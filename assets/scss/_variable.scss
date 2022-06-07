@@ -1,0 +1,43 @@
+// Variables
+
+// Queries
+
+$mobileS: "320px";
+$mobileM: "375px";
+$mobileL: "425px";
+$tablet: "768px";
+$laptop: "1024px";
+$laptopL: "1280px";
+$desktop: "1536px";
+
+$primaryDefault: linear-gradient(89.67deg, #5479e6 0.26%, #6b7aff 99.71%);
+$primaryHover: linear-gradient(89.67deg, #3d3ae8 0.26%, #664ff1 99.71%);
+$primaryPressed: #3a67e8;
+$secondaryHover: #e0fff2;
+$tag: #e5fff6;
+$colorTag: #579f70;
+$hot: #ec6daf;
+$most: #6a49ee;
+$special: #ffa03e;
+$card: #ebeff8;
+$textDark: #3a445c;
+$textMedium: #6e7687;
+$font: "Urbanist", sans-serif;
+$border-gradient: radial-gradient(
+      circle at 100% 100%,
+      #ffffff 0,
+      #ffffff 13px,
+      transparent 13px
+    )
+    0% 0%/14px 14px no-repeat,
+  radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 13px, transparent 13px)
+    100% 0%/14px 14px no-repeat,
+  radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 13px, transparent 13px)
+    0% 100%/14px 14px no-repeat,
+  radial-gradient(circle at 0 0, #ffffff 0, #ffffff 13px, transparent 13px) 100%
+    100%/14px 14px no-repeat,
+  linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 2px) calc(100% - 28px)
+    no-repeat,
+  linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 28px) calc(100% - 2px)
+    no-repeat,
+  linear-gradient(53deg, #dd7bff 0%, #4d89ff 100%);

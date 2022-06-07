@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="assets/scss/main.css" />
+    <link rel="stylesheet" href="assets/scss/blog/blog.css" />
+
+    <!-- components -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/blog-card.js"></script>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- Navbar end-->
+
+    <main>
+      <div class="blog-bg">
+        <!-- Blog hero -->
+        <section class="blog-hero">
+          <div class="wrap">
+            <span class="tag main">Our blog</span>
+            <h2 class="heading-2">
+              Latest <span class="dot">Articles</span> from popular gaming
+              services
+            </h2>
+          </div>
+        </section>
+        <!-- Blog hero end -->
+
+        <!-- Select wrap -->
+        <div class="select-wrap">
+          <div className="container">
+            <div class="select-news">
+              <div class="news-wrap">
+                <div class="news active">
+                  <p class="heading-5">All News</p>
+                </div>
+                <div class="news">
+                  <p class="heading-5">All News</p>
+                </div>
+                <div class="news">
+                  <p class="heading-5">All News</p>
+                </div>
+                <div class="news">
+                  <p class="heading-5">All News</p>
+                </div>
+                <div class="news">
+                  <p class="heading-5">All News</p>
+                </div>
+              </div>
+              <div class="search-news">
+                <input class="input" placeholder="Search theme" type="text" />
+                <img src="" alt="icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Select wrap end -->
+
+        <!-- Blog wrap -->
+        <section class="blog-wrap">
+          <div class="container">
+            <div class="blog-head">
+              <!-- Blog card -->
+              <!-- components/blog-card.js -->
+
+              <blogcard-component></blogcard-component>
+              <blogcard-component></blogcard-component>
+            </div>
+
+            <span class="tag main">Latest News</span>
+            <h3 class="heading-3">Most Commented News</h3>
+
+            <div class="col-3">
+              <blogcard-component></blogcard-component>
+              <blogcard-component></blogcard-component>
+              <blogcard-component></blogcard-component>
+            </div>
+
+            <div class="btn-container">
+                <a href="#">
+                    <button class="btn btn-primary">Read more</button>
+                </a>
+            </div>
+          </div>
+        </section>
+        <!-- Blog wrap end -->
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer-component></footer-component>
+    <!-- Footer end -->
+
+    <!-- js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

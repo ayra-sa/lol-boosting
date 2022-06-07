@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+
+    <link rel="stylesheet" href="assets/scss/main.css" />
+    <link rel="stylesheet" href="assets/scss/faq/faq.css" />
+
+    <!-- components -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/faq-box.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- Navbar end-->
+
+    <main>
+      <!-- FAQ Hero -->
+      <section class="faq-hero">
+        <div className="container">
+          <span class="tag main">FAQs</span>
+          <h2 class="heading-2">
+            Have any <span class="dot">questions</span> to ask?
+          </h2>
+          <p class="body-3">
+            Eloboostleague is the world’s most advanced League of Legends
+            boosting service. Since Season 1, we’ve become one of the leading
+            platforms for League of Legends boosting.
+          </p>
+
+          <div class="faq-search">
+            <input class="input" placeholder="Write your question" />
+            <button class="btn btn-primary">Search The Answer</button>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ Hero end -->
+
+      <!-- FAQ Body -->
+      <section id="faq-body">
+        <div class="container">
+          <div class="faq-wrap">
+            <h2 class="heading-2">General question</h2>
+            <faq-component></faq-component>
+            <faq-component></faq-component>
+          </div>
+
+          <div class="faq-wrap">
+            <h2 class="heading-2">General question</h2>
+            <faq-component></faq-component>
+            <faq-component></faq-component>
+          </div>
+
+          <div class="faq-wrap">
+            <h2 class="heading-2">General question</h2>
+            <faq-component></faq-component>
+            <faq-component></faq-component>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ Body end -->
+    </main>
+
+    <!-- Footer -->
+    <footer-component></footer-component>
+    <!-- Footer end -->
+
+    <!-- js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

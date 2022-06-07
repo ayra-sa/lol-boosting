@@ -1,0 +1,155 @@
+@import "variable";
+
+// TYPOGRAPHY
+
+.center {
+    text-align: center;
+  }
+  
+  .tag {
+    padding: 3px 8px;
+    border-radius: 3px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.85em;
+    line-height: 19px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    font-family: #{$font};
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    
+    &.special {
+      background: #{$special};
+    }
+    &.most {
+      background: #{$most};
+    }
+    &.main {
+      background: #{$colorTag};
+    }
+    &.hot {
+      background: #{$hot};
+    }
+  }
+  
+  
+  .dot {
+    border: 1px dashed #5479e5;
+    border-radius: 8px;
+    background: linear-gradient(89.67deg, #5479e6 0.26%, #7094ea 99.71%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  
+  .blueText {
+    background: #{$primaryDefault};
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .heroTitle {
+    font-size: 3em;
+    line-height: 64px;
+    margin-bottom: 20px;
+    font-weight: 800;
+  
+    @media (min-width: #{$tablet}) {
+      font-size: 3.5em;
+      line-height: 78px;
+    }
+  }
+  
+  .heading {
+  
+    &-1 {
+      font-weight: 700;
+      font-size: 2.875em;
+      line-height: 64px;
+    }
+    
+    &-2 {
+      font-weight: 800;
+      font-size: 2.375em;
+      line-height: 53px;
+      margin-bottom: 10px;
+    }
+  
+    &-3 {
+      
+      font-weight: 700;
+      font-size: 1.375em;
+      line-height: 33px;
+      margin-bottom: 10px;
+    }
+  
+    &-4 {
+      font-weight: 700;
+      font-size: 1em;
+      margin-bottom: 10px;
+      
+    }
+    
+    &-5 {
+      font-weight: 500;
+      font-size: 1em;
+      
+    }
+    
+    &-6 {
+      font-weight: 700;
+      font-size: 0.85em;
+      // color: #6e7687;
+      
+    }
+    
+    &-7 {
+      font-weight: 700;
+      font-size: 0.875em;
+      line-height: 19px;
+    }
+  }
+  
+  
+  .body {
+  
+    &-1 {
+      font-weight: 500;
+      font-size: 1.1em;
+      line-height: 32px;
+    }
+    
+    &-2 {
+      font-weight: 600;
+      font-size: 0.85em;
+      // color: #6e7687;
+    }
+  
+    &-3 {
+      font-weight: 500;
+      font-size: 1em;
+      // color: #6e7687;
+    }
+  
+    &-4 {
+      font-weight: 500;
+      font-size: 0.875em;
+      // color: #6e7687;
+    }
+  
+    &-5 {
+      font-weight: 400;
+      font-size: 0.875em;
+      // color: #6e7687;
+    }
+  }

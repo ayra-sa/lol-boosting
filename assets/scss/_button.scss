@@ -1,0 +1,64 @@
+@import "variable";
+
+
+// BUTTON
+
+button {
+    font-family: inherit;
+    background: none;
+    border: none;
+}
+
+.btn {
+    border-radius: 12px;
+    padding: 16px 26px;
+    display: flex;
+    font-size: 1em;
+    line-height: 19px;
+    font-family: #{$font};
+    cursor: pointer;
+    align-items: center;
+    column-gap: 10px;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+  
+    &-primary {
+      background: #{$primaryDefault};
+      border: 1px solid;
+      border-image-source: linear-gradient(
+        94.43deg,
+        rgba(255, 255, 255, 0.6) 2.5%,
+        rgba(255, 255, 255, 0) 62.83%,
+        rgba(255, 255, 255, 0.4) 98.5%
+      );
+      color: #fff;
+  
+      &:hover {
+        background: #{$primaryHover};
+      }
+    }
+  
+    &-secondary {
+      border-radius: 10px;
+      /* padding: 1px; */
+      box-sizing: content-box;
+      color: #5479e5;
+      border: 1px solid #5479e5;
+      background: transparent;
+  
+      &:hover {
+        background: #{$secondaryHover};
+      }
+    }
+  
+    &-wrap {
+      margin-top: 30px;
+      display: block;
+    }
+  
+    &-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+  }
