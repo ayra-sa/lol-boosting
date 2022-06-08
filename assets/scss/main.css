@@ -659,7 +659,7 @@ button {
 #review {
   background: url("../images/review-bg.png") no-repeat center;
   background-size: cover;
-  padding: 5%;
+  padding: 80px;
   position: relative;
 }
 
@@ -686,12 +686,8 @@ button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-
-@media (min-width: 768px) {
-  .rating {
-    width: 400px;
-  }
+  -webkit-box-shadow: 2px 3px 13px -8px #6c6c6c;
+          box-shadow: 2px 3px 13px -8px #6c6c6c;
 }
 
 .review-info {
@@ -700,9 +696,7 @@ button {
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
   border-radius: 30px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -714,6 +708,9 @@ button {
   color: #fff;
   row-gap: 10px;
   padding: 15px 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (min-width: 768px) {
@@ -739,12 +736,17 @@ button {
 }
 
 .review-info > div {
-  width: 230px;
-  padding: 15px 0;
+  width: 233px;
   /* padding: 10px 50px; */
   text-align: center;
   display: inline-block;
   color: #fff;
+}
+
+@media (min-width: 1280px) {
+  .review-info > div {
+    width: 333px;
+  }
 }
 
 .review-info > div p {
@@ -946,6 +948,18 @@ button {
   }
 }
 
+#main-right {
+  width: 100%;
+  /* margin-top: 40px; */
+}
+
+@media (min-width: 1024px) {
+  #main-right {
+    width: calc(100% - 375px);
+    margin-left: 375px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1036,17 +1050,6 @@ textarea {
   }
 }
 
-.footerProd {
-  width: 100%;
-}
-
-@media (min-width: 1024px) {
-  .footerProd {
-    width: calc(100% - 375px);
-    margin-left: 375px;
-  }
-}
-
 .reviewProd {
   width: auto !important;
 }
@@ -1064,6 +1067,16 @@ textarea {
   height: 1px;
   width: 100%;
   margin-top: 40px;
+}
+
+.hide {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .hide {
+    display: block;
+  }
 }
 
 .navbar {
@@ -1332,6 +1345,103 @@ input:focus {
   .mobile-menu {
     display: none;
   }
+}
+
+.sidebar {
+  width: 100%;
+  display: inline-block;
+  background: #ebeff8;
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 375px;
+    position: fixed;
+    inset: 0 auto 0 0;
+  }
+}
+
+.game-selection {
+  background: url("../images/icons/header-mobo.png") center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  margin-top: 60px;
+  padding: 20px 32px;
+}
+
+@media (min-width: 1024px) {
+  .game-selection {
+    padding: 20px 60px;
+  }
+}
+
+.game-left {
+  color: #fff;
+}
+
+.game-left span {
+  color: #fff !important;
+}
+
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  padding-left: 20px;
+  overflow-x: scroll;
+  background: #EBEFF8;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.categories::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .categories {
+    display: block;
+    padding: 20px 50px;
+    /* text-align: center; */
+  }
+}
+
+.category-list {
+  list-style: none;
+  padding: 20px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.link-list {
+  background: transparent;
+  /* display: flex; */
+  color: #5679e7;
+}
+
+.link-list.active {
+  background: linear-gradient(89.67deg, #5479e6 0.26%, #6b7aff 99.71%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
 
 .work {
@@ -1715,5 +1825,16 @@ input:focus {
 
 .text {
   font-weight: 500;
+}
+
+.footer-product {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .footer-product {
+    width: calc(100% - 375px);
+    margin-left: 375px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

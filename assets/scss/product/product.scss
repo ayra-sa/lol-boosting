@@ -1,5 +1,9 @@
 @import "../variable";
 
+
+// Main
+
+
 .product-body {
     margin-top: 60px;
 }
@@ -7,3 +11,22 @@
 .desc {
     color: #6E7687;
 }
+
+// REVIEW PRODUCT
+#review-product {
+    background: url("../../images/review-bg.png") no-repeat center;
+    background-size: cover;
+    padding: 80px;
+    position: relative;
+    
+    @media (min-width: #{$laptop}) {
+        margin-left: 80px;
+        margin-right: 80px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+}
+}
+// REVIEW PRODUCT END

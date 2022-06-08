@@ -95,14 +95,7 @@ textarea {
   }
 }
 
-.footerProd {
-  width: 100%;
 
-  @media (min-width: 1024px) {
-    width: calc(100% - 375px);
-    margin-left: 375px;
-  }
-}
 
 .reviewProd {
   width: auto !important;
@@ -119,6 +112,13 @@ textarea {
   margin-top: 40px;
 }
 
+.hide {
+  display: none;
+
+  @media (min-width: #{$laptop}) {
+    display: block;
+  }
+}
 
 // NAVBAR
 
@@ -339,6 +339,95 @@ input {
   }
 
 // END NAVBAR
+
+
+// SIDEBAR
+
+.sidebar {
+  width: 100%;
+  display: inline-block;
+  background: #ebeff8;
+  // margin-top: 5%;
+  
+  @media (min-width: #{$laptop}) {
+    width: 375px;
+    position: fixed;
+    inset: 0 auto 0 0;
+    // margin-top: 2%;
+  }
+}
+
+
+.game-selection {
+  background: url("../images/icons/header-mobo.png") center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  margin-top: 60px;
+  padding: 20px 32px;
+
+  @media (min-width: #{$laptop}) {
+    padding: 20px 60px;
+  }
+}
+
+.game-left {
+  color: #fff;
+
+  & span {
+    color: #fff !important;
+  }
+}
+
+.categories {
+  display: flex;
+  column-gap: 10px;
+  padding-left: 20px;
+  overflow-x: scroll;
+  background: #EBEFF8;
+  -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+  @media (min-width: #{$laptop}) {
+    display: block;
+    padding: 20px 50px;
+    /* text-align: center; */
+  }
+}
+
+.category-list {
+  list-style: none;
+  padding: 20px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.link-list {
+  background: transparent;
+  /* display: flex; */
+  color: #5679e7;
+  
+  &.active {
+    background: #{$primaryDefault};
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+}
+
+// SIDEBAR END
 
 
 // WORK
@@ -640,5 +729,15 @@ input {
 .text {
   font-weight: 500;
 }
+
+  // FOOTER Product
+  .footer-product {
+    width: 100%;
+  
+    @media (min-width: 1024px) {
+      width: calc(100% - 375px);
+      margin-left: 375px;
+    }
+  }
 
 // FOOTER END
