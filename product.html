@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+
+    <link rel="stylesheet" href="assets/scss/main.css" />
+    <link rel="stylesheet" href="assets/scss/product/product.css" />
+
+    <!-- components -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer-product.js"></script>
+    <script src="components/sidebar.js"></script>
+    <script src="components/card.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- Navbar end-->
+
+    <main>
+      <!-- sidebar nav -->
+      <sidebar-component></sidebar-component>
+      <!-- sidebar nav end -->
+
+      <section id="main-right">
+        <div class="container-fluid">
+          <section class="section">
+            <div class="small-container">
+              <breadcrumb-component></breadcrumb-component>
+              <h2 class="heading-2">
+                World of warCraft <span class="dot">Character Boosting</span>
+              </h2>
+              <p class="body-1">
+                Lol Boosting provides cheap WoW boosting of all types: character
+                or PvP boosting, raid or dungeons carry, Powerleveling, farming
+                & many more to save your time. Book a slot in our live chat and
+                enjoy WoW boost!{" "}
+              </p>
+            </div>
+          </section>
+
+          <section class="section">
+            <span class="tag main">Rare and limited</span>
+            <h2 class="heading-2">Today’s Special Offers</h2>
+
+            <div class="column-cards">
+              <card-component></card-component>
+              <card-component></card-component>
+              <card-component></card-component>
+            </div>
+          </section>
+
+          <section class="section">
+            <span class="tag main">Get it first</span>
+            <h2 class="heading-2">Limited editions</h2>
+
+            <div class="column-cards">
+              <card-component></card-component>
+              <card-component></card-component>
+              <card-component></card-component>
+            </div>
+          </section>
+
+          <section class="section">
+            <span class="tag main">According to your search</span>
+            <h2 class="heading-2">Special for your account</h2>
+
+            <div class="column-cards">
+              <card-component></card-component>
+              <card-component></card-component>
+              <card-component></card-component>
+            </div>
+          </section>
+
+          <div class="divider"></div>
+
+          <div class="small-container">
+            <div class="product-body">
+              <h4 class="heading-4">Product description</h4>
+              <div class="mt-2">
+                <p class="body-1 mt-2 desc">
+                  The last boss of every raid in WoW is usually very difficult
+                  to defeat even in Normal mode. However, with proper gear and
+                  an experienced team, it is more than real. To defeat Sylvanas
+                  Windrunner you need to get through 3 phases and bring Sylvanas
+                  health down to 50%. At mythic difficulty SoD Sylvanas
+                  Windrunner kill will be counted at 45% of her health.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review -->
+          <!-- Review end -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footerproduct-component></footerproduct-component>
+    <!-- Footer end -->
+
+    <!-- js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

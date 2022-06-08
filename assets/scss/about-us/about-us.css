@@ -11,11 +11,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  background: url("../../images/about-us/about-hero.png") no-repeat center;
+  background-size: cover;
 }
 
 .count-box {
-  background: #4b76e2;
+  background: url("../../images/numbers.png") no-repeat center;
+  background-size: cover;
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
   border-radius: 30px;
@@ -105,7 +107,8 @@
           align-items: center;
   border-radius: 30px;
   padding: 40px;
-  position: relative;
+  background: url("../../images/card-bg.png") no-repeat center;
+  background-size: cover;
 }
 
 #service {
@@ -190,6 +193,8 @@
 }
 
 #team {
+  background: url("../../images/about-us/team-bg.png") no-repeat center;
+  background-size: cover;
   margin-top: 100px;
   padding: 5% 0;
   text-align: center;
@@ -201,7 +206,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  row-gap: 40px;
   /* flex-direction: column; */
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -218,8 +222,20 @@
 }
 
 .count-team > div {
-  padding: 0 90px;
+  padding: 20px 90px;
   text-align: center;
+}
+
+.count-team > div:nth-of-type(1) {
+  border-bottom: 1px solid #D2CBFF;
+}
+
+.count-team > div:nth-of-type(2) {
+  border-bottom: 1px solid #D2CBFF;
+}
+
+.count-team > div:nth-of-type(3) {
+  border-bottom: 1px solid #D2CBFF;
 }
 
 @media (min-width: 768px) {
@@ -269,6 +285,16 @@
       flex-wrap: wrap;
 }
 
+.lonely-right {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .lonely-right {
+    text-align: left;
+  }
+}
+
 @media (min-width: 1024px) {
   .lonely {
     -webkit-box-orient: horizontal;
@@ -285,15 +311,33 @@
   }
 }
 
-.lonely-right {
-  text-align: left;
-}
-
 .buttons-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
   margin-top: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .buttons-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.buttons-wrap .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=about-us.css.map */

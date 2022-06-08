@@ -7,14 +7,17 @@ class BlogCard extends HTMLElement {
     this.innerHTML = `
     <div class="blog-card">    
         <div class="blog-top">
-        <span class="tag special">WOW</span>
-        <img class="blog-image" src="./assets/images/latest-img.png" alt="blog" >
-        <div class="blog-info">
-            <p class="body-2">12 Nov 2021</p>
-            <div class="comment">
-            <img src="./assets/images/icons/chat.svg" alt="icon" > <span>212</span>
-            </div>
-        </div>
+          <div class="tag-wrap">
+            <span class="tag special">WOW</span>
+            <span class="tag special">WOW</span>
+          </div>
+          <img class="blog-image" src="./assets/images/latest-img.png" alt="blog" >
+          <div class="blog-info">
+              <p class="body-2">12 Nov 2021</p>
+              <div class="comment">
+              <img src="./assets/images/icons/chat.svg" alt="icon" > <span>212</span>
+              </div>
+          </div>
         </div>
         <a href="blog-detail.html">
             <div class="mt-2">

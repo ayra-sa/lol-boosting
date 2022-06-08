@@ -51,14 +51,19 @@
   width: 50%;
 }
 
-.faq-body {
+#faq-body {
   margin: 0 auto;
-  width: 80%;
   margin-bottom: 60px;
 }
 
+@media (min-width: 768px) {
+  #faq-body {
+    width: 80%;
+  }
+}
+
 @media (min-width: 1024px) {
-  .faq-body {
+  #faq-body {
     max-width: 70%;
   }
 }

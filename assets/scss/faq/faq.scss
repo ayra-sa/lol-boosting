@@ -37,10 +37,13 @@
     width: 50%;
 }
 
-.faq-body {
+#faq-body {
     margin: 0 auto;
-    width: 80%;
     margin-bottom: 60px;
+    
+    @media (min-width: #{$tablet}) {
+        width: 80%;
+    }
     
     @media (min-width: #{$laptop}) {
         max-width: 70%;
