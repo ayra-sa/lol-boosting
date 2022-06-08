@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+
+    <link rel="stylesheet" href="assets/scss/main.css" />
+    <link rel="stylesheet" href="assets/scss/main.css" />
+
+    <!-- components -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- Navbar end-->
+    
+    <main>
+        <section class="order-hero">
+            <span class="tag main">Your order is in progress</span>
+            <h2 class="heading-2">My Orders <Dot>Demo</Dot></h2>
+            <div class="badge">
+              <img src="assets/images/order/item.png" alt='icon' />
+              <h3 class="heading-3">Silver 3 to platinum 4</h3>
+            </div>
+          </section>
+    
+          <div className="container">
+              <!-- Progress -->
+              <!-- Progress end -->
+            <div class="order-col">
+              <div class="items">
+                <div class="item-box">
+                  <h4 class="heading-4">Initial</h4>
+                  <img src="assets/images/order/item.png" alt='item' />
+                  <p class="heading-3 level">Silver 3</p>
+                </div>
+                
+              </div>
+    
+              <div class="gift">
+                <div class="gift-about">
+                  <h3 class="heading-3">Playing As Lulu</h3>
+                  <p class="body-4">23.11 till 25.11</p>
+                </div>
+                <div class="gift-body">
+                  <div class="center">
+                    <h2 class="heading-3 headline">Summoner Spell (Heal, Cleanse)</h2>
+                    <p class="body-4">Extra Options</p>
+                  </div>
+    
+                  <p class="body-4">Enter amount</p>
+                  <div class="amount">
+                    <div class="amount-inputs">
+                      <input class="input" type='number'/>
+                      <select class="input" name='select'>
+                        <option value='USD'>USD</option>
+                        <option value='USD'>USD</option>
+                        <option value='USD'>USD</option>
+                      </select>
+                    </div>
+                    <button class="btn btn-primary">Add Gift Player</button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="history">
+                <h2 class="heading-3">Win history</h2>
+                <div class="win">
+                  <p class="heading-4">Lulu</p>
+                  <div class="info">
+                    <p class="heading-3">Win</p>
+                    <p class="body-4">(11.12 at 23:42)</p>
+                  </div>
+                  <p class="heading-4">12/3/21</p>
+                  <p class="heading-4">14042</p>
+                </div>
+                <div class="loose">
+                    <h2 class="heading-3">Win history</h2>
+                    <div class="win">
+                      <p class="heading-4">Lulu</p>
+                      <div class="loose-info">
+                        <p class="heading-3">Win</p>
+                        <p class="body-4">(11.12 at 23:42)</p>
+                      </div>
+                      <p class="heading-4">12/3/21</p>
+                      <p class="heading-4">14042</p>
+                </div>
+              </div>
+    
+              <div class="chat-wrap">
+                <h2 class="heading-3">Chat With Us</h2>
+                <div class="chat-box">
+                  <div class="chat-admin">
+                    <img class="profile-admin" src="assets/images/avatar.png" alt='avatar' />
+                    <div class="message-details">
+                      <span class="admin-message-details">Hey</span>
+                      <p class="body-5">12.09 at 10.23</p>
+                    </div>
+                  </div>
+                  <div class="chat-admin">
+                    <img class="profile-admin" src="assets/images/avatar.png" alt='avatar' />
+                    <div class="message-details">
+                      <span class="admin-message-details">Hey</span>
+                      <p class="body-5">12.09 at 10.23</p>
+                    </div>
+                  </div>
+                  
+    
+                  <div class="chat-user">
+                    <div class="profile">G</div>
+                    <div class="message-details">
+                      <span class="message">How can i log in?</span>
+                      <p class="body-5">12.09 at 10.23</p>
+                    </div>
+                  </div>
+    
+    
+                  <div class="chat-type">
+                      <input class="input" placeholder="Type message" type='text' />
+                      <button class="btn btn-primary">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <section className="section">
+              <span class="tag main">You may like it</span>
+              <h2 class="heading-2">Related products</h2>
+              <div class="col-3">
+
+              </div>
+    
+              <div class="btn-container">
+                  <a href="#" class="btn btn-primary">Go To All Product</a>
+              </div>
+            </section>
+    
+            <section className="section" id="help">
+                <div class="help-top">
+                    <span class="tag main">Help</span>
+                    <h2 class="heading-2">Need future assistance?</h2>
+                    <p class="body-3">Feel free to mail us or look in the bottom left corner!</p>
+                </div>
+                <a href="#" class="btn btn-primary">Contact Us</a>
+            </section>
+          </div>
+    </main>
+
+    <!-- Footer -->
+    <footer-component></footer-component>
+    <!-- Footer end -->
+
+    <!-- js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

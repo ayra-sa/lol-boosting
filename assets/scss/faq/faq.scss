@@ -25,16 +25,14 @@
     justify-content: space-between;
     margin-top: 40px;
     width: 100%;
+
+    input {
+        width: 50%;
+    }
     
     @media (min-width: #{$laptop}) {
       width: unset;
     }
-}
-
-.input {
-    border: none;
-    outline: none;
-    width: 50%;
 }
 
 #faq-body {

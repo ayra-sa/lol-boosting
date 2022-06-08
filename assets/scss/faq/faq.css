@@ -39,16 +39,14 @@
   width: 100%;
 }
 
+.faq-search input {
+  width: 50%;
+}
+
 @media (min-width: 1024px) {
   .faq-search {
     width: unset;
   }
-}
-
-.input {
-  border: none;
-  outline: none;
-  width: 50%;
 }
 
 #faq-body {
