@@ -217,7 +217,6 @@ button {
 }
 
 .hero {
-  padding: 15% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,7 +234,10 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-top: 0;
+    margin-top: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -781,6 +783,10 @@ button {
   }
 }
 
+.blog-content {
+  width: 50%;
+}
+
 .blog-card-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1027,6 +1033,10 @@ textarea {
   margin-top: 40px;
 }
 
+.mb-1 {
+  margin-bottom: 10px;
+}
+
 .mb-2 {
   margin-bottom: 20px;
 }
@@ -1093,6 +1103,10 @@ textarea {
   .hide {
     display: block;
   }
+}
+
+.w-auto {
+  width: auto !important;
 }
 
 .navbar {
@@ -1180,6 +1194,7 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 360px;
   }
 }
 
@@ -1338,7 +1353,14 @@ input:focus {
 
 .btn-navbar {
   margin-left: auto;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .login {
@@ -1962,5 +1984,154 @@ input:focus {
 
 .how-do h6 {
   color: var(--text-dark);
+}
+
+.checkout-wrap {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  overflow: auto;
+  z-index: 88;
+}
+
+.checkout-box {
+  background: #fff;
+  -webkit-box-shadow: 0px 5px 70px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 70px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  text-align: center;
+  padding: 30px 85px;
+  max-width: 70%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20px;
+  position: relative;
+}
+
+.checkout-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 70px;
+  margin: 20px 0 40px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .checkout-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.left {
+  text-align: left;
+}
+
+.personal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.method {
+  border: 2px solid #d0d5df;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.method-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.item-box {
+  background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 13px, transparent 13px) 0% 0%/14px 14px no-repeat, radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 13px, transparent 13px) 100% 0%/14px 14px no-repeat, radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 13px, transparent 13px) 0% 100%/14px 14px no-repeat, radial-gradient(circle at 0 0, #ffffff 0, #ffffff 13px, transparent 13px) 100% 100%/14px 14px no-repeat, linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 2px) calc(100% - 28px) no-repeat, linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 28px) calc(100% - 2px) no-repeat, linear-gradient(53deg, #dd7bff 0%, #4d89ff 100%);
+  border-radius: 14px;
+  padding: 15px 50px;
+  text-align: center;
+}
+
+.item-box img {
+  margin: 25px 0 20px 0;
+}
+
+table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+tr {
+  margin-bottom: 10px;
+}
+
+td {
+  width: 35%;
+}
+
+.td-result {
+  color: #3a67e8;
+}
+
+.coupon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.coupon input {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.checks {
+  margin: 20px 0;
+}
+
+.check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

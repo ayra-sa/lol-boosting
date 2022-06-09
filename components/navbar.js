@@ -25,7 +25,7 @@ class Navbar extends HTMLElement {
                 </li>
                 <li class="nav-search on-mobo">
                   <div class="search-bar">
-                    <input placeholder="Search for boosting">
+                    <input type="text" placeholder="Search for boosting">
                     <img src="./assets/images/icons/search.svg" alt="icon">
                   </div>
                 </li>

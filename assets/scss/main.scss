@@ -76,6 +76,8 @@ textarea {
 
 @include mt("2", "20px");
 @include mt("4", "40px");
+
+@include mb("1", "10px");
 @include mb("2", "20px");
 @include mb("4", "40px");
 
@@ -131,6 +133,10 @@ textarea {
   @media (min-width: #{$laptop}) {
     display: block;
   }
+}
+
+.w-auto {
+  width: auto !important;
 }
 
 // NAVBAR
@@ -193,6 +199,7 @@ textarea {
 
   @media (min-width: #{$laptop}) {
     display: flex;
+    width: 360px;
   }
 }
 
@@ -322,7 +329,10 @@ input {
 
 .btn-navbar {
   margin-left: auto;
-  display: inline-block;
+  // display: inline-block;
+  display: inline-flex;
+  column-gap: 50px;
+  align-items: center;
 }
 
 .login {
@@ -834,3 +844,129 @@ input {
 }
 
 // LOGIN MODAL END
+
+
+// CHECKOUT MODAL
+
+.checkout-wrap {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(14px);
+  display: flex;
+  place-content: center;
+  overflow: auto;
+  z-index: 88;
+}
+
+.checkout-box {
+  background: #fff;
+  box-shadow: 0px 5px 70px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  text-align: center;
+  padding: 30px 85px;
+  max-width: 70%;
+  height: fit-content;
+  margin-top: 20px;
+  position: relative;
+}
+
+// .x-btn {
+//   position: absolute;
+//   inset: 48px 70px auto auto;
+//   border: none;
+//   background: transparent;
+//   font-size: 1.2em;
+// }
+
+.checkout-content {
+  display: flex;
+  gap: 70px;
+  margin: 20px 0 40px 0;
+  flex-direction: column;
+
+  @media (min-width: #{$laptop}) {
+      flex-direction: row;
+  }
+}
+
+.left {
+  text-align: left;
+}
+
+.personal {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.method {
+  border: 2px solid rgba(208, 213, 223, 1);
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.method-img {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.items {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.item-box {
+  background: #{$borderGradient};
+  border-radius: 14px;
+  padding: 15px 50px;
+  text-align: center;
+
+  & img {
+      margin: 25px 0 20px 0;
+  }
+}
+
+table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+tr {
+  margin-bottom: 10px;
+}
+
+td {
+  width: 35%;
+}
+
+.td-result {
+  color: #{$primaryPressed};
+}
+
+.coupon {
+  
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+
+  & input {
+      margin-bottom: 0;
+      width: 100%;
+  }
+}
+
+.checks {
+  margin: 20px 0;
+}
+
+.check {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}

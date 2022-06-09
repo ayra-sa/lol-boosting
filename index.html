@@ -13,6 +13,7 @@
     <script src="components/footer.js"></script>
     <script src="components/blog-card.js"></script>
     <script src="components/work.js"></script>
+    <script src="components/card.js"></script>
 
   </head>
   <body>
@@ -32,23 +33,23 @@
                 <span class="dot">WOW boosting</span> solution from any to every
                 division
               </h1>
-              <p class="body-3">
+              <p class="body-3 mt-2 mb-2">
                 League boosting solution from any to every division. LoL
                 boosting is a very popular gaming service and a modern standard
                 for anyone who has respect for their time.
               </p>
-  
+
               <a href="#about">
                 <button class="btn btn btn-primary">About Us</button>
               </a>
             </div>
-            <div class="her-right">
-              <img src="./assets/images/hero-img.png" alt="hero" />
-              <img src="" class="decor leftBtm" alt="decor" />
+            <div class="hero-right">
+              <img src="./assets/images/hero-image.png" alt="hero" />
+              <!-- <img src="" class="decor leftBtm" alt="decor" />
               <img src="" class="decor rightBtm" alt="decor" />
               <img src="" class="decor rightBtw" alt="decor" />
               <img src="" class="decor right" alt="decor" />
-              <img src="" class="decor leftTop" alt="decor" />
+              <img src="" class="decor leftTop" alt="decor" /> -->
             </div>
           </section>
         </div>
@@ -76,7 +77,7 @@
               </div>
               <div class="filter-dropdown">
                 <span>Other</span>
-                <img src="" alt="icon" />
+                <img src="assets/images/icons/arrow-down.svg" alt="icon" />
               </div>
             </div>
 
@@ -149,36 +150,10 @@
             <span class="tag main">Top Product</span>
             <h2 class="heading-2">Top World of Warcraft Products</h2>
 
-            <div class="col">
-              <div class="card">
-                <img src="./assets/images/image 5.png" class="bg-image" alt="bg" />
-                <div class="card-info">
-                  <div class="card-top">
-                    <span class="tag most">Most popular</span>
-                    <span class="tag special">Special Offer</span>
-                  </div>
-                  <div class="card-body">
-                    <div class="card-body-left">
-                      <h3 class="heading-3">WOW Character</h3>
-                      <ul class="list-wrap">
-                        <li class="list">
-                          <p class="body-5">Stream on demand</p>
-                        </li>
-                        <li class="list">
-                          <p class="body-5">Stream on demand</p>
-                        </li>
-                        <li class="list">
-                          <p class="body-5">Stream on demand</p>
-                        </li>
-                      </ul>
-                      <h3 class="heading-3">$89.99</h3>
-                    </div>
-                    <a href="#">
-                      <button class="btn btn-primary">Buy</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <div class="col-3">
+              <card-component></card-component>
+              <card-component></card-component>
+              <card-component></card-component>
             </div>
 
             <div class="btn-container">
@@ -294,7 +269,7 @@
       <!-- Blog -->
       <section class="section">
         <div class="container">
-          <div class="blog">
+          <div class="blog mb-2">
             <div class="blog-content">
               <span class="tag main">Blog&News</span>
               <h2 class="heading-2">
