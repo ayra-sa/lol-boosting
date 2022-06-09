@@ -12,7 +12,7 @@
     
     @media (min-width: #{$laptop}) {
       flex-direction: row;
-      margin-top: 100px;
+      margin-top: 80px;
       align-items: center;
     }
 }
@@ -102,7 +102,7 @@
   }
 }
 
-.filter-games {
+.filter-games, .filter-dropdown {
   padding: 24px 50px;
   /* white-space: nowrap; */
   border-radius: 20px;
@@ -417,8 +417,8 @@
   background-size: cover;
   backdrop-filter: blur(12px);
   border-radius: 30px;
-  // width: fit-content;
-  width: auto;
+  width: fit-content;
+  // width: auto;
   display: flex;
   flex-direction: column;
   margin: 0 auto;

@@ -10,13 +10,20 @@
     <link rel="stylesheet" href="assets/scss/product/product.css" />
 
     <!-- components -->
-    <script src="components/navbar.js"></script>
+    <script src="components/navbar-login.js"></script>
     <script src="components/footer-product.js"></script>
     <script src="components/sidebar.js"></script>
+    <script src="components/checkout-modal.js"></script>
+
   </head>
   <body>
     <!-- Navbar -->
+    <navbarlogin-component></navbarlogin-component>
     <!-- Navbar end-->
+
+    <!-- Checkout modal -->
+    <checkout-component></checkout-component>
+    <!-- Checkout modal end -->
 
     <!-- sidebar nav -->
     <sidebar-component></sidebar-component>
@@ -59,10 +66,6 @@
                   <li class="select-top">
                     <p class="body-1">Placement</p>
                   </li>
-                  <li class="select-top">
-                    <p class="body-1">Placement</p>
-                  </li>
-
                 </ul>
     
                 <div class="content-slide">
@@ -142,13 +145,15 @@
                     <div class="bb-info">
                           <p class="heading-7 bb-title">Completion Time</p>
                           <p class="heading-6">12 Fox Coins (1.4$))</p>
-                        </div>
-                        <div class="bb-detail">
+                    </div>
+                      <div class="bb-detail">
                           <p class="heading-7 bb-title">Completion Time</p>
-                          <p class="heading-3">12 Fox Coins (1.4$))</p>
+                          <p class="heading-3">$34</p>
                       </div>
-                      <div class="btn-container">
-                        <a href="#" class="btn btn-primary">Rank Up</a>
+                        <div class="btn-container">
+                        <a href="#" id="modalBtn">
+                          <button class="btn btn-primary">Rank Up</button>
+                        </a>
                       </div>
                     </div>
                   </div>

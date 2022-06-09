@@ -11,7 +11,7 @@ class NavbarLogin extends HTMLElement {
             <div class="nav-wrap">
               <div class="nav-left">
                 <img src="./assets/images/icons/menu.png" class="mobile-menu" alt="icon">
-                <a href="/">
+                <a href="index.html">
                   <img src="./assets/images/logo.svg" alt="logo">
                 </a>
                 <div class="search-bar w-auto">
@@ -38,7 +38,9 @@ class NavbarLogin extends HTMLElement {
               </div>
   
               <div class="btn-navbar">
-                <a href="order.html" class="btn btn-primary">My Order</a>
+                <a href="order.html">
+                  <button class="btn btn-primary">My Order</button>
+                </a>
                 <div class="profile-btn">
                     <img src="./assets/images/user.png" alt="icon" >
                 </div>

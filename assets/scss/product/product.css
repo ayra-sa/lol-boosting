@@ -33,9 +33,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   margin-top: 40px;
 }
 
@@ -48,6 +46,14 @@
 .select-top p {
   color: #6E7687;
   margin: 0;
+}
+
+.select-top.active {
+  background: linear-gradient(89.67deg, #5479e6 0.26%, #6b7aff 99.71%);
+}
+
+.select-top.active p {
+  color: #fff;
 }
 
 .content-slide {

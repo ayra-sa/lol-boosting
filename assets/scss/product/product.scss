@@ -39,7 +39,7 @@
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
-    width: fit-content;
+    width: 100%;
     margin-top: 40px;
 }
 
@@ -51,6 +51,14 @@
     & p {
         color: #6E7687;
         margin: 0;
+    }
+
+    &.active {
+        background: #{$primaryDefault};
+
+        p {
+            color: #fff;
+        }
     }
 }
 

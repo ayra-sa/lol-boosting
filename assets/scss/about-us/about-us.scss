@@ -1,8 +1,8 @@
 @import "../variable";
 
 .about-hero {
-    margin-top: 80px;
-    padding: 5%;
+    margin-top: 70px;
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@
     background-size: cover;
     backdrop-filter: blur(12px);
     border-radius: 30px;
-    width: max-content;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -37,8 +37,8 @@
         &:nth-of-type(2) {
           border-top: none !important;
           border-bottom: none !important;
-          border-left: 1px solid #fff;
-          border-right: 1px solid #fff;
+          border-left: 1px solid rgba(255, 255, 255, 0.5);
+          border-right: 1px solid rgba(255, 255, 255, 0.5);
         }
       }
     }
@@ -49,6 +49,10 @@
       text-align: center;
       display: inline-block;
       color: #fff;
+
+      @media (min-width: #{$laptop}) {
+        width: 333px;
+      }
   
       & p {
         color: #fff;
@@ -78,7 +82,7 @@
     flex-direction: column;
     align-items: center;
     border-radius: 30px;
-    padding: 40px;
+    padding: 40px 85px;
     background: url("../../images/card-bg.png") no-repeat center;
     background-size: cover;
 }
@@ -133,6 +137,10 @@
         width: 70%;
       }
     }
+}
+
+.info-panel {
+  display: none;
 }
 
 
@@ -196,6 +204,7 @@
     
         &:nth-of-type(1) {
           border-right: unset;
+          border-bottom: unset;
         }
     
         &:nth-last-of-type(1) {
@@ -203,10 +212,12 @@
         }
     
         &:nth-of-type(2) {
+          border-bottom: unset;
           border-left: 1px solid rgba(77, 137, 255, .4);
         }
     
         &:nth-of-type(3) {
+          border-bottom: unset;
           border-left: 1px solid rgba(77, 137, 255, .4);
           border-right: 1px solid rgba(77, 137, 255, .4);
         }

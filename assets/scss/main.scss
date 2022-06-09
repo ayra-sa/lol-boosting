@@ -757,9 +757,10 @@ input {
 // LOGIN MODAL
 
 .login-container {
-  display: flex;
+  display: none;
   place-content: center;
   position: fixed;
+  z-index: 889;
   inset: 0;
   background: rgba(0, 0, 0, 0.3);
 }
@@ -853,10 +854,10 @@ input {
   inset: 0;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(14px);
-  display: flex;
+  display: none;
   place-content: center;
   overflow: auto;
-  z-index: 88;
+  z-index: 889;
 }
 
 .checkout-box {
@@ -922,8 +923,9 @@ input {
 }
 
 .item-box {
-  background: #{$borderGradient};
-  border-radius: 14px;
+  // background: #{$borderGradient};
+  border-radius: 20px;
+  border: 1px solid #DABCFF;
   padding: 15px 50px;
   text-align: center;
 

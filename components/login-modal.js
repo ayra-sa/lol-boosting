@@ -5,12 +5,12 @@ class Login extends HTMLElement {
 
     connectedCallback() {
       this.innerHTML = `
-        <div class="login-container">
+        <div class="login-container" id="modal">
             <div class="login-wrap">
                 <h3 class="heading-3">Login</h3>
-                <button class="x-btn">
-                    <img src="assets/images/icons/x.svg" alt="icon" />
-                </button>
+                <div>
+                    <img class="x-btn" src="assets/images/icons/x.svg" alt="icon" />
+                </div>
                 <form class="login-form">
                     <input class="input" placeholder="User" type="text" required="true" />
                     <div class="password">
