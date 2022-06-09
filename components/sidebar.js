@@ -29,7 +29,7 @@ class Sidebar extends HTMLElement {
                     </a>
                 </li>
                 <li class="category-list">
-                    <a class="link-list" href="product-slider.html">
+                    <a class="link-list" href="product-slider2.html">
                         <span class="heading-4">WOW Gold</span>
                     </a>
                 </li>

@@ -126,6 +126,9 @@
 
 // Product home
 
+#products {
+  position: relative;
+}
 
 .product-title {
   position: relative;
@@ -323,6 +326,22 @@
 
 // what is
 
+#what-is {
+  background: url("../images/what-is-bg.svg") no-repeat center;
+  background-size: cover;
+}
+
+#what-is-title {
+  position: relative;
+
+  &::before {
+    content: url("../images/Burst-pucker-2-1.svg");
+    position: absolute;
+    left: -60px;
+    bottom: -20px;
+  }
+}
+
 .info-wrap {
   display: flex;
   column-gap: 30px;
@@ -355,6 +374,7 @@
   margin-top: 100px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   /* flex-wrap: wrap; */
 
   @media (min-width: #{$laptop}) {
@@ -368,6 +388,9 @@
   @media (min-width: #{$laptop}) {
     width: 50%;
   }
+}
+
+.wi-img {
 }
 
 // Review

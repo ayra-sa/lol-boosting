@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+
+    <link rel="stylesheet" href="assets/scss/main.css" />
+    <link rel="stylesheet" href="assets/scss/product/product.css" />
+
+    <!-- components -->
+    <script src="components/navbar-login.js"></script>
+    <script src="components/footer-product.js"></script>
+    <script src="components/sidebar.js"></script>
+    <script src="components/checkout-modal.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <navbarlogin-component></navbarlogin-component>
+    <!-- Navbar end-->
+
+    <!-- Checkout modal -->
+    <checkout-component></checkout-component>
+    <!-- Checkout modal end -->
+
+    <!-- sidebar nav -->
+    <sidebar-component></sidebar-component>
+    <!-- sidebar nav end -->
+
+    <main>
+      <div id="main-right">
+        <div class="container-fluid">
+          <section id="product-slider">
+            <!-- breadcrumb -->
+            <breadcrumb-component></breadcrumb-component>
+            <!-- breadcrumb end -->
+
+            <div class="small-container">
+              <h2 class="heading-2">
+                We offer to buy booster for your account
+              </h2>
+              <p class="body-3">
+                Lol Boosting provides cheap WoW boosting of all types: character
+                or PvP boosting, raid or dungeons carry, Powerleveling, farming
+                & many more to save your time. Book a slot in our live chat and
+                enjoy WoW boost!
+              </p>
+            </div>
+
+            <ul class="selector-wrap">
+              <li class="select-top active">
+                <p class="body-1">Placement</p>
+              </li>
+              <li class="select-top">
+                <p class="body-1">Placement</p>
+              </li>
+              <li class="select-top">
+                <p class="body-1">Placement</p>
+              </li>
+              <li class="select-top">
+                <p class="body-1">Placement</p>
+              </li>
+              <li class="select-top">
+                <p class="body-1">Placement</p>
+              </li>
+              <li class="select-top">
+                <p class="body-1">Placement</p>
+              </li>
+            </ul>
+
+            <div class="content-slide">
+              <div class="rank-selection">
+                <div class="positions">
+                  <div class="position">
+                    <h4 class="heading-4">Current Position</h4>
+                    <img src="assets/images/order/item.png" alt="item" />
+                    <div class="cursor">
+                      <img
+                        src="assets/images/slider/pointer-current.svg"
+                        alt="icon"
+                      />
+                    </div>
+                    <div class="rank">
+                        <div class="box box-1"></div>
+                        <div class="box box-1"></div>
+                        <div class="box box-1"></div>
+                        <div class="box box-1"></div>
+                        <div class="box box-2"></div>
+                        <div class="box box-2"></div>
+                        <div class="box box-2"></div>
+                        <div class="box box-3"></div>
+                        <div class="box box-3"></div>
+                        <div class="box box-3"></div>
+                        <div class="box box-4"></div>
+                        <div class="box box-4"></div>
+                    </div>
+                    <div class="rank-slider">
+                      <input
+                        type="range"
+                        name="range"
+                        id="range"
+                        class="range"
+                      />
+                      <!-- <input type="range" name="range" id="range" class="range" /> -->
+                      <div class="mt-2">
+                        <h4 class="heading-4">3 LP</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Basket -->
+
+              <div class="basket">
+                <div class="header">
+                  <h2 class="heading-4">My Order</h2>
+                </div>
+                <div class="basket-body">
+                  <div class="bb-info mt-1">
+                    <p class="heading-7 bb-title">Completion Time</p>
+                    <p class="heading-6">1 Day</p>
+                  </div>
+                  <div class="bb-info mt-1">
+                    <p class="heading-7 bb-title">Completion Time</p>
+                    <p class="heading-6">Champion ($5)</p>
+                    <p class="heading-6">Champion ($5)</p>
+                  </div>
+                  <div class="bb-info mt-1">
+                    <p class="heading-7 bb-title">Completion Time</p>
+                    <p class="heading-6">12 Fox Coins (1.4$))</p>
+                  </div>
+                  <div class="bb-detail">
+                    <p class="heading-7 bb-title">Completion Time</p>
+                    <p class="heading-3">$34</p>
+                  </div>
+                  <div class="btn-container">
+                    <a href="#" id="modalBtn">
+                      <button class="btn btn-primary">
+                        <span>Rank Up</span>
+                        <img
+                          src="assets/images/icons/arrow-up.svg"
+                          alt="icon"
+                        />
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Basket end -->
+
+            <div class="divider"></div>
+          </section>
+
+          <div class="small-container">
+            <section class="section">
+              <span class="tag main">Some addings for you </span>
+              <h3 class="heading-3">Extra Options</h3>
+              <p class="body-3">
+                Lol Boosting provides cheap WoW boosting of all types: character
+                or PvP boosting, raid or dungeons carry, Powerleveling, farming
+                & many more to save your time. Book a slot in our live chat and
+                enjoy WoW boost!{" "}
+              </p>
+
+              <ul class="extra-options">
+                <li class="extra active">Spell Buttons</li>
+                <li class="extra">Spell Buttons</li>
+                <li class="extra">Spell Buttons</li>
+                <li class="extra">Spell Buttons</li>
+                <li class="extra">Spell Buttons</li>
+              </ul>
+
+              <div class="mb-2 text-product">
+                <p class="body-3">This option <b>+10%</b> to final price</p>
+              </div>
+
+              <p class="body-3">
+                Would you like to see how a Challenger player plays on your
+                account in your elo? By enabling this option we will set up a
+                private stream specifically for you! Your booster will also be
+                able to chat with you, provide you rank up images and send you
+                VODs / recordings of the games played. Your replays will be sent
+                to you after order completion on your e-mail. If you wish us to
+                send them to you, please write it in the notes or notify us
+                before we initiate your order.
+              </p>
+            </section>
+
+            <section class="section">
+              <span class="tag main">Some addings for you </span>
+              <h3 class="heading-3">What You Will Get</h3>
+
+              <div class="what-you-wrap">
+                <div class="what-you">
+                  <img src="assets/images/slider/what.svg" alt="icon" />
+                  <h4 class="heading-4">Pre Ranked</h4>
+                  <p class="body-3">
+                    Lol Boosting provides cheap WoW boosting of all types:
+                    character or PvP boosting, raid or dungeons carry,
+                    Powerleveling, farming & many more
+                  </p>
+                </div>
+                <div class="what-you">
+                  <img src="assets/images/slider/what.svg" alt="icon" />
+                  <h4 class="heading-4">Pre Ranked</h4>
+                  <p class="body-3">
+                    Lol Boosting provides cheap WoW boosting of all types:
+                    character or PvP boosting, raid or dungeons carry,
+                    Powerleveling, farming & many more
+                  </p>
+                </div>
+                <div class="what-you">
+                  <img src="assets/images/slider/what.svg" alt="icon" />
+                  <h4 class="heading-4">Pre Ranked</h4>
+                  <p class="body-3">
+                    Lol Boosting provides cheap WoW boosting of all types:
+                    character or PvP boosting, raid or dungeons carry,
+                    Powerleveling, farming & many more
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="section">
+              <span class="tag main">Ordering procedure</span>
+              <h3 class="heading-3">How It Works</h3>
+              <ul class="how">
+                <li class="how-list">
+                  <p class="body-3">Place an order choosing options you need</p>
+                </li>
+                <li class="how-list">
+                  <p class="body-3">Place an order choosing options you need</p>
+                </li>
+                <li class="how-list">
+                  <p class="body-3">Place an order choosing options you need</p>
+                </li>
+              </ul>
+            </section>
+
+            <section class="section">
+              <span class="tag main">About this item</span>
+              <h3 class="heading-3">Product Description</h3>
+              <p class="body-3 mt-2">
+                The last boss of every raid in WoW is usually very difficult to
+                defeat even in Normal mode. However, with proper gear and an
+                experienced team, it is more than real. To defeat Sylvanas
+                Windrunner you need to get through 3 phases and bring Sylvanas
+                health down to 50%. At mythic difficulty SoD Sylvanas Windrunner
+                kill will be counted at 45% of her health.{" "}
+              </p>
+              <p class="body-3 mt-2">
+                The last boss of every raid in WoW is usually very difficult to
+                defeat even in Normal mode. However, with proper gear and an
+                experienced team, it is more than real. To defeat Sylvanas
+                Windrunner you need to get through 3 phases and bring Sylvanas
+                health down to 50%. At mythic difficulty SoD Sylvanas Windrunner
+                kill will be counted at 45% of her health.{" "}
+              </p>
+              <p class="body-3 mt-2">
+                The last boss of every raid in WoW is usually very difficult to
+                defeat even in Normal mode. However, with proper gear and an
+                experienced team, it is more than real. To defeat Sylvanas
+                Windrunner you need to get through 3 phases and bring Sylvanas
+                health down to 50%. At mythic difficulty SoD Sylvanas Windrunner
+                kill will be counted at 45% of her health.{" "}
+              </p>
+            </section>
+
+            <section id="feedback">
+              <div class="center">
+                <span class="tag main">Review and Feedback</span>
+                <h2 class="heading-2">Leave us a feedback</h2>
+                <p class="body-3">
+                  You can leave here feedback and read user’s reviews
+                </p>
+              </div>
+
+              <div class="rating">
+                <div class="rating-text">
+                  <p class="heading-2">4.9</p>
+                  <span class="heading-7">/5</span>
+                </div>
+                <div class="rating-feedback">
+                  <img src="assets/images/icons/star-fill.svg" alt="star" />
+                  <img src="assets/images/icons/star-fill.svg" alt="star" />
+                  <img src="assets/images/icons/star-fill.svg" alt="star" />
+                  <img src="assets/images/icons/star-fill.svg" alt="star" />
+                  <img src="assets/images/icons/star-fill.svg" alt="star" />
+                </div>
+                <img src="assets/images/Trustpilot.png" alt="img" />
+              </div>
+
+              <div class="reviews">
+                <div class="tell-us">
+                  <h4 class="heading-4 mb-2">Tell us about your experience</h4>
+                  <p class="body-4">Your overall rating</p>
+                  <div class="rating-input">
+                    <img
+                      src="assets/images/icons/star-outline.svg"
+                      alt="star"
+                    />
+                    <img
+                      src="assets/images/icons/star-outline.svg"
+                      alt="star"
+                    />
+                    <img
+                      src="assets/images/icons/star-outline.svg"
+                      alt="star"
+                    />
+                    <img
+                      src="assets/images/icons/star-outline.svg"
+                      alt="star"
+                    />
+                    <img
+                      src="assets/images/icons/star-outline.svg"
+                      alt="star"
+                    />
+                  </div>
+                  <form class="review-form">
+                    <input class="input" placeholder="Title" type="text" />
+                    <input class="input" placeholder="Name" type="text" />
+                    <input class="input" placeholder="Email" type="email" />
+                    <textarea
+                      name="message"
+                      class="message"
+                      id="message"
+                      cols="30"
+                      rows="10"
+                      placeholder="Review text"
+                    ></textarea>
+                    <div class="btn-container">
+                      <input
+                        type="submit"
+                        class="btn btn-primary"
+                        value="Send Review"
+                      />
+                    </div>
+                  </form>
+                </div>
+
+                <div class="review-total">
+                  <h4 class="heading-4 mb-2">2 of 132 Reviews</h4>
+
+                  <div class="review-card">
+                    <p class="heading-6">Fantastic Job</p>
+                    <p class="body-3">
+                      Good purchase Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.
+                    </p>
+                    <div class="verified">
+                      <img src="assets/images/icons/verified.svg" alt="icon" />
+                      <span>Verified purchased</span>
+                    </div>
+                  </div>
+                  <div class="review-card">
+                    <p class="heading-6">Fantastic Job</p>
+                    <p class="body-3">
+                      Good purchase Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.
+                    </p>
+                    <div class="verified">
+                      <img src="assets/images/icons/verified.svg" alt="icon" />
+                      <span>Verified purchased</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footerproduct-component></footerproduct-component>
+    <!-- Footer end -->
+
+    <!-- js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

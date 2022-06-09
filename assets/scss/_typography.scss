@@ -64,7 +64,6 @@
   .heroTitle {
     font-size: 3em;
     line-height: 64px;
-    margin-bottom: 20px;
     font-weight: 800;
   
     @media (min-width: #{$tablet}) {
@@ -154,5 +153,45 @@
       font-weight: 400;
       font-size: 0.875em;
       // color: #6e7687;
+    }
+  }
+
+  .text-decoration {
+    position: relative;
+  
+    &-star::after {
+      content: url("../images/Burst-pucker-2.svg");
+      position: absolute;
+      top: 10px;
+      margin-left: 20px;
+    }
+
+    &-hero::after {
+      content: url("../images/Highlight_10.svg");
+      position: absolute;
+      inset: 50% -10px auto auto;
+    }
+
+    &-review::after {
+      content: url("../images/hl-review.svg");
+      position: absolute;
+      left: 0;
+      top: -30%;
+    }
+    
+    &-about::after {
+      content: url("../images/hl-review.svg");
+      position: absolute;
+      left: -60px;
+      top: -50%;
+    }
+
+    &-hiring::after {
+      content: url("../images/Highlight_10.svg");
+      position: absolute;
+    }
+  
+    &-right {
+      right: 0;
     }
   }

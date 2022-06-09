@@ -1,3 +1,7 @@
+#product-slider {
+  margin-top: 150px;
+}
+
 .product-body {
   margin-top: 60px;
 }
@@ -135,6 +139,10 @@
   }
 }
 
+.cursor img {
+  margin: 0;
+}
+
 .rank-selection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,11 +159,28 @@
   display: flex;
   -webkit-column-gap: 3px;
           column-gap: 3px;
+  margin-bottom: 30px;
 }
 
 .box {
   width: 8px;
   height: 28px;
+}
+
+.box-1 {
+  background: #7D7D80;
+}
+
+.box-2 {
+  background: #B0723A;
+}
+
+.box-3 {
+  background: #B1C3C4;
+}
+
+.box-4 {
+  background: #F1E804;
 }
 
 .rank-slider {

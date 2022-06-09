@@ -1,4 +1,4 @@
-.blog-background {
+.blog-bg {
   background: url("../../images/blogs/bg-blog.png") no-repeat center;
   background-size: contain;
 }
@@ -9,17 +9,37 @@
   text-align: center;
 }
 
-.select-wrap {
+#blog-title {
+  position: relative;
+}
+
+#blog-title::before {
+  content: url("../../images/Burst-pucker-2.svg");
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: -5%;
+}
+
+#blog-title::after {
+  content: url("../../images/Burst-pucker-2.svg");
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: -5%;
+}
+
+.select-news-wrap {
   border-bottom: 4px solid #ebeff8;
   margin-bottom: 20px;
 }
 
-.select-wrap .search-news {
+.select-news-wrap .search-news {
   display: none;
 }
 
 @media (min-width: 1024px) {
-  .select-wrap .search-news {
+  .select-news-wrap .search-news {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -72,6 +92,25 @@
   display: none;
 }
 
+@media (min-width: 1024px) {
+  .news-wrap {
+    padding-bottom: 0;
+  }
+}
+
+.news {
+  padding: 18px 5px;
+  position: relative;
+}
+
+.news.active {
+  border-bottom: 4px solid #5479e6;
+}
+
+.news.active p {
+  font-weight: 700;
+}
+
 .search-news {
   min-width: 360px;
   background: #ebeff8;
@@ -109,10 +148,12 @@
   margin-bottom: 60px;
 }
 
-.blog-detail-wrap {
-  background: url("../../images/blogs/bg-blog.png") no-repeat center;
+#blogDetail {
+  background: url("../../images/blogs/bdetail-bg.png") no-repeat center;
   background-size: contain;
-  margin-top: 40px;
+}
+
+.blog-detail-wrap {
   margin-inline: auto;
 }
 

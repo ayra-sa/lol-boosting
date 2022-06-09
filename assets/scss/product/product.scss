@@ -3,6 +3,9 @@
 
 // Main
 
+#product-slider {
+    margin-top: 150px;
+}
 
 .product-body {
     margin-top: 60px;
@@ -111,6 +114,13 @@
     }
 }
 
+.cursor {
+
+    img {
+        margin: 0;
+    }
+}
+
 .rank-selection {
     display: flex;
     flex-direction: column;
@@ -119,12 +129,29 @@
 .rank {
     display: flex;
     column-gap: 3px;
+    margin-bottom: 30px;
 }
 
 .box {
     // background: ${props => props.bg};
     width: 8px;
     height: 28px;
+
+    &-1 {
+        background: #7D7D80;
+    }
+
+    &-2 {
+        background: #B0723A;
+    }
+
+    &-3 {
+        background: #B1C3C4;
+    }
+
+    &-4 {
+        background: #F1E804;
+    }
 }
 
 .rank-slider {
@@ -149,6 +176,8 @@
         cursor: pointer;
     }
 }
+
+
 
 .basket {
     

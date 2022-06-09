@@ -81,3 +81,24 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+
+// Nav
+
+console.log(document.URL)
+
+const current = 0;
+for (let i = 0; i < document.links.length; i++) {
+    if (document.links[i].href === document.URL) {
+        current = i;
+    }
+}
+document.links[current].className = 'current';
+
+
+for (let e of document.querySelectorAll('input[type="range"].slider-progress')) {
+  e.style.setProperty('--value', e.value);
+  e.style.setProperty('--min', e.min == '' ? '0' : e.min);
+  e.style.setProperty('--max', e.max == '' ? '100' : e.max);
+  e.addEventListener('input', () => e.style.setProperty('--value', e.value));
+}

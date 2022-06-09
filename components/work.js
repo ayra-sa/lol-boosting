@@ -9,7 +9,7 @@ class Work extends HTMLElement {
       <div class="work">
         <div class="work-left">
           <span class="tag main">Work With Us</span>
-          <h2 class="heading-2">
+          <h2 class="heading-2 text-decoration text-decoration-hiring">
             We Are <span class="blueText">Hiring</span>
           </h2>
           <p class="body-3">

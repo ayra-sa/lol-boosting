@@ -65,6 +65,24 @@
     }
 }
 
+#values-about {
+  position: relative;
+
+  &::before {
+    content: url("../../images/Burst-pucker-2.svg");
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &::after {
+    content: url("../../images/Burst-pucker-2.svg");
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
 .values-cards {
     display: grid;
     margin-top: 60px;

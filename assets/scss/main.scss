@@ -82,7 +82,6 @@ textarea {
 @include mb("2", "20px");
 @include mb("4", "40px");
 
-
 // Input
 
 .input {
@@ -91,7 +90,7 @@ textarea {
   padding: 10px;
   border: none;
   margin-bottom: 20px;
-  font-size: .875em;
+  font-size: 0.875em;
   font-family: inherit;
 
   &:focus {
@@ -99,7 +98,6 @@ textarea {
     border: none;
   }
 }
-
 
 .container-fluid {
   padding: 0 40px;
@@ -139,12 +137,14 @@ textarea {
 .w-auto {
   width: auto !important;
 
-  @media (min-width: #{$laptopL}) {
+  @media (min-width: #{$desktop}) {
     width: fit-content !important;
   }
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   font-size: inherit !important;
   font-family: inherit;
 }
@@ -186,6 +186,13 @@ select {
   margin-bottom: 20px;
 }
 
+.decoration {
+  position: absolute;
+  top: -35%;
+  left: 0;
+  z-index: -1;
+}
+
 // NAVBAR
 
 .navbar {
@@ -199,7 +206,7 @@ select {
   background: #fff;
   box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.05);
   margin: 0;
-  z-index: 999;
+  z-index: 992;
   // overflow-x: auto;
 }
 
@@ -275,11 +282,6 @@ input {
   top: 0;
   right: 0;
   background: #fff;
-  // padding: 8%;
-  // flex-direction: column;
-  // row-gap: 30px;
-  // align-items: flex-start;
-  // background: #EEF1F5;
   width: 100%;
   transition: 0.3s ease-out;
   -webkit-transition: 0.3s ease-out;
@@ -307,6 +309,28 @@ input {
   font-weight: 700;
   box-sizing: border-box;
   flex-shrink: 0;
+  position: relative;
+
+  &.current {
+
+    a {
+      font-weight: 700;
+    }
+
+    &::before {
+      content: "as";
+      position: absolute;
+      display: block;
+      inset: -10px 0 auto 0;
+      height: 4px;
+      background: #{$primaryDefault};
+      border-radius: 0px 0px 4px 4px;
+      -webkit-border-radius: 0px 0px 4px 4px;
+      -moz-border-radius: 0px 0px 4px 4px;
+      -ms-border-radius: 0px 0px 4px 4px;
+      -o-border-radius: 0px 0px 4px 4px;
+    }
+  }
 
   &-header {
     background: url("../images/icons/header-mobo.png") no-repeat center;
@@ -342,19 +366,19 @@ input {
     margin-left: 0;
   }
 
-  &:last-of-type {
-    margin-right: 0;
+  // &:last-of-type {
+  //   margin-right: 0;
 
-    &:after {
-      content: "";
-      display: inline-block;
-      width: 24px;
-    }
-  }
+  //   &:after {
+  //     content: "";
+  //     display: inline-block;
+  //     width: 24px;
+  //   }
+  // }
 
   @media (min-width: #{$tablet}) {
-    padding: 0;
-    margin: 0 16px;
+    padding: 20px;
+    // margin: 0 16px;
     font-size: 18px;
     line-height: 27px;
     font-weight: 500;
@@ -437,7 +461,7 @@ input {
   align-items: center;
   justify-content: space-between;
   color: #fff;
-  margin-top: 60px;
+  margin-top: 95px;
   padding: 20px 32px;
 
   @media (min-width: #{$laptop}) {
@@ -816,7 +840,7 @@ input {
   display: none;
   place-content: center;
   position: fixed;
-  z-index: 889;
+  z-index: 994;
   inset: 0;
   background: rgba(0, 0, 0, 0.3);
 }
@@ -902,7 +926,6 @@ input {
 
 // LOGIN MODAL END
 
-
 // CHECKOUT MODAL
 
 .checkout-wrap {
@@ -913,7 +936,7 @@ input {
   display: none;
   place-content: center;
   overflow: auto;
-  z-index: 889;
+  z-index: 996;
 }
 
 .checkout-box {
@@ -943,7 +966,7 @@ input {
   flex-direction: column;
 
   @media (min-width: #{$laptop}) {
-      flex-direction: row;
+    flex-direction: row;
   }
 }
 
@@ -955,7 +978,6 @@ input {
   display: flex;
   flex-direction: column;
 }
-
 
 .method {
   border: 2px solid rgba(208, 213, 223, 1);
@@ -981,12 +1003,12 @@ input {
 .item-box {
   // background: #{$borderGradient};
   border-radius: 20px;
-  border: 1px solid #DABCFF;
+  border: 1px solid #dabcff;
   padding: 15px 50px;
   text-align: center;
 
   & img {
-      margin: 25px 0 20px 0;
+    margin: 25px 0 20px 0;
   }
 }
 
@@ -1008,14 +1030,13 @@ td {
 }
 
 .coupon {
-  
   display: flex;
   gap: 15px;
   margin-top: 20px;
 
   & input {
-      margin-bottom: 0;
-      width: 100%;
+    margin-bottom: 0;
+    width: 100%;
   }
 }
 
