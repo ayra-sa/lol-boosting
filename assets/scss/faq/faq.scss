@@ -1,86 +1,109 @@
 @import "../variable";
 
-
 .faq-hero {
-    background: url("../../images/hero-bg.png") no-repeat center;
-    background-size: cover;
-    margin-top: 80px;
-    padding: 5% 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  
-    @media (min-width: #{$desktop}) {
-      display: block;
-    }
+  background: url("../../images/hero-bg.png") no-repeat center;
+  background-size: cover;
+  margin-top: 70px;
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @media (min-width: #{$desktop}) {
+    display: block;
+  }
 }
 
 .faq-search {
-    background: #fff;
-    border-radius: 14px;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
-    width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  padding: 8px 8px 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 100%;
 
-    input {
-        width: 50%;
-    }
-    
-    @media (min-width: #{$laptop}) {
-      width: unset;
-    }
+  input {
+    width: 50%;
+  }
+
+  @media (min-width: #{$laptop}) {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 #faq-body {
-    margin: 0 auto;
-    margin-bottom: 60px;
-    
-    @media (min-width: #{$tablet}) {
-        width: 80%;
-    }
-    
-    @media (min-width: #{$laptop}) {
-        max-width: 70%;
-    }
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  @media (min-width: #{$tablet}) {
+    max-width: 80%;
+  }
+
+  @media (min-width: #{$laptop}) {
+    max-width: 70%;
+    width: 60%;
+  }
 }
 
 .faq-wrap {
-    margin-top: 60px;
-    text-align: center;
+  margin-top: 60px;
+  text-align: center;
 }
 
-.faq-box {   
-    text-align: left;
-    background: 
-      radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 13px, transparent 13px) 0% 0%/14px 14px no-repeat,
-      radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 13px, transparent 13px) 100% 0%/14px 14px no-repeat, 
-      radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 13px, transparent 13px) 0% 100%/14px 14px no-repeat, 
-      radial-gradient(circle at 0 0, #ffffff 0, #ffffff 13px, transparent 13px) 100% 100%/14px 14px no-repeat,
-      linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 2px) calc(100% - 28px) no-repeat, 
-      linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 28px) calc(100% - 2px) no-repeat, 
-      linear-gradient(53deg, #dd7bff 0%, #4D89FF 100%);
-    border-radius: 14px;
-    /* padding: 5px; */
-    box-sizing: content-box;
-    padding: 20px 30px;
-    margin-top: 20px;
+.faq-box {
+  text-align: left;
+  background: radial-gradient(
+        circle at 100% 100%,
+        #ffffff 0,
+        #ffffff 13px,
+        transparent 13px
+      )
+      0% 0%/14px 14px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 13px, transparent 13px)
+      100% 0%/14px 14px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 13px, transparent 13px)
+      0% 100%/14px 14px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 13px, transparent 13px)
+      100% 100%/14px 14px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 2px)
+      calc(100% - 28px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 28px)
+      calc(100% - 2px) no-repeat,
+    linear-gradient(53deg, #dd7bff 0%, #4d89ff 100%);
+  border-radius: 14px;
+  /* padding: 5px; */
+  box-sizing: content-box;
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 0 !important;
+}
+
+details > summary::after {
+  content: url("../../images/icons/plus.svg");
+}
+
+details[open] > summary::after {
+  content: url("../../images/icons/minus.svg");
 }
 
 .faq-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    & > h3 {
-        margin: 0;
-    }
-}
-
-.answer {
-    display: block;
-    margin-top: 20px;   
+  & > h3 {
+    margin: 0;
+  }
 }

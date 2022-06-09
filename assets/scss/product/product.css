@@ -288,6 +288,12 @@
   white-space: nowrap;
 }
 
+.extra.active {
+  background: linear-gradient(89.67deg, #5479e6 0.26%, #6b7aff 99.71%);
+  color: #fff;
+  font-weight: 700;
+}
+
 .extra-info {
   margin-bottom: 20px;
   display: -webkit-box;
@@ -382,7 +388,7 @@
   margin-bottom: 60px;
 }
 
-.tell-us input, .review-total input {
+.tell-us .input, .review-total .input {
   width: 100%;
 }
 
@@ -395,6 +401,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .review-form {

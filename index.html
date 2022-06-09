@@ -15,10 +15,8 @@
     <script src="components/work.js"></script>
     <script src="components/card.js"></script>
     <script src="components/login-modal.js"></script>
-
   </head>
   <body>
-
     <!-- Navbar -->
     <navbar-component></navbar-component>
     <!-- Navbar end -->
@@ -45,7 +43,10 @@
               </p>
 
               <a href="#about">
-                <button class="btn btn btn-primary">About Us</button>
+                <button class="btn btn btn-primary">
+                  <span>About Us</span>
+                  <img src="assets/images/icons/arrow-up.svg" alt="icons" />
+                </button>
               </a>
             </div>
             <div class="hero-right">
@@ -88,7 +89,7 @@
 
             <div class="product-content">
               <span class="tag main">Our Suggestion</span>
-              <h1 class="heading-1">The Best Products</h1>
+              <h1 class="heading-2">The Best Products</h1>
               <div class="product-box">
                 <div class="product-card">
                   <span class="tag hot">Hot Sale</span>
@@ -109,12 +110,22 @@
                     </p>
                     <div class="btn-wrap">
                       <a href="#">
-                        <button class="btn btn-primary">Buy</button>
+                        <button class="btn btn-primary">
+                          <span>Buy</span>
+                          <img
+                            src="assets/images/icons/arrow-up.svg"
+                            alt="icons"
+                          />
+                        </button>
                       </a>
                     </div>
                   </div>
 
-                  <img class="char" src="./assets/images/pngitem-wow.png" alt="chara" />
+                  <img
+                    class="char"
+                    src="./assets/images/pngitem-wow.png"
+                    alt="chara"
+                  />
                 </div>
 
                 <div class="product-card-right">
@@ -136,12 +147,22 @@
                     </p>
                     <div class="btn-wrap">
                       <a href="#">
-                        <button class="btn btn-primary">Buy</button>
+                        <button class="btn btn-primary">
+                          <span>Buy</span>
+                          <img
+                            src="assets/images/icons/arrow-up.svg"
+                            alt="icons"
+                          />
+                        </button>
                       </a>
                     </div>
                   </div>
 
-                  <img class="char" src="./assets/images/pngkey_wow2.png" alt="chara" />
+                  <img
+                    class="char"
+                    src="./assets/images/pngkey_wow2.png"
+                    alt="chara"
+                  />
                 </div>
               </div>
             </div>
@@ -155,7 +176,7 @@
             <span class="tag main">Top Product</span>
             <h2 class="heading-2">Top World of Warcraft Products</h2>
 
-            <div class="col-3">
+            <div class="col-3 mt-4">
               <card-component></card-component>
               <card-component></card-component>
               <card-component></card-component>
@@ -163,7 +184,10 @@
 
             <div class="btn-container">
               <a href="#">
-                <button class="btn btn-primary">Go To All Product</button>
+                <button class="btn btn-primary">
+                  <span>Go To All Product</span>
+                  <img src="assets/images/icons/arrow-up.svg" alt="icons" />
+                </button>
               </a>
             </div>
           </div>
@@ -173,9 +197,9 @@
         <!-- What is -->
         <section class="section">
           <div class="container">
-            <div class="center">
+            <div class="text-wrap center">
               <span class="tag main">What Is Elo Boosting League?</span>
-              <h1 class="heading-1">
+              <h1 class="heading-2">
                 We offer to buy booster for your account
               </h1>
               <p class="body-3">
@@ -228,7 +252,11 @@
                 </div>
               </div>
 
-              <img class="wi-img" src="./assets/images/what-is-img.png" alt="what-is" />
+              <img
+                class="wi-img"
+                src="./assets/images/what-is-img.png"
+                alt="what-is"
+              />
             </div>
           </div>
         </section>
@@ -237,9 +265,9 @@
 
       <!-- Review -->
       <section id="review" class="section">
-        <div class="center">
+        <div class="text-wrap center">
           <span class="tag main">Review and Feedback</span>
-          <h1 class="heading-1">
+          <h1 class="heading-2">
             Thousands of players Constantly <span class="dot">Choose Us</span>
           </h1>
           <p class="body-3">
@@ -249,8 +277,17 @@
         </div>
 
         <div class="rating">
-          <p class="heading-2">4.9</p>
-          <!-- <img src="" alt="star" /> -->
+          <div class="rating-text">
+            <p class="heading-2">4.9</p>
+            <span class="heading-7">/5</span>
+          </div>
+          <div class="rating-feedback">
+            <img src="assets/images/icons/star-fill.svg" alt="star" />
+            <img src="assets/images/icons/star-fill.svg" alt="star" />
+            <img src="assets/images/icons/star-fill.svg" alt="star" />
+            <img src="assets/images/icons/star-fill.svg" alt="star" />
+            <img src="assets/images/icons/star-fill.svg" alt="star" />
+          </div>
           <img src="./assets/images/Trustpilot.png" alt="image" />
         </div>
 
@@ -278,29 +315,32 @@
             <div class="blog-content">
               <span class="tag main">Blog&News</span>
               <h2 class="heading-2">
-                <span class="blueText">Latest Articles</span> from a very popular gaming
-                service
+                <span class="blueText">Latest Articles</span> from a very
+                popular gaming service
               </h2>
             </div>
-  
+
             <div class="blog-content">
               <p class="body-5">
-                Articles lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliquaThe fine folks of Smokywood Pastures aren’t letting a little
-                thing. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et{" "}
+                Articles lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliquaThe fine folks of Smokywood Pastures aren’t letting a
+                little thing. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et{" "}
               </p>
             </div>
           </div>
           <div class="blog-card-wrap">
             <blogcard-component></blogcard-component>
-            <blogcard-component></blogcard-component>            
+            <blogcard-component></blogcard-component>
           </div>
-  
+
           <div class="btn-container">
             <a href="#">
-              <button class="btn btn-primary">Visit blog</button>
+              <button class="btn btn-primary">
+                <span>Visit Blog</span>
+                <img src="assets/images/icons/arrow-up.svg" alt="icons" />
+              </button>
             </a>
           </div>
         </div>

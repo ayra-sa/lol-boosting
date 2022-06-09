@@ -105,22 +105,22 @@
       flex-direction: row;
     }
   
-    &::before {
-      content: '';
-      border-left: 1px dashed #D0D5DF;
-      display: block;
-      position: absolute;
-      inset: 0;
-      margin-left: 40px;
-      z-index: -1;
-      height: 50%;
+    // &::before {
+    //   content: '';
+    //   border-left: 1px dashed #D0D5DF;
+    //   display: block;
+    //   position: absolute;
+    //   inset: 0;
+    //   margin-left: 40px;
+    //   z-index: -1;
+    //   height: 50%;
       
-      @media (min-width: #{$laptop}) {
-        height: 60%;
-        margin: auto 0 auto 40px;
-      }
+    //   @media (min-width: #{$laptop}) {
+    //     height: 60%;
+    //     margin: auto 0 auto 40px;
+    //   }
   
-    }
+    // }
 }
 
 .info-wrap {
@@ -139,13 +139,63 @@
     }
 }
 
-.info-panel {
+.info-wrap input {
   display: none;
 }
 
+.info-wrap label {
+  cursor: pointer;
+}
+
+.info-wrap article {
+  overflow: hidden;
+  height: 0;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+  -moz-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+  -o-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+  -ms-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+  transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+}
+
+.info-wrap article p {
+  margin-top: 20px;
+}
+
+.info-wrap input:checked ~ article {
+  -webkit-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+  -moz-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+  -o-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+  -ms-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+  transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+}
+
+.info-wrap input:checked ~ article.ac-small {
+  height: auto;
+}
 
 .content-wrap {
     width: 100%;
+
+    &:nth-of-type(1) {
+      &::before {
+        content: '';
+        border-left: 1px dashed #D0D5DF;
+        display: block;
+        position: absolute;
+        inset: 0;
+        margin-left: 40px;
+        z-index: -1;
+        height: 50%;
+        
+        @media (min-width: #{$laptop}) {
+          height: 60%;
+          margin: auto 0 auto 40px;
+        }
+    
+      }
+    }
   
     @media (min-width: #{$laptop}) {
       width: 50%;

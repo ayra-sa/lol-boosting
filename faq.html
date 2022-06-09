@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="assets/scss/faq/faq.css" />
 
     <!-- components -->
-    <script src="components/navbar.js"></script>
+    <script src="components/navbar-login.js"></script>
     <script src="components/footer.js"></script>
     <script src="components/faq-box.js"></script>
   </head>
   <body>
     <!-- Navbar -->
+    <navbarlogin-component></navbarlogin-component>
     <!-- Navbar end-->
 
 
@@ -37,7 +38,10 @@
           </div>
           <div class="faq-search">
             <input placeholder="Write your question" />
-            <button class="btn btn-primary">Search The Answer</button>
+            <button class="btn btn-primary">
+              <span>Search The Answer</span>
+              <img src="assets/images/icons/arrow-up.svg" alt="icon">
+            </button>
           </div>
         </div>
       </section>

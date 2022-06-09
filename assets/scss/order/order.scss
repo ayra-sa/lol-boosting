@@ -151,6 +151,19 @@
 .amount-inputs {
     display: flex;
     gap: 10px;
+
+    .select-wrap::after {
+        top: 12px;
+    }
+
+    input {
+        width: 100px;
+    }
+
+    select {
+        width: 140px;
+        height: 100%;
+    }
 }
 
 .history {

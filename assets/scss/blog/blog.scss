@@ -18,7 +18,7 @@
   .search-news {
     display: none;
 
-    @media (min-width: #{$tablet}) {
+    @media (min-width: #{$laptop}) {
       display: flex;
     }
   }
@@ -70,6 +70,13 @@
   }
 }
 
+.search-mobo {
+  
+  @media (min-width: #{$laptop}) {
+    display: none;
+  }
+}
+
 .blog-wrap {
   margin-bottom: 60px;
 }
@@ -77,9 +84,9 @@
 // BLOG DETAIL
 
 .blog-detail-wrap {
-  background: url("../../images/blogs/bdetail-bg.png") no-repeat;
-  background-size: cover;
-  margin-top: 140px;
+  background: url("../../images/blogs/bg-blog.png") no-repeat center;
+  background-size: contain;
+  margin-top: 40px;
   margin-inline: auto;
 
   @media (min-width: #{$laptop}) {
@@ -178,7 +185,8 @@
 .input {
   background: #ebeff8;
   border-radius: 6px;
-  padding: 10px;
+  padding: 10px 11px;
+  font-size: inherit;
   border: none;
   margin-bottom: 20px;
   width: -webkit-fill-available;
@@ -187,6 +195,7 @@
 .message {
   background: #ebeff8;
   border-radius: 6px;
+  font-size: inherit;
   padding: 10px;
   border: none;
   font-family: inherit;

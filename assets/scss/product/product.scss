@@ -226,6 +226,12 @@
     border-radius: 12px;
     background: #ebeff8;
     white-space: nowrap;
+
+    &.active {
+        background: #{$primaryDefault};
+        color: #fff;
+        font-weight: 700;
+    }
 }
 
 .extra-info {
@@ -298,7 +304,7 @@
 .tell-us, .review-total {
     margin-bottom: 60px;
   
-    & input {
+    .input {
       width: 100%;
     }
 }
@@ -308,6 +314,7 @@
     gap: 5px;
     align-items: center;
     margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .review-form {

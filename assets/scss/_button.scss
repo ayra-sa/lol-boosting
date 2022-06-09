@@ -76,5 +76,9 @@ button {
   &-mobo {
     justify-content: center;
     width: 100%;
+
+    @media (min-width: #{$tablet}) {
+      width: auto;
+    }
   }
 }

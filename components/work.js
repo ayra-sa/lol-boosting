@@ -20,7 +20,10 @@ class Work extends HTMLElement {
         </div>
         
         <a href="#">
-          <button class="btn btn-primary">Find job</button>
+          <button class="btn btn-primary">
+            <span>Find Job</span>
+            <img src="assets/images/icons/arrow-up.svg" alt="icon">
+          </button>
         </a>
 
         <img class="work-img" src="./assets/images/PngItem_work.png" alt="work" />

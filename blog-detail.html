@@ -10,18 +10,30 @@
     <link rel="stylesheet" href="assets/scss/blog/blog.css" />
 
     <!-- components -->
-    <script src="components/navbar.js"></script>
+    <script src="components/navbar-login.js"></script>
+    <script src="components/breadcrumb.js"></script>
     <script src="components/footer.js"></script>
     <script src="components/blog-card.js"></script>
     
   </head>
   <body>
     <!-- Navbar -->
+    <navbarlogin-component></navbarlogin-component>
     <!-- Navbar end-->
 
-    <main>
+    <main id="blogDetail">
+      <div class="container section">
+        <!-- breadcrumb -->
+        <breadcrumb-component></breadcrumb-component>
+        <!-- breadcrumb end -->
+      </div>
+
       <section class="blog-detail-wrap">
         <div class="container">
+          <div class="tag-container">
+            <span class="tag special">WOW</span>
+            <span class="tag special">WOW</span>
+          </div>
           <h2 class="heading-2">
             Get the Baby Murloc Satch-Shells Transmog with the Purchase of a
             6-Month Subscription!
@@ -166,7 +178,8 @@
 
           <div class="btn-container">
             <a href="#" class="btn btn-mobo btn-primary">
-              load 10 more Comments
+              <span>Load more comments</span>
+              <img src="assets/images/icons/arrow-up.svg" alt="icon">
             </a>
           </div>
         </div>
@@ -208,7 +221,10 @@
             </div>
         
             <div class="btn-container">
-                <a href="#" class="btn btn-mobo btn-primary">Read More News</a>
+                <a href="#" class="btn btn-mobo btn-primary">
+                  <span>Read More News</span>
+                  <img src="assets/images/icons/arrow-up.svg" alt="icon">
+                </a>
             </div>
       </div>
     </section>

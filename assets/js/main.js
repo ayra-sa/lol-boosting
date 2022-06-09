@@ -80,48 +80,4 @@ window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-  // else if (event.target == checkoutModal) {
-  //   checkoutModal.style.display = "none";
-  // }
 };
-
-// TAB ABOUT
-
-const acc = document.querySelectorAll(".info-title");
-let i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    console.log("oke")
-    this.classList.toggle("active");
-    const panel = this.nextElementSibling;
-    if (panel.style.display === "none") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-
-// const tabLink = document.querySelectorAll(".tab-link");
-// const tabTitle = document.querySelectorAll(".tab-title");
-
-// let i;
-
-// for (i = 0; i < tabTitle.length; i++) {
-//   tabTitle[i].onclick = function () {
-//     let contentClass = this.parentNode.classList.value;
-
-//     for (i = 0; i < tabLink.length; i++) {
-//       tabLink[i].className = "tab-link";
-//     }
-
-//     if (contentClass == "tab-link") {
-//       this.parentNode.classList = "tab-link active";
-//     } else {
-//       this.parentNode.className = "tab-link active";
-//     }
-//   };
-// }
-
-// TAB ABOUT END

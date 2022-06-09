@@ -195,6 +195,19 @@
   gap: 10px;
 }
 
+.amount-inputs .select-wrap::after {
+  top: 12px;
+}
+
+.amount-inputs input {
+  width: 100px;
+}
+
+.amount-inputs select {
+  width: 140px;
+  height: 100%;
+}
+
 .history {
   margin-top: 40px;
 }

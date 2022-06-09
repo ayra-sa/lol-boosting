@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="assets/scss/blog/blog.css" />
 
     <!-- components -->
-    <script src="components/navbar.js"></script>
+    <script src="components/navbar-login.js"></script>
     <script src="components/footer.js"></script>
     <script src="components/blog-card.js"></script>
 
   </head>
   <body>
     <!-- Navbar -->
+    <navbarlogin-component></navbarlogin-component>
     <!-- Navbar end-->
 
     <main>
@@ -62,7 +63,7 @@
           </div>
         </div>
         <div class="container">
-          <div class="search-news">
+          <div class="search-news search-mobo">
             <input class="input" placeholder="Search theme" type="text" />
             <img src="assets/images/icons/search.svg" alt="icon" />
           </div>
@@ -91,7 +92,10 @@
 
             <div class="btn-container">
                 <a href="#">
-                    <button class="btn btn-primary">Read more</button>
+                    <button class="btn btn-primary">
+                      <span>Read More</span>
+                      <img src="assets/images/icons/arrow-up.svg" alt="icon">
+                    </button>
                 </a>
             </div>
           </div>

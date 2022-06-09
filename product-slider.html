@@ -73,47 +73,30 @@
                     <div class="position">
                       <h4 class="heading-4">Current Position</h4>
                       <img src="assets/images/order/item.png" alt="item" />
-                      <select class="input" name="position">
-                        <option value="iron">Iron</option>
-                        <option value="platinum">Platinum</option>
-                      </select>
-                      <select class="input" name="position">
-                        <option value="iron">Iron</option>
-                        <option value="platinum">Platinum</option>
-                      </select>
-                      <select class="input" name="position">
-                        <option value="iron">Iron</option>
-                        <option value="platinum">Platinum</option>
-                      </select>
-                      <div class="rank-selection">
+                      <div class="select-wrap">
+                        <select class="input" name="position">
+                          <option value="iron">Iron</option>
+                          <option value="platinum">Platinum</option>
+                        </select>
+                      </div>
+                      <div class="select-wrap">
+                        <select class="input" name="position">
+                          <option value="iron">Iron</option>
+                          <option value="platinum">Platinum</option>
+                        </select>
+                      </div>
+                      <div class="select-wrap">
+                        <select class="input" name="position">
+                          <option value="iron">Iron</option>
+                          <option value="platinum">Platinum</option>
+                        </select>
+                      </div>
+                      
+                      <!-- <div class="rank-selection">
                         <div class="cursor">
                             <img src="assets/" alt="">
                         </div>
-                        <!-- <div class="rank">
-                          <Box bg='#7D7D80'/>
-                          <Box bg='#7D7D80'/>
-                          <Box bg='#7D7D80'/>
-                          <Box bg='#7D7D80'/>
-                          <Box bg='#B0723A'/>
-                          <Box bg='#B0723A'/>
-                          <Box bg='#B0723A'/>
-                          <Box bg='#B0723A'/>
-                          <Box bg='#B1C3C4' />
-                          <Box bg='#B1C3C4' />
-                          <Box bg='#B1C3C4' />
-                          <Box bg='#B1C3C4' />
-                          <Box bg='#F1E804' />
-                          <Box bg='#F1E804' />
-                          <Box bg='#F1E804' />
-                          <Box bg='#028999' />
-                          <Box bg='#028999' />
-                          <Box bg='#028999' />
-                          <Box bg='#00B1FF' />
-                          <Box bg='#00B1FF' />
-                          <Box bg='#00B1FF' />
-                          <Box bg='#00B1FF' />
-                          <Box bg='#4B00F5' />
-                        </div> -->
+                        
     
                         <div class="rank-slider">
                             <input type="range" name="range" id="range" class="range">
@@ -121,7 +104,7 @@
                               <h4 class="heading-4">3 LP</h4>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                     
                   </div>
@@ -133,16 +116,16 @@
                       <h2 class="heading-4">My Order</h2>
                     </div>
                     <div class="basket-body">
-                      <div class="bb-info">
+                      <div class="bb-info mt-1">
                         <p class="heading-7 bb-title">Completion Time</p>
                         <p class="heading-6">1 Day</p>
                     </div>
-                    <div class="bb-info">
+                    <div class="bb-info mt-1">
                           <p class="heading-7 bb-title">Completion Time</p>
                           <p class="heading-6">Champion ($5)</p>
                           <p class="heading-6">Champion ($5)</p>
                       </div>
-                    <div class="bb-info">
+                    <div class="bb-info mt-1">
                           <p class="heading-7 bb-title">Completion Time</p>
                           <p class="heading-6">12 Fox Coins (1.4$))</p>
                     </div>
@@ -152,7 +135,10 @@
                       </div>
                         <div class="btn-container">
                         <a href="#" id="modalBtn">
-                          <button class="btn btn-primary">Rank Up</button>
+                          <button class="btn btn-primary">
+                            <span>Rank Up</span>
+                            <img src="assets/images/icons/arrow-up.svg" alt="icon">
+                          </button>
                         </a>
                       </div>
                     </div>
@@ -176,15 +162,15 @@
                   </p>
     
                   <ul class="extra-options">
+                    <li class="extra active">Spell Buttons</li>
                     <li class="extra">Spell Buttons</li>
                     <li class="extra">Spell Buttons</li>
                     <li class="extra">Spell Buttons</li>
                     <li class="extra">Spell Buttons</li>
-                    <li class="extra">Spell Buttons</li>
-                  </u>
+                  </ul>
     
-                  <div class="mb-2">
-                    <p class="body-3">This option <span class="body-2">+10%</span> to final price </p>
+                  <div class="mb-2 text-product">
+                    <p class="body-3">This option <b>+10%</b> to final price </p>
                   </div>
     
                   <p class="body-3">
@@ -288,8 +274,17 @@
                   </div>
     
                   <div class="rating">
-                    <p class="heading-2">4.9</p>
-                    <!-- <img src={star} alt="star" /> -->
+                    <div class="rating-text">
+                      <p class="heading-2">4.9</p>
+                      <span class="heading-7">/5</span>
+                    </div>
+                    <div class="rating-feedback">
+                      <img src="assets/images/icons/star-fill.svg" alt="star">
+                      <img src="assets/images/icons/star-fill.svg" alt="star">
+                      <img src="assets/images/icons/star-fill.svg" alt="star">
+                      <img src="assets/images/icons/star-fill.svg" alt="star">
+                      <img src="assets/images/icons/star-fill.svg" alt="star">
+                    </div>
                     <img src="assets/images/Trustpilot.png" alt="img" />
                   </div>
     
@@ -298,11 +293,11 @@
                       <h4 class="heading-4 mb-2">Tell us about your experience</h4>
                       <p class="body-4">Your overall rating</p>
                       <div class="rating-input">
-                        <!-- <img src={ratingStar} alt='icon' />
-                        <img src={ratingStar} alt='icon' />
-                        <img src={ratingStar} alt='icon' />
-                        <img src={ratingStar} alt='icon' />
-                        <img src={ratingStar} alt='icon' /> -->
+                        <img src="assets/images/icons/star-outline.svg" alt="star">
+                        <img src="assets/images/icons/star-outline.svg" alt="star">
+                        <img src="assets/images/icons/star-outline.svg" alt="star">
+                        <img src="assets/images/icons/star-outline.svg" alt="star">
+                        <img src="assets/images/icons/star-outline.svg" alt="star">
                       </div>
                       <form class="review-form">
                         <input class="input" placeholder="Title" type="text" />
@@ -310,7 +305,7 @@
                         <input class="input" placeholder="Email" type="email" />
                         <textarea name="message" class="message" id="message" cols="30" rows="10" placeholder="Review text"></textarea>
                         <div class="btn-container">
-                            <input type="submit" class="btn btn-primary" value="Submit">
+                            <input type="submit" class="btn btn-primary" value="Send Review">
                         </div>
                       </form>
                     </div>

@@ -74,6 +74,7 @@ textarea {
   }
 }
 
+@include mt("1", "10px");
 @include mt("2", "20px");
 @include mt("4", "40px");
 
@@ -137,6 +138,52 @@ textarea {
 
 .w-auto {
   width: auto !important;
+
+  @media (min-width: #{$laptopL}) {
+    width: fit-content !important;
+  }
+}
+
+input, textarea, select {
+  font-size: inherit !important;
+  font-family: inherit;
+}
+
+.select-wrap {
+  float: left;
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: url("../images/icons/down-arrow.svg");
+    right: 11px;
+    top: 6px;
+    // height: 34px;
+    // padding: 15px 0px 0px 8px;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.rating-text {
+  display: flex;
+  align-items: flex-end;
+
+  .heading-7 {
+    margin-bottom: 20px !important;
+  }
+}
+
+.rating-feedback {
+  display: flex;
+  column-gap: 14px;
+  margin-bottom: 20px;
 }
 
 // NAVBAR
@@ -200,6 +247,10 @@ textarea {
   @media (min-width: #{$laptop}) {
     display: flex;
     width: 360px;
+
+    input {
+      width: 160px;
+    }
   }
 }
 
@@ -427,19 +478,24 @@ input {
   padding: 20px 10px;
   border-radius: 12px;
   white-space: nowrap;
+
+  .body-2 {
+    padding-left: 20px;
+  }
 }
 
 .link-list {
   background: transparent;
   /* display: flex; */
-  color: #5679e7;
+  color: #5679e7 !important;
+  padding: 15px 20px;
 
   &.active {
     background: #{$primaryDefault};
-    color: #fff;
+    color: #fff !important;
     font-weight: 700;
     font-size: 14px;
-    padding: 10px;
+    // padding: 10px;
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
