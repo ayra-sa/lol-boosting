@@ -38,13 +38,21 @@ class NavbarLogin extends HTMLElement {
               </div>
   
               <div class="btn-navbar">
+                <div class="search-bar on-tablet">
+                  <!-- <input type="text" placeholder="Search for boosting"> -->
+                  <img src="./assets/images/icons/search.svg" alt="icon" />
+                </div>
                 <a href="order.html">
-                  <button class="btn btn-primary">My Order</button>
+                  <button class="btn btn-primary btn-order">My Order</button>
                 </a>
                 <div class="profile-btn">
-                    <img src="./assets/images/user.png" alt="icon" >
+                  <img src="./assets/images/user.png" alt="icon" />
                 </div>
-                <img class="on-mobo" src="./assets/images/icons/order.svg" alt="icon">
+                <img
+                  class="on-mobo"
+                  src="./assets/images/icons/order.svg"
+                  alt="icon"
+                />
               </div>
             </div>
           </div>

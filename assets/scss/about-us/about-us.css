@@ -1,6 +1,6 @@
 .about-hero {
   margin-top: 70px;
-  padding: 100px 0;
+  padding: 100px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,16 +103,21 @@
 }
 
 .values-cards {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 60px;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 30px;
 }
 
 @media (min-width: 1024px) {
   .values-cards {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
@@ -236,7 +241,13 @@
   inset: 0;
   margin-left: 40px;
   z-index: -1;
-  height: 50%;
+  height: 40%;
+}
+
+@media (min-width: 768px) {
+  .content-wrap:nth-of-type(1)::before {
+    height: 30%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -272,6 +283,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  row-gap: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -301,6 +313,13 @@
 @media (min-width: 768px) {
   .count-team > div:nth-of-type(1) {
     border-right: 1px solid rgba(77, 137, 255, 0.4);
+    border-bottom: none;
+  }
+  .count-team > div:nth-of-type(2) {
+    border-bottom: none;
+  }
+  .count-team > div:nth-of-type(3) {
+    border-bottom: none;
   }
   .count-team > div:nth-last-of-type(1) {
     border-left: 1px solid rgba(77, 137, 255, 0.4);

@@ -182,8 +182,12 @@
     &-about::after {
       content: url("../images/hl-review.svg");
       position: absolute;
-      left: -60px;
       top: -50%;
+      left: 0;
+      
+      @media (min-width: #{$tablet}) {
+        left: -60px;
+      }
     }
 
     &-hiring::after {

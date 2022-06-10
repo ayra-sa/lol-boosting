@@ -53,7 +53,11 @@ textarea {
   font-family: inherit;
 }
 .section {
-  margin-top: 60px;
+  margin-top: 40px;
+
+  @media (min-width: #{$tablet}) {
+    margin-top: 60px;
+  }
 
   @media (min-width: #{$laptop}) {
     margin-top: 100px;
@@ -149,6 +153,10 @@ select {
   font-family: inherit;
 }
 
+textarea {
+  resize: none;
+}
+
 .select-wrap {
   float: left;
   width: 100%;
@@ -240,6 +248,10 @@ select {
   column-gap: 20px;
 
   @media (min-width: #{$tablet}) {
+    column-gap: 40px;
+  }
+
+  @media (min-width: #{$laptop}) {
     column-gap: 90px;
   }
 }
@@ -318,17 +330,24 @@ input {
     }
 
     &::before {
-      content: "as";
-      position: absolute;
-      display: block;
-      inset: -10px 0 auto 0;
-      height: 4px;
-      background: #{$primaryDefault};
-      border-radius: 0px 0px 4px 4px;
-      -webkit-border-radius: 0px 0px 4px 4px;
-      -moz-border-radius: 0px 0px 4px 4px;
-      -ms-border-radius: 0px 0px 4px 4px;
-      -o-border-radius: 0px 0px 4px 4px;
+      content: "";
+    }
+
+    
+    @media (min-width: #{$tablet}) {
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        inset: -10px 0 auto 0;
+        height: 4px;
+        background: #{$primaryDefault};
+        border-radius: 0px 0px 4px 4px;
+        -webkit-border-radius: 0px 0px 4px 4px;
+        -moz-border-radius: 0px 0px 4px 4px;
+        -ms-border-radius: 0px 0px 4px 4px;
+        -o-border-radius: 0px 0px 4px 4px;
+      }
     }
   }
 
@@ -377,11 +396,31 @@ input {
   // }
 
   @media (min-width: #{$tablet}) {
-    padding: 20px;
+    padding: 14px;
     // margin: 0 16px;
     font-size: 18px;
     line-height: 27px;
     font-weight: 500;
+  }
+
+  @media (min-width: #{$laptop}) {
+    padding: 20px;
+  }
+}
+
+.profile-btn {
+  display: none;
+
+  @media (min-width: #{$tablet}) {
+    display: flex;
+  }
+}
+
+.btn-order {
+  display: none;
+
+  @media (min-width: #{$tablet}) {
+    display: flex;
   }
 }
 
@@ -402,12 +441,28 @@ input {
   }
 }
 
+.on-tablet {
+  display: none;
+
+  @media (min-width: #{$tablet}) {
+    display: flex;
+  }
+
+  @media (min-width: #{$laptop}) {
+    display: none;
+  }
+}
+
 .btn-navbar {
   margin-left: auto;
   // display: inline-block;
   display: inline-flex;
-  column-gap: 50px;
+  column-gap: 20px;
   align-items: center;
+
+  @media (min-width: #{$laptop}) {
+    column-gap: 50px;
+  }
 }
 
 .login {
@@ -461,11 +516,12 @@ input {
   align-items: center;
   justify-content: space-between;
   color: #fff;
-  margin-top: 95px;
+  margin-top: 85px;
   padding: 20px 32px;
 
   @media (min-width: #{$laptop}) {
     padding: 20px 60px;
+    margin-top: 95px;
   }
 }
 
@@ -573,7 +629,14 @@ input {
   @media (min-width: #{$tablet}) {
     position: absolute;
     inset: 0 0 0 auto;
+    width: 430px;
   }
+
+  @media (min-width: #{$laptop}) {
+    width: unset;
+  }
+
+
 }
 
 .work-left {
@@ -714,6 +777,10 @@ input {
       display: none;
     }
   }
+}
+
+.brand-name {
+  text-align: left;
 }
 
 .footer-info {

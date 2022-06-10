@@ -5,7 +5,7 @@
 
 .blog-hero {
   margin-top: 80px;
-  padding: 5% 0;
+  padding: 80px 0;
   text-align: center;
 }
 
@@ -18,7 +18,13 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  margin-left: -5%;
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #blog-title::before {
+    margin-left: -5%;
+  }
 }
 
 #blog-title::after {
@@ -26,7 +32,13 @@
   position: absolute;
   right: 0;
   top: 0;
-  margin-right: -5%;
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  #blog-title::after {
+    margin-left: -5%;
+  }
 }
 
 .select-news-wrap {
@@ -85,7 +97,6 @@
   /* IE and Edge */
   scrollbar-width: none;
   white-space: nowrap;
-  padding-bottom: 10px;
 }
 
 .news-wrap::-webkit-scrollbar {
