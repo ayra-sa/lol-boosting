@@ -13,6 +13,8 @@
     <script src="components/navbar-login.js"></script>
     <script src="components/footer.js"></script>
     <script src="components/faq-box.js"></script>
+    <script src="components/rank-up.js"></script>
+    <script src="components/checkout-modal.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -63,6 +65,12 @@
                 <li class="nav-item current">
                   <a class="heading-5" href="faq.html">FAQ</a>
                 </li>
+                <li class="nav-item on-mobo">
+                  <a class="heading-5 blueText" href="order.html">My Order</a>
+                </li>
+                <li class="nav-item on-mobo">
+                  <a class="heading-5 blueText" href="#">Account</a>
+                </li>
               </ul>
             </div>
 
@@ -77,14 +85,19 @@
               <div class="profile-btn">
                 <img src="./assets/images/user.png" alt="icon" />
               </div>
-              <img
-                class="on-mobo"
-                src="./assets/images/icons/order.svg"
-                alt="icon"
-              />
+              <div id="orderBtn">
+                <img
+                  class="on-mobo"
+                  src="./assets/images/icons/order.svg"
+                  alt="icon"
+                />
+              </div>
             </div>
           </div>
         </div>
+        <rank-component></rank-component>
+
+        <checkout-component></checkout-component>
       </div>
     </nav>
     <!-- Navbar end-->

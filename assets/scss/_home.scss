@@ -340,6 +340,11 @@
   }
 }
 
+.selected {
+  background-color: rgb(25, 121, 211);
+  color: ivory;
+}
+
 // what is
 
 #what-is {
@@ -349,6 +354,8 @@
 
 #what-is-title {
   position: relative;
+  background: url("../images/what-is-title-bg.svg") no-repeat top;
+  background-size: contain;
 
   &::before {
     content: url("../images/Burst-pucker-2-1.svg");
@@ -362,6 +369,11 @@
   display: flex;
   column-gap: 30px;
   margin-bottom: 50px;
+  align-items: flex-start;
+
+  @media (min-width: #{$tablet}) {
+    align-items: unset;
+  }
 }
 
 // .icon-box {
@@ -489,13 +501,17 @@
   }
 
   & > div {
-    width: 233px;
+    width: 200px;
     // padding: 20px;
     /* padding: 10px 50px; */
     text-align: center;
     display: inline-block;
     color: #fff;
     
+    @media (min-width: #{$tablet}) {
+      width: 233px;
+    }
+
     @media (min-width: #{$laptopL}) {
       width: 333px;
     }

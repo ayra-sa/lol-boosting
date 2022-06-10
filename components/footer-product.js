@@ -42,7 +42,7 @@ class FooterProduct extends HTMLElement {
   
             <div class="footer-right">
               <div class="footer-menu">
-                <h class="heading-5">Information</h>
+                <h2 class="heading-5">Information</h2>
                 <div class="footer-links">
                   <a href="#">
                     <p class="body-3">About us</p>
@@ -59,7 +59,7 @@ class FooterProduct extends HTMLElement {
                 </div>
               </div>
               <div class="footer-menu">
-                <h class="heading-5">Information</h>
+                <h2 class="heading-5">Information</h2>
                 <div class="footer-links">
                   <a href="#">
                     <p class="body-3">About us</p>
@@ -76,7 +76,7 @@ class FooterProduct extends HTMLElement {
                 </div>
               </div>
               <div class="footer-menu">
-                <h class="heading-5">Information</h>
+                <h2 class="heading-5">Information</h2>
                 <div class="footer-links">
                   <a href="#">
                     <p class="body-3">About us</p>

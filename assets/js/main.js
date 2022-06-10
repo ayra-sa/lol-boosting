@@ -24,7 +24,6 @@ function closeMenu() {
   navMenu.classList.remove("active");
 }
 
-
 // Slider
 
 // let slideIndex = 1;
@@ -67,14 +66,23 @@ const closeModal = document.querySelector(".x-btn");
 
 // When the user clicks the button, open the modal
 
-btn.onclick = function () {
-  modal.style.display = "flex";
-};
+if (btn) {
+  btn.addEventListener("click", openModal)
+}
 
-// When the user clicks on <span> (x), close the modal
-closeModal.onclick = function () {
-  modal.style.display = "none";
-};
+function openModal() {
+  modal.style.display = "flex"
+}
+
+// // When the user clicks on <span> (x), close the modal
+
+if (closeModal) {
+  closeModal.addEventListener("click", closeModalOpen) 
+}
+
+function closeModalOpen() {
+  modal.style.display = "none"
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
@@ -84,14 +92,78 @@ window.onclick = function (event) {
 };
 
 
+// Order
+
+const order = document.querySelector(".rank-up-mobo")
+const orderBtn = document.getElementById("orderBtn")
+const closeOrder = document.getElementById("closeOrder")
+const rankCheckout = document.getElementById("rankCheckout")
+
+if (orderBtn) {
+  orderBtn.addEventListener("click", orderOpen)
+}
+
+function orderOpen() {
+  order.classList.toggle("active");
+}
+
+if (closeOrder) {
+  closeOrder.addEventListener("click", orderClose)
+}
+
+function orderClose() {
+  order.classList.remove("active")
+}
+
+if (rankCheckout) {
+  rankCheckout.addEventListener("click", rankCheckoutOpen)
+}
+
+function rankCheckoutOpen() {
+  modal.style.display = "flex"
+}
+
 // Nav
 
-console.log(document.URL)
+// console.log(document.URL);
 
-const current = 0;
-for (let i = 0; i < document.links.length; i++) {
-    if (document.links[i].href === document.URL) {
-        current = i;
-    }
+// const current = 0;
+// for (let i = 0; i < document.links.length; i++) {
+//   if (document.links[i].href === document.URL) {
+//     current = i;
+//   }
+// }
+// document.links[current].className = "current";
+
+
+
+// Slider
+
+// let children = document.querySelector(".sample").children;
+// let i = 0;
+
+// children[i].classList.add("selected"); // Item default selection
+
+// function resetClass() {
+//   for (let j = 0; j < children.length; j++) {
+//     children[j].classList.remove("selected");
+//   }
+// }
+
+function next() {
+  if (i >= children.length - 1) {
+    return false;
+  }
+  resetClass();
+  i++;
+  children[i].classList.add("selected");
 }
-document.links[current].className = 'current';
+
+function previous() {
+  if (i <= 0) {
+    return false;
+  }
+  resetClass();
+  i--;
+  children[i].classList.add("selected");
+}

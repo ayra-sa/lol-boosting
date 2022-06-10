@@ -7,10 +7,16 @@ class Checkout extends HTMLElement {
       this.innerHTML = `
         <div class="checkout-wrap" id="modal">
             <div class="checkout-box">
+                <div class="header on-mobo">
+                    <h2 class="heading-4">Checkout</h2>
+                    <div class="x-btn">
+                        <img src="./assets/images/icons/close-mobo.svg" alt="icon" >
+                    </div>
+                </div>
                 <h2 class="heading-2">Checkout</h2>
 
                 <button class="x-btn">
-                <img src="assets/images/icons/x.svg" alt="icon" />
+                    <img src="assets/images/icons/x.svg" alt="icon" />
                 </button>
 
                 <div class="checkout-content">
@@ -26,7 +32,7 @@ class Checkout extends HTMLElement {
 
                     <div class="payment">
                     <h3 class="heading-3 mb-1">Payment Method</h3>
-                    <div class="method">
+                    <div class="method active">
                         <div class="method-img">
                         <img
                             src="assets/images/payment/american-express-1.svg"
@@ -131,7 +137,20 @@ class Checkout extends HTMLElement {
                     </div>
                 </div>
                 </div>
-                <button class="btn btn-primary">Purchase</button>
+                <button class="btn btn-primary btn-purchase">
+                    <span>Purchase</span>
+                    <img src="./assets/images/icons/arrow-up.svg" alt="icon" >
+                </button>
+                <div class="btn-bottom">
+                    <div class="coupon">
+                        <input class="input" placeholder="Enter coupon" type="text" />
+                        <button class="btn btn-secondary">Apply</button>
+                    </div>
+                    <button class="btn btn-mobo btn-primary">
+                        <span>Purchase</span>
+                        <img src="./assets/images/icons/arrow-up.svg" alt="icon" >
+                    </button>
+                </div>
             </div>
         </div>      
       `;

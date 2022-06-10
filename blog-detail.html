@@ -13,8 +13,9 @@
     <script src="components/navbar-login.js"></script>
     <script src="components/breadcrumb.js"></script>
     <script src="components/footer.js"></script>
+    <script src="components/rank-up.js"></script>
+    <script src="components/checkout-modal.js"></script>
     <script src="components/blog-card.js"></script>
-    
   </head>
   <body>
     <!-- Navbar -->
@@ -53,7 +54,11 @@
             </div>
           </div>
 
-          <img class="bd-img" src="assets/images/blogs/img-detail.png" alt="blog" />
+          <img
+            class="bd-img"
+            src="assets/images/blogs/img-detail.png"
+            alt="blog"
+          />
           <h4 class="heading-4">
             A group of Activision Blizzard workers officially announced a strike
             fund Thursday morning following two days of walkouts in support of
@@ -75,7 +80,11 @@
             Kotick resign.
           </p>
 
-          <img class="bd-img" src="assets/images/blogs/img-detail2.png" alt="blog" />
+          <img
+            class="bd-img"
+            src="assets/images/blogs/img-detail2.png"
+            alt="blog"
+          />
           <p class="body-3">
             Image: Allen J. Schaben/Los Angeles Times/Getty Images
           </p>
@@ -179,7 +188,7 @@
           <div class="btn-container">
             <a href="#" class="btn btn-mobo btn-primary">
               <span>Load more comments</span>
-              <img src="assets/images/icons/arrow-up.svg" alt="icon">
+              <img src="assets/images/icons/arrow-up.svg" alt="icon" />
             </a>
           </div>
         </div>
@@ -196,12 +205,20 @@
               <input class="input" placeholder="Email" type="email" />
             </div>
 
-            <textarea class="message" cols="30" rows="10" placeholder="Your comment"></textarea>
+            <textarea
+              class="message"
+              cols="30"
+              rows="10"
+              placeholder="Your comment"
+            ></textarea>
 
             <div class="btn-container">
-              <input type='submit' class="btn btn-mobo btn-primary" value="Send Comment">
+              <input
+                type="submit"
+                class="btn btn-mobo btn-primary"
+                value="Send Comment"
+              />
             </div>
-
           </form>
         </div>
       </section>
@@ -210,30 +227,34 @@
       <!-- Blog bottom -->
       <section class="blog-btm">
         <div class="container">
-            <div class="wrap">
-              <span class="tag main">Related articles</span>
-              <h2 class="heading-2">You can also like to read</h2>
-            </div>
-        
-            <div class="blog-related">
-              <blogcard-component></blogcard-component>
-              <blogcard-component></blogcard-component>
-            </div>
-        
-            <div class="btn-container">
-                <a href="#" class="btn btn-mobo btn-primary">
-                  <span>Read More News</span>
-                  <img src="assets/images/icons/arrow-up.svg" alt="icon">
-                </a>
-            </div>
-      </div>
-    </section>
+          <div class="wrap">
+            <span class="tag main">Related articles</span>
+            <h2 class="heading-2">You can also like to read</h2>
+          </div>
+
+          <div class="blog-related">
+            <blogcard-component></blogcard-component>
+            <blogcard-component></blogcard-component>
+          </div>
+
+          <div class="btn-container">
+            <a href="#" class="btn btn-mobo btn-primary">
+              <span>Read More News</span>
+              <img src="assets/images/icons/arrow-up.svg" alt="icon" />
+            </a>
+          </div>
+        </div>
+      </section>
       <!-- Blog bottom end -->
     </main>
 
     <!-- Footer -->
     <footer-component></footer-component>
     <!-- Footer end -->
+
+    <rank-component></rank-component>
+
+    <checkout-component></checkout-component>
 
     <!-- js -->
     <script src="assets/js/main.js"></script>

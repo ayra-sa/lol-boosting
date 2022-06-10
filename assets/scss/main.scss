@@ -304,6 +304,8 @@ input {
   &.active {
     left: 0;
     z-index: 999;
+    bottom: 0;
+    overflow: scroll;
   }
 
   @media (min-width: #{$tablet}) {
@@ -322,6 +324,13 @@ input {
   box-sizing: border-box;
   flex-shrink: 0;
   position: relative;
+
+  
+  #modalBtn {
+    color: #fff !important;
+    padding: 0 !important;
+    text-align: center;
+  }
 
   &.current {
 
@@ -802,6 +811,10 @@ input {
 }
 
 .footer-menu {
+  & > h2 {
+    font-weight: 700;
+  }
+
   & > h6 {
     color: #fff;
   }
@@ -825,6 +838,8 @@ input {
   display: flex;
   align-items: center;
   column-gap: 10px;
+  font-size: inherit;
+  font-weight: 500;
 }
 
 .socmed {
@@ -870,6 +885,7 @@ input {
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
+  font-weight: 700;
 
   @media (min-width: #{$tablet}) {
     flex-direction: row;
@@ -918,10 +934,15 @@ input {
   border-radius: 30px;
   padding: 40px;
   text-align: center;
-  max-width: 500px;
   height: fit-content;
   margin-top: 10%;
   position: relative;
+  width: 90%;
+  
+  @media (min-width: #{$tablet}) {
+    max-width: 500px;
+    width: unset;
+  }
 
   .input {
     width: 100%;
@@ -1003,42 +1024,115 @@ input {
   display: none;
   place-content: center;
   overflow: auto;
-  z-index: 996;
+  z-index: 1002;
+
+  .btn-purchase {
+    display: none;
+
+    @media (min-width: #{$laptop}) {
+      display: flex;
+    }
+  }
+
+  .btn-bottom {
+    padding: 30px;
+    display: block;
+
+    input {
+      width: 100%;
+    }
+
+    .coupon {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: #{$laptop}) {
+      display: none;
+    }
+  }
 }
 
 .checkout-box {
   background: #fff;
   box-shadow: 0px 5px 70px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
   text-align: center;
-  padding: 30px 85px;
-  max-width: 70%;
   height: fit-content;
-  margin-top: 20px;
+  // padding: 30px;
   position: relative;
-}
+  width: 100%;
 
-// .x-btn {
-//   position: absolute;
-//   inset: 48px 70px auto auto;
-//   border: none;
-//   background: transparent;
-//   font-size: 1.2em;
-// }
+  .header {
+    background: url("../images/icons/header-mobo.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 30px;
+
+    .x-btn {
+      position: static;
+    }
+
+    @media (min-width: #{$tablet}) {
+      display: none;
+    }
+  }
+
+  .heading-2, button.x-btn {
+    display: none;
+  }
+
+  .coupon {
+    display: none;
+
+    @media (min-width: #{$laptop}) {
+      display: flex;
+    }
+  }
+  
+  @media (min-width: #{$tablet}) {
+    margin-top: 20px;
+    border-radius: 30px;
+    width: 80%;
+    padding: 30px 85px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: #{$laptop}) {
+    margin-top: 20px;
+    border-radius: 30px;
+    max-width: 70%;
+    padding: 30px 85px;
+    width: unset;
+  }
+}
 
 .checkout-content {
   display: flex;
   gap: 70px;
   margin: 20px 0 40px 0;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  padding: 30px;
 
   @media (min-width: #{$laptop}) {
     flex-direction: row;
+    padding: unset;
   }
 }
 
 .left {
   text-align: left;
+
+  .items {
+    flex-direction: column;
+
+    @media (min-width: #{$tablet}) {
+      flex-direction: row;
+    }
+  }
 }
 
 .personal {
@@ -1051,6 +1145,10 @@ input {
   border-radius: 6px;
   padding: 10px;
   margin-bottom: 10px;
+
+  &.active {
+    border-color: #6B7AFF;
+  }
 }
 
 .method-img {
@@ -1115,4 +1213,83 @@ td {
   display: flex;
   column-gap: 10px;
   align-items: center;
+}
+
+
+// Order
+
+.rank-up-mobo {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  box-shadow: 0px 4px 30px 0px #3232321a;
+  background: #fff;
+  height: fit-content;
+  width: 100%;
+  overflow: scroll;
+  z-index: 999;
+
+  @media (min-width: #{$tablet}) {
+    width: unset;
+    min-width: 300px;
+  }
+
+  @media (min-width: #{$laptop}) {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    margin-left: 24%;
+  }
+
+  @media (min-width: #{$laptopL}) {
+    bottom: unset;
+    margin-left: 45%;
+  }
+
+  @media (min-width: #{$desktop}) {
+    margin-left: 50%;
+  }
+
+  &.active {
+    left: 0;
+  }
+  
+  .header {
+    background: url("../images/slider/bg-basket.png") no-repeat;
+    background-size: cover;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .basket-body {
+    padding: 20px;
+  }
+  
+  .bb-info {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ebeff8;
+  
+    & h6 {
+      color: #{$textDark};
+    }
+  }
+  
+  .bb-title {
+    margin-bottom: 6px;
+    color: #{$primaryPressed};
+  }
+  
+  .bb-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 150px;
+  }
 }

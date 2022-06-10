@@ -14,6 +14,8 @@
     <script src="components/blog-card.js"></script>
     <script src="components/work.js"></script>
     <script src="components/card.js"></script>
+    <script src="components/rank-up.js"></script>
+    <script src="components/checkout-modal.js"></script>
     <script src="components/login-modal.js"></script>
   </head>
   <body>
@@ -31,7 +33,7 @@
         <section id="heroHome">
           <!-- decoration -->
           <div class="decoration">
-            <img src="assets/images/hero-home-bg.svg" alt="bg">
+            <img src="assets/images/hero-home-bg.svg" alt="bg" />
           </div>
           <!-- decoration end -->
           <div class="container">
@@ -39,15 +41,15 @@
               <div class="hero-left">
                 <span class="tag main">World of Warcraft</span>
                 <h1 class="heroTitle text-decoration text-decoration-hero">
-                  <span class="dot">WOW boosting</span> solution from any to every
-                  division
+                  <span class="dot">WOW boosting</span> solution from any to
+                  every division
                 </h1>
                 <p class="body-3 mt-2 mb-2">
                   League boosting solution from any to every division. LoL
-                  boosting is a very popular gaming service and a modern standard
-                  for anyone who has respect for their time.
+                  boosting is a very popular gaming service and a modern
+                  standard for anyone who has respect for their time.
                 </p>
-    
+
                 <a href="#about">
                   <button class="btn btn btn-primary">
                     <span>About Us</span>
@@ -112,7 +114,9 @@
 
             <div class="product-content">
               <span class="tag main">Our Suggestion</span>
-              <h1 class="heading-2 text-decoration text-decoration-star">The Best Products</h1>
+              <h1 class="heading-2 text-decoration text-decoration-star">
+                The Best Products
+              </h1>
               <div class="product-box">
                 <div class="product-card">
                   <span class="tag hot">Hot Sale</span>
@@ -196,7 +200,7 @@
         <!-- Cards -->
         <section class="section" id="products">
           <div class="decoration">
-            <img src="assets/images/product-home-bg.png" alt="decoration">
+            <img src="assets/images/product-home-bg.png" alt="decoration" />
           </div>
           <div class="container">
             <span class="tag main">Top Product</span>
@@ -207,6 +211,11 @@
               <card-component></card-component>
               <card-component></card-component>
             </div>
+
+            <!-- <div class="btn-container">
+              <button class="pre" onclick="previous()">Previous</button>
+              <button class="next" onclick="next()">Next</button>
+            </div> -->
 
             <div class="btn-container">
               <a href="#">
@@ -381,6 +390,10 @@
     <!-- Footer -->
     <footer-component></footer-component>
     <!-- Footer end -->
+
+    <rank-component></rank-component>
+
+    <checkout-component></checkout-component>
 
     <!-- js -->
     <script src="assets/js/main.js"></script>
