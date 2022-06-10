@@ -127,9 +127,25 @@
 }
 
 .rank {
-    display: flex;
-    column-gap: 3px;
     margin-bottom: 30px;
+
+    &-select {
+        display: flex;
+        column-gap: 3px;
+        padding: 0 10px;
+    }
+
+    &-server {
+        display: flex;
+      column-gap: 8px;
+
+      .server {
+
+        &.active span {
+            font-weight: 700;
+        }
+      }
+    }
 }
 
 .box {
@@ -151,6 +167,18 @@
 
     &-4 {
         background: #F1E804;
+    }
+
+    &-5 {
+        background: #028999;
+    }
+
+    &-6 {
+        background: #00B1FF;
+    }
+
+    &-7 {
+        background: #4B00F5;
     }
 }
 
@@ -175,6 +203,164 @@
         border-radius: 2px;
         cursor: pointer;
     }
+}
+
+$width: 15px;
+$height: 20px;
+$thumb-height: 20px;
+$track-height: 6px;
+
+// colours
+$upper-color: #cfcfcf;
+$lower-color: #5479E5;
+$thumb-color: #0199ff;
+$thumb-hover-color: #55c2ff;
+
+$upper-background: linear-gradient(to bottom, $upper-color, $upper-color) 100% 50% / 100% $track-height no-repeat transparent;
+$lower-background: linear-gradient(to bottom, $lower-color, $lower-color) 100% 50% / 100% $track-height no-repeat transparent;
+
+// Webkit cannot style progress so we fake it with a long shadow
+// on the thumb element
+@function webkit-slider-thumb-shadow($i: 1) {
+  $val: #{$i}px 0 0 -#{($thumb-height - $track-height) / 2} #{$upper-color};
+  @if $i == 1 {
+    @for $k from 2 through 1000 {
+      $val: #{$val}, webkit-slider-thumb-shadow($k);
+    }
+  }
+  @return $val;
+}
+
+.e-range {
+  display: block;
+  appearance: none;
+  width: 100%;
+  margin: 0;
+  height: $height;
+  overflow: hidden;
+  cursor: pointer;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+// Webkit
+.e-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: $height;
+  background: $lower-background;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.e-range::-webkit-slider-thumb {
+  position: relative;
+  appearance: none;
+  height: $thumb-height;
+  width: $width;
+  background: #{$primaryDefault};
+  border-radius: 2px;
+  border: 0;
+  top: 50%;
+  margin-top: (-$thumb-height/2);
+  box-shadow: webkit-slider-thumb-shadow();
+  transition: background-color 150ms;
+  -webkit-transition: background-color 150ms;
+  -moz-transition: background-color 150ms;
+  -ms-transition: background-color 150ms;
+  -o-transition: background-color 150ms;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+// Firefox
+.e-range::-moz-range-track,
+.e-range::-moz-range-progress {
+  width: 100%;
+  height: $height;
+  background: $upper-background;
+}
+
+.e-range::-moz-range-progress {
+  background: $lower-background;
+}
+
+.e-range::-moz-range-thumb {
+  appearance: none;
+  margin: 0;
+  height: $thumb-height;
+  width: $thumb-height;
+  background: $thumb-color;
+  border-radius: 100%;
+  border: 0;
+  transition: background-color 150ms;
+  -webkit-transition: background-color 150ms;
+  -moz-transition: background-color 150ms;
+  -ms-transition: background-color 150ms;
+  -o-transition: background-color 150ms;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+// Internet Exploder
+.e-range::-ms-track {
+  width: 100%;
+  height: $height;
+  border: 0;
+  // color needed to hide track marks
+  color: transparent;
+  background: transparent;
+}
+
+.e-range::-ms-fill-lower {
+  background: $lower-background;
+}
+
+.e-range::-ms-fill-upper {
+  background: $upper-background;
+}
+
+.e-range::-ms-thumb {
+  appearance: none;
+  height: $thumb-height;
+  width: $thumb-height;
+  background: $thumb-color;
+  border-radius: 100%;
+  border: 0;
+  transition: background-color 150ms;
+  //IEEdgethinksitcansupport-webkitprefixestop: 0;
+  margin: 0;
+  box-shadow: none;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  -webkit-transition: background-color 150ms;
+  -moz-transition: background-color 150ms;
+  -ms-transition: background-color 150ms;
+  -o-transition: background-color 150ms;
+}
+
+.e-range:hover,
+.e-range:focus {
+
+  &::-webkit-slider-thumb {
+    background-color: $thumb-hover-color;
+  }
+  &::-moz-range-thumb {
+    background-color: $thumb-hover-color;
+  }
+  &::-ms-thumb {
+    background-color: $thumb-hover-color;
+  }
 }
 
 
@@ -363,6 +549,13 @@
     -o-border-radius: 6px;
 }
 
+.review-total-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // height: 100%;
+}
+
 .review-card {
     margin-bottom: 30px;
 }
@@ -373,6 +566,53 @@
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.pagination {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+
+    button {
+        width: 20px;
+        height: 20px;
+        background: #{$primaryDefault};
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+
+        &:disabled {
+            background: #A7B0CB;
+        }
+    }
+    
+    &-numbers {
+        display: flex;
+        column-gap: 10px;
+        
+        .number {
+            border: 1px solid #5479E5;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            color: #5479E5;
+            font-weight: 600;
+
+            &.active {
+                background: #5479E5;
+                color: #fff;
+            }
+}
+    }
 }
 
 

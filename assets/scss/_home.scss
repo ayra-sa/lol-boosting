@@ -3,6 +3,10 @@
 
 // Hero
 
+#heroHome {
+  position: relative;
+}
+
 .hero {
     // padding: 5% 0;
     display: flex;
@@ -12,7 +16,7 @@
     
     @media (min-width: #{$laptop}) {
       flex-direction: row;
-      margin-top: 80px;
+      margin-top: 140px;
       align-items: center;
     }
 }
@@ -390,8 +394,6 @@
   }
 }
 
-.wi-img {
-}
 
 // Review
 
