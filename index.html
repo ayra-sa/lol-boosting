@@ -68,43 +68,22 @@
         <!-- Hero end -->
 
         <!-- Tab Home -->
-        <section class="section">
-          <!-- <div class="filter-wrap">
-            <div class="filter-games">
-              <span>World of Warcraft</span>
-            </div>
-            <div class="filter-games">
-              <span>Apex Legends</span>
-            </div>
-            <div class="filter-games">
-              <span>League of Legends</span>
-            </div>
-            <div class="filter-games">
-              <span>New world</span>
-            </div>
-            <div class="filter-games">
-              <span>Destiny 2</span>
-            </div>
-            <div class="filter-dropdown">
-              <span>Other</span>
-              <img src="assets/images/icons/chevron-down.svg" alt="icon" />
-            </div>
-          </div> -->
+        <section class="section" id="productTab">
           <div class="container">
             <div class="filter-wrap">
-              <div class="filter-games">
+              <div class="filter-games active" onclick="openTab(event, 'WorldOfWarcraft')">
                 <span>World of Warcraft</span>
               </div>
-              <div class="filter-games">
+              <div class="filter-games" onclick="openTab(event, 'Apex')">
                 <span>Apex Legends</span>
               </div>
-              <div class="filter-games">
+              <div class="filter-games" onclick="openTab(event, 'LeagueLogends')">
                 <span>League of Legends</span>
               </div>
-              <div class="filter-games">
+              <div class="filter-games" onclick="openTab(event, 'NewWorld')">
                 <span>New world</span>
               </div>
-              <div class="filter-games">
+              <div class="filter-games" onclick="openTab(event, 'Destiny')">
                 <span>Destiny 2</span>
               </div>
               <div class="filter-dropdown">
@@ -118,7 +97,7 @@
               <h1 class="heading-2 text-decoration text-decoration-star">
                 The Best Products
               </h1>
-              <div class="product-box">
+              <div class="product-box" id="WorldOfWarcraft">
                 <div class="product-card">
                   <span class="tag hot">Hot Sale</span>
 
@@ -192,6 +171,83 @@
                     alt="chara"
                   />
                 </div>
+              </div>
+              <div class="product-box" id="Apex">
+                
+                <div class="product-card-right">
+                  <span class="tag hot">Hot Sale</span>
+
+                  <div class="product-info">
+                    <h3 class="heading-3">WOW Character</h3>
+                    <ul class="list-wrap">
+                      <li class="product-list">
+                        <span class="body-4">Stream on demand</span>
+                      </li>
+                      <li class="product-list">
+                        <span class="body-4">Unlock flying</span>
+                      </li>
+                    </ul>
+                    <p class="heading-7">
+                      Heroic Sanctum of Domination for you sed ut perspiciatis
+                      unde omnis
+                    </p>
+                    <div class="btn-wrap">
+                      <a href="#">
+                        <button class="btn btn-primary">
+                          <span>Buy</span>
+                          <img
+                            src="assets/images/icons/arrow-up.svg"
+                            alt="icons"
+                          />
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+
+                  <img
+                    class="char"
+                    src="./assets/images/pngkey_wow2.png"
+                    alt="chara"
+                  />
+                </div>
+
+                <div class="product-card">
+                  <span class="tag hot">Hot Sale</span>
+
+                  <div class="product-info">
+                    <h3 class="heading-3">WOW Character</h3>
+                    <ul class="list-wrap">
+                      <li class="product-list">
+                        <span class="body-4">Stream on demand</span>
+                      </li>
+                      <li class="product-list">
+                        <span class="body-4">Unlock flying</span>
+                      </li>
+                    </ul>
+                    <p class="heading-7">
+                      Heroic Sanctum of Domination for you sed ut perspiciatis
+                      unde omnis
+                    </p>
+                    <div class="btn-wrap">
+                      <a href="#">
+                        <button class="btn btn-primary">
+                          <span>Buy</span>
+                          <img
+                            src="assets/images/icons/arrow-up.svg"
+                            alt="icons"
+                          />
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+
+                  <img
+                    class="char"
+                    src="./assets/images/pngitem-wow.png"
+                    alt="chara"
+                  />
+                </div>
+
               </div>
             </div>
           </div>

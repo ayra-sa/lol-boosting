@@ -167,3 +167,20 @@ function previous() {
   i--;
   children[i].classList.add("selected");
 }
+
+
+// Tab
+
+function openTab(evt, tabName) {
+  let i, x, tablinks;
+  x = document.getElementsByClassName("product-box");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("filter-games");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "flex";
+  evt.currentTarget.className += " active";
+}

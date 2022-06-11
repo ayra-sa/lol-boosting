@@ -34,21 +34,12 @@ class Navbar extends HTMLElement {
                 <li class="nav-item"><a class="heading-5" href="#">Hiring</a></li>
                 <li class="nav-item"><a class="heading-5" href="blog.html">Blog</a></li>
                 <li class="nav-item"><a class="heading-5" href="faq.html">FAQ</a></li>
-                <li class="nav-item on-mobo">
-                  <a class="btn btn-primary btn-mobo" id="modalBtn">Log In</a>
-                </li>
+                
               </ul>
             </div>
 
             <div class="btn-navbar">
-              <a class="btn btn-primary login" id="modalBtn">Log In</a>
-              <div id="orderBtn">
-                <img
-                  class="on-mobo"
-                  src="./assets/images/icons/order.svg"
-                  alt="icon"
-                />
-              </div>
+              <a class="btn btn-primary" id="modalBtn">Log In</a>
             </div>
           </div>
         </div>

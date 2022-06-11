@@ -38,7 +38,7 @@ class Login extends HTMLElement {
                         <p class="heading-7">Forgot password?</p>
                         </a>
                     </div>
-                    <input type="submit" value="Login" class="btn btn-mobo btn-primary" />
+                    <button type="submit" class="btn btn-primary btn-mobo">Login</button>
                 </form>
             
                 <div class="how-do">

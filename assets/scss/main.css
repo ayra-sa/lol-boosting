@@ -216,9 +216,22 @@ button {
 }
 
 .btn-primary {
-  background: linear-gradient(89.67deg, #5479e6 0.26%, #6b7aff 99.71%);
   color: #fff;
   border-radius: 12px;
+  position: relative;
+  background: linear-gradient(89.67deg, #5479e6 0.26%, #6b7aff 99.71%);
+}
+
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
 }
 
 .btn-primary:hover {
@@ -369,9 +382,12 @@ button {
   }
 }
 
+#productTab {
+  position: relative;
+}
+
 .filter-wrap {
   background: #ebeff8;
-  border-radius: 20px;
   margin: 40px 0 60px 0;
   width: 100%;
   overflow: scroll;
@@ -392,6 +408,16 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .filter-wrap {
+    position: static;
+    border-radius: 20px;
   }
 }
 
@@ -403,12 +429,13 @@ button {
   font-size: 1.15em;
   line-height: 32px;
   color: #6e7687;
+  cursor: pointer;
 }
 
-.filter-games:nth-of-type(1), .filter-dropdown:nth-of-type(1) {
+.filter-games.active {
   background: linear-gradient(89.67deg, #5479e6 0.26%, #6b7aff 99.71%);
-  color: #fff;
   font-weight: 700;
+  color: #fff;
 }
 
 .filter-dropdown {
@@ -422,6 +449,18 @@ button {
   position: relative;
 }
 
+@media (min-width: 768px) {
+  .product-content {
+    padding-top: 180px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-content {
+    padding-top: unset;
+  }
+}
+
 .product-title {
   position: relative;
 }
@@ -433,9 +472,6 @@ button {
 }
 
 .product-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -443,6 +479,13 @@ button {
           justify-content: space-between;
   gap: 50px;
   margin-top: 40px;
+  display: none;
+}
+
+.product-box:nth-of-type(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (min-width: 1024px) {

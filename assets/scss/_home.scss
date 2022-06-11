@@ -85,9 +85,12 @@
 
 // Filter
 
+#productTab {
+  position: relative;
+}
+
 .filter-wrap {
   background: #{$card};
-  border-radius: 20px;
   margin: 40px 0 60px 0;
   width: 100%;
   overflow: scroll;
@@ -103,6 +106,14 @@
   @media (min-width: #{$tablet}) {
     /* overflow: unset; */
     display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  @media (min-width: #{$laptop}) {
+    position: static;
+  border-radius: 20px;
   }
 }
 
@@ -114,11 +125,15 @@
   font-size: 1.15em;
   line-height: 32px;
   color: #{$textMedium};
+  cursor: pointer;
+}
 
-  &:nth-of-type(1) {
+.filter-games {
+
+  &.active {
     background: #{$primaryDefault};
-    color: #fff;
     font-weight: 700;
+    color: #fff;
   }
 }
 
@@ -134,6 +149,17 @@
   position: relative;
 }
 
+.product-content {
+
+  @media (min-width: #{$tablet}) {
+    padding-top: 180px;
+  }
+
+  @media (min-width: #{$laptop}) {
+    padding-top: unset;
+  }
+}
+
 .product-title {
   position: relative;
 
@@ -147,11 +173,15 @@
 
 
 .product-box {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 50px;
   margin-top: 40px;
+  display: none;
+  
+  &:nth-of-type(1) {
+    display: flex;
+  }
 
   @media (min-width: #{$laptop}) {
     flex-wrap: nowrap;
