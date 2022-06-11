@@ -52,6 +52,19 @@ input,
 textarea {
   font-family: inherit;
 }
+
+input {
+  
+  &:focus {
+    outline: 1px solid hsla(234, 100%, 71%, 1) !important;
+  }
+
+  // &:required:focus {
+  //   background: hsla(4, 100%, 97%, 1);
+  //   outline: 1px solid hsla(0, 90%, 54%, 1) !important;
+  // }
+
+} 
 .section {
   margin-top: 40px;
 
@@ -100,18 +113,6 @@ textarea {
   &:focus {
     outline: none;
     border: none;
-  }
-}
-
-.container-fluid {
-  padding: 0 40px;
-
-  @media (min-width: 1024px) {
-    padding: 0 80px;
-  }
-
-  @media (min-width: 1536px) {
-    width: inherit;
   }
 }
 
@@ -325,7 +326,6 @@ input {
   flex-shrink: 0;
   position: relative;
 
-  
   #modalBtn {
     color: #fff !important;
     padding: 0 !important;
@@ -333,7 +333,6 @@ input {
   }
 
   &.current {
-
     a {
       font-weight: 700;
     }
@@ -342,7 +341,6 @@ input {
       content: "";
     }
 
-    
     @media (min-width: #{$tablet}) {
       &::before {
         content: "";
@@ -644,8 +642,6 @@ input {
   @media (min-width: #{$laptop}) {
     width: unset;
   }
-
-
 }
 
 .work-left {
@@ -938,7 +934,7 @@ input {
   margin-top: 10%;
   position: relative;
   width: 90%;
-  
+
   @media (min-width: #{$tablet}) {
     max-width: 500px;
     width: unset;
@@ -1080,7 +1076,8 @@ input {
     }
   }
 
-  .heading-2, button.x-btn {
+  .heading-2,
+  button.x-btn {
     display: none;
   }
 
@@ -1091,7 +1088,7 @@ input {
       display: flex;
     }
   }
-  
+
   @media (min-width: #{$tablet}) {
     margin-top: 20px;
     border-radius: 30px;
@@ -1147,7 +1144,7 @@ input {
   margin-bottom: 10px;
 
   &.active {
-    border-color: #6B7AFF;
+    border-color: #6b7aff;
   }
 }
 
@@ -1215,12 +1212,12 @@ td {
   align-items: center;
 }
 
-
 // Order
 
 .rank-up-mobo {
   position: fixed;
   top: 0;
+  bottom: 0;
   left: -100%;
   box-shadow: 0px 4px 30px 0px #3232321a;
   background: #fff;
@@ -1253,7 +1250,7 @@ td {
   &.active {
     left: 0;
   }
-  
+
   .header {
     background: url("../images/slider/bg-basket.png") no-repeat;
     background-size: cover;
@@ -1263,28 +1260,30 @@ td {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .basket-body {
     padding: 20px;
+    background: url("../images/slider/rank-bg.svg") no-repeat bottom;
+    background-size: cover;
   }
-  
+
   .bb-info {
     display: flex;
     // align-items: center;
     justify-content: space-between;
     padding-bottom: 20px;
     border-bottom: 1px solid #ebeff8;
-  
+
     & h6 {
       color: #{$textDark};
     }
   }
-  
+
   .bb-title {
     margin-bottom: 6px;
     color: #{$primaryPressed};
   }
-  
+
   .bb-detail {
     display: flex;
     justify-content: space-between;
@@ -1293,3 +1292,75 @@ td {
     margin-bottom: 150px;
   }
 }
+
+// DROPDOWN
+
+#dropdown {
+  margin-top: 60px;
+
+  .dropdown {
+    position: relative;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      background: url("../images/icons/header-mobo.png") no-repeat center;
+      background-size: cover;
+      padding: 20px 32px;
+      color: #fff;
+    }
+
+    &-body {
+      width: 310px;
+      border-radius: 20px;
+      margin-top: 20px;
+      position: absolute;
+      right: 20px;
+      z-index: 787;
+      background: #fff;
+      display: none;
+      
+      &.open {
+        display: block;
+      }
+
+      &::before {
+        content: url("../images/icons/arrow-up-dropdown.svg");
+        display: block;
+        right: 10px;
+        position: absolute;
+        top: -15px;
+        z-index: -1;
+      }
+
+      &-top {
+        background: #{$primaryDefault};
+        color: #fff;
+        padding: 15px 20px;
+        border-radius: 20px 20px 0 0;
+        -webkit-border-radius: 20px 20px 0 0;
+        -moz-border-radius: 20px 20px 0 0;
+        -ms-border-radius: 20px 20px 0 0;
+        -o-border-radius: 20px 20px 0 0;
+}
+
+      li {
+        padding: 15px 20px;
+
+        &:not(:nth-last-of-type(1)) {
+          border-bottom: 1px solid hsla(220, 100%, 92%, 1);
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  @media (min-width: #{$tablet}) {
+    display: none;
+  }
+}
+
+// DROPDOWN END

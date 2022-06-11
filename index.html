@@ -18,6 +18,7 @@
     <script src="components/rank-up.js"></script>
     <script src="components/checkout-modal.js"></script>
     <script src="components/login-modal.js"></script>
+    <script src="components/dropdown.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -66,6 +67,10 @@
         </section>
 
         <!-- Hero end -->
+
+        <!-- Dropdown -->
+        <dropdown-component></dropdown-component>
+        <!-- Dropdown end -->
 
         <!-- Tab Home -->
         <section class="section" id="productTab">
@@ -262,18 +267,20 @@
           <div class="container">
             <span class="tag main">Top Product</span>
             <h2 class="heading-2">Top World of Warcraft Products</h2>
+          </div>
 
+          <div class="container container-full">
             <div class="col-3 mt-4">
               <card-component></card-component>
               <card-component></card-component>
               <card-component></card-component>
             </div>
-
+  
             <!-- <div class="btn-container">
               <button class="pre" onclick="previous()">Previous</button>
               <button class="next" onclick="next()">Next</button>
             </div> -->
-
+  
             <div class="btn-container">
               <a href="#">
                 <button class="btn btn-primary">

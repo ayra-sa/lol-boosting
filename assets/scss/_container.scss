@@ -6,6 +6,30 @@
     margin: 0 auto;
     width: 100%;
     // max-width: 100%;
+
+    &-full {
+      padding: 0 !important;
+
+      @media (min-width: #{$tablet}) {
+        padding: unset !important;
+      }
+    }
+
+    &-fluid {
+      padding: 0 30px;
+    
+      @media (min-width: #{$tablet}) {
+        padding: 0 40px;
+      }
+
+      @media (min-width: #{$laptop}) {
+        padding: 0 80px;
+      }
+    
+      @media (min-width: #{$laptopL}) {
+        width: inherit;
+      }
+    }
   
     @media (min-width: #{$mobileL}) {
       max-width: 425px;
@@ -33,19 +57,22 @@
 }
 
 .col-3 {
-    
-    display: grid;
-    column-gap: 30px;
-    row-gap: 60px;
-    grid-template-columns: 1fr;
+    overflow: scroll;
+    display: flex;
+    column-gap: 20px;
     -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;
+    scrollbar-width: none;
+    padding-inline: 20px;
     
     &::-webkit-scrollbar {
       display: none;
     }
-  
+    
     @media (min-width: #{$tablet}) {
+      overflow: unset;
+      display: grid;
+      row-gap: 60px;
+      column-gap: 30px;
       grid-template-columns: repeat(2, 1fr);
     }
   
@@ -55,19 +82,22 @@
 }
 
 .column-cards {
-    
-    display: grid;
+    padding-inline: 30px;
     column-gap: 30px;
-    row-gap: 60px;
-    grid-template-columns: 1fr;
+    overflow: scroll;
+    display: flex;
     -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;
+    scrollbar-width: none;
     
     &::-webkit-scrollbar {
       display: none;
     }
     
     @media (min-width: #{$tablet}) {
+      display: grid;
+      padding-inline: unset;
+      overflow: unset;
+      row-gap: 60px;
       grid-template-columns: repeat(2, 1fr);
     }
     

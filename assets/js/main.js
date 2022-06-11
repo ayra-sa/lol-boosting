@@ -15,6 +15,7 @@ const navLink = document.querySelectorAll(".nav-item");
 const closeBtn = document.querySelector(".close-mobo");
 
 navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
 if (closeBtn) {
   closeBtn.addEventListener("click", closeMenu);
 }
@@ -183,4 +184,24 @@ function openTab(evt, tabName) {
   }
   document.getElementById(tabName).style.display = "flex";
   evt.currentTarget.className += " active";
+}
+
+// Dropdown
+
+const dropdownIcon = document.querySelector(".dropdown-icon")
+const dropdownBody = document.querySelector(".dropdown-body")
+const dropdownList = document.querySelectorAll(".dropdown-body li a")
+
+if (dropdownIcon) {
+  dropdownIcon.addEventListener("click", openDropdown)
+}
+
+function openDropdown() {
+  dropdownBody.classList.toggle("open")
+}
+
+dropdownList.forEach((n) => n.addEventListener("click", closeDropdown));
+
+function closeDropdown() {
+  dropdownBody.classList.remove("open")
 }
