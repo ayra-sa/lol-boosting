@@ -113,6 +113,24 @@
   width: 100%;
 }
 
+.positions select:focus {
+  outline: 1px solid #6b7aff;
+}
+
+.positions select option {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-weight: 600;
+  color: #3a445c;
+  background: #fff;
+  padding: 20px;
+}
+
+.positions select option:hover {
+  background: #ecf0f8 !important;
+}
+
 @media (min-width: 768px) {
   .positions {
     width: auto;

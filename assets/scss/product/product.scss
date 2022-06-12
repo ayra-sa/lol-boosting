@@ -102,6 +102,22 @@
   & select {
     margin-bottom: 10px;
     width: 100%;
+
+    &:focus {
+      outline: 1px solid hsla(234, 100%, 71%, 1);
+    }
+
+    option {
+      appearance: none;
+      font-weight: 600;
+      color: #{$textDark};
+      background: #fff;
+      padding: 20px;
+
+      &:hover {
+        background: hsla(222, 48%, 95%, 1) !important;
+      }
+    }
   }
 
   @media (min-width: #{$tablet}) {

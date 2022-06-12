@@ -1013,7 +1013,7 @@ button {
 
 @media (min-width: 768px) {
   .container-full {
-    padding: unset !important;
+    padding: unset;
   }
 }
 
@@ -1023,19 +1023,13 @@ button {
 
 @media (min-width: 768px) {
   .container-fluid {
-    padding: 0 40px;
+    padding: 0 40px !important;
   }
 }
 
 @media (min-width: 1024px) {
   .container-fluid {
-    padding: 0 80px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container-fluid {
-    width: inherit;
+    padding: 0 80px !important;
   }
 }
 
@@ -1265,10 +1259,6 @@ img {
 input,
 textarea {
   font-family: inherit;
-}
-
-input:focus {
-  outline: 1px solid #6b7aff !important;
 }
 
 .section {
@@ -2337,6 +2327,10 @@ input:focus {
 
 .login-wrap .input {
   width: 100%;
+}
+
+.login-wrap .input:focus {
+  outline: 1px solid #6b7aff !important;
 }
 
 .x-btn {

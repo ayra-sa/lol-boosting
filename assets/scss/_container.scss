@@ -11,7 +11,7 @@
       padding: 0 !important;
 
       @media (min-width: #{$tablet}) {
-        padding: unset !important;
+        padding: unset;
       }
     }
 
@@ -19,16 +19,16 @@
       padding: 0 30px;
     
       @media (min-width: #{$tablet}) {
-        padding: 0 40px;
+        padding: 0 40px !important;
       }
 
       @media (min-width: #{$laptop}) {
-        padding: 0 80px;
+        padding: 0 80px !important;
       }
     
-      @media (min-width: #{$laptopL}) {
-        width: inherit;
-      }
+      // @media (min-width: #{$laptopL}) {
+      //   width: inherit;
+      // }
     }
   
     @media (min-width: #{$mobileL}) {
