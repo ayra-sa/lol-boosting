@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
 
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
 
     <link rel="stylesheet" href="assets/scss/main.css" />
     <link rel="stylesheet" href="assets/scss/blog/blog.css" />
@@ -121,17 +125,17 @@
           <div class="container">
             <div class="select-news">
               <div class="news-wrap">
-                <div class="news active">
+                <div class="news active" onclick="filterSelection('all')">
                   <p class="heading-5">All News</p>
                 </div>
-                <div class="news">
-                  <p class="heading-5">All News</p>
+                <div class="news" onclick="filterSelection('popular')">
+                  <p class="heading-5">Popular</p>
                 </div>
-                <div class="news">
-                  <p class="heading-5">All News</p>
+                <div class="news" onclick="filterSelection('new')">
+                  <p class="heading-5">New</p>
                 </div>
-                <div class="news">
-                  <p class="heading-5">All News</p>
+                <div class="news" onclick="filterSelection('games')">
+                  <p class="heading-5">Games</p>
                 </div>
                 <div class="news">
                   <p class="heading-5">All News</p>
@@ -154,32 +158,100 @@
 
         <!-- Blog wrap -->
         <section class="blog-wrap">
-          <div class="container">
-            <div class="blog-head">
-              <!-- Blog card -->
-              <!-- components/blog-card.js -->
+          <div class="blog-panel">
+            <div class="container">
+              <div class="blog-head">
+                <!-- Blog card -->
+                <blogcard-component></blogcard-component>
+                <blogcard-component></blogcard-component>
+              </div>
 
-              <blogcard-component></blogcard-component>
-              <blogcard-component></blogcard-component>
+              <span class="tag main">Latest News</span>
+              <h3 class="heading-3">Most Commented News</h3>
+
+              <div class="col-3">
+                <blogcard-component></blogcard-component>
+                <blogcard-component></blogcard-component>
+                <blogcard-component></blogcard-component>
+
+                <div class="blog-card popular">
+                  <div class="blog-top">
+                    <div class="tag-wrap">
+                      <span class="tag special">WOW</span>
+                      <span class="tag special">WOW</span>
+                    </div>
+                    <img
+                      class="blog-image"
+                      src="./assets/images/latest-img.png"
+                      alt="blog"
+                    />
+                    <div class="blog-info">
+                      <p class="body-2">12 Nov 2021</p>
+                      <div class="comment">
+                        <img src="./assets/images/icons/chat.svg" alt="icon" />
+                        <span>212</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="blog-detail.html">
+                    <div class="mt-2">
+                      <h3 class="heading-3">
+                        Get the Baby Murloc Satch-Shells Transmog with the
+                        Purchase of a 6-Month Subscription!
+                      </h3>
+                      <p class="body-3">
+                        Introducing the eggcelent Baby Murloc Satch-Shells
+                        transmog*— now available to add to your collection!
+                        You’ll be able to carry this adorable...
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="blog-card new">
+                  <div class="blog-top">
+                    <div class="tag-wrap">
+                      <span class="tag special">WOW</span>
+                      <span class="tag special">WOW</span>
+                    </div>
+                    <img
+                      class="blog-image"
+                      src="./assets/images/latest-img.png"
+                      alt="blog"
+                    />
+                    <div class="blog-info">
+                      <p class="body-2">12 Nov 2021</p>
+                      <div class="comment">
+                        <img src="./assets/images/icons/chat.svg" alt="icon" />
+                        <span>212</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="blog-detail.html">
+                    <div class="mt-2">
+                      <h3 class="heading-3">
+                        Get the Baby Murloc Satch-Shells Transmog with the
+                        Purchase of a 6-Month Subscription!
+                      </h3>
+                      <p class="body-3">
+                        Introducing the eggcelent Baby Murloc Satch-Shells
+                        transmog*— now available to add to your collection!
+                        You’ll be able to carry this adorable...
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <span class="tag main">Latest News</span>
-            <h3 class="heading-3">Most Commented News</h3>
-
-            <div class="col-3">
-              <blogcard-component></blogcard-component>
-              <blogcard-component></blogcard-component>
-              <blogcard-component></blogcard-component>
-            </div>
-
-            <div class="btn-container">
-              <a href="#">
-                <button class="btn btn-primary">
-                  <span>Read More</span>
-                  <img src="assets/images/icons/arrow-up.svg" alt="icon" />
-                </button>
-              </a>
-            </div>
+          <div class="btn-container">
+            <a href="#">
+              <button class="btn btn-primary">
+                <span>Read More</span>
+                <img src="assets/images/icons/arrow-up.svg" alt="icon" />
+              </button>
+            </a>
           </div>
         </section>
         <!-- Blog wrap end -->
