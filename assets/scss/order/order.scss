@@ -1,310 +1,319 @@
 @import "../variable";
 
 .order-hero {
-    background: url("../../images/hero-bg.png") no-repeat center;
-    background-size: cover;
-    margin-top: 80px;
-    padding: 40px 0;
-    text-align: center;
+  background: url("../../images/hero-bg.png") no-repeat center;
+  background-size: cover;
+  margin-top: 80px;
+  padding: 40px 0;
+  text-align: center;
 }
 
 // Progress
 
 .progress-bar {
-    margin: 60px auto 20px auto;
-    /* display: inline-block; */
-    
-    @media (min-width: #{$laptop}) {
-        width: 780px;
-    }
+  margin: 60px auto 20px auto;
+  /* display: inline-block; */
+
+  @media (min-width: #{$laptop}) {
+    width: 780px;
+  }
 }
 
 .progress-back {
-    background: url("../../images/progress.png") no-repeat center;
-    height: 12px;
-    border-radius: 10px;
+  background: url("../../images/progress.png") no-repeat center;
+  height: 12px;
+  border-radius: 10px;
 }
 
 .progress-front {
-    background: linear-gradient(53.42deg, #DD7BFF 3.84%, #4D89FF 96.16%);
-    border-radius: 10px;
-    width: 30%;
-    height: 100%;
-    position: relative;
-    
-    &::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        bottom: -5px;
-        width: 20px;
-        height: 20px;
-        background: linear-gradient(53.42deg, #DD7BFF 3.84%, #4D89FF 96.16%);
-        border-radius: 50px;
-    }
+  background: linear-gradient(53.42deg, #dd7bff 3.84%, #4d89ff 96.16%);
+  border-radius: 10px;
+  width: 30%;
+  height: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(53.42deg, #dd7bff 3.84%, #4d89ff 96.16%);
+    border-radius: 50px;
+  }
 }
 
 .progress-info {
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-evenly;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-evenly;
 }
 
 // Progress end
 
 .badge {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 
-    h3 {
-        margin: 0;
-    }
+  h3 {
+    margin: 0;
+  }
 }
 
 .order-col {
-    margin-top: 100px;
-        display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 100px;
-        row-gap: 40px;
-    
-        & input, select, option {
-          margin-bottom: 0 !important;
-        }
-        
-        @media (min-width: #{$laptop}) {
-            grid-template-columns: repeat(2, 1fr);
-          }
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 100px;
+  row-gap: 40px;
+
+  & input,
+  select,
+  option {
+    margin-bottom: 0 !important;
+  }
+
+  @media (min-width: #{$laptop}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .items {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 
-    @media (min-width: #{$tablet}) {
-      flex-wrap: nowrap;
-    }
+  @media (min-width: #{$tablet}) {
+    flex-wrap: nowrap;
+  }
 }
 
 .item-box {
-    // background: #{$borderGradient};
-    border-radius: 20px;
-    border: 1px solid #DABCFF;
-    // padding: 15px 45px;
-    // box-sizing: content-box;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
+  // background: #{$borderGradient};
+  border-radius: 20px;
+  border: 1px solid #dabcff;
+  padding: 15px 45px;
+  // box-sizing: content-box;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 
-      @media (min-width: #{$laptop}) {
-        width: fit-content;
-      }
-}
-
-.level {
-    color: #5479E5;
+  @media (min-width: #{$laptop}) {
+    width: fit-content;
+  }
 }
 
 .gift {
-    border: 1px solid #DABCFF;
-    /* border-image-source: linear-gradient(89.26deg, #DABCFF 0.57%, #BFB5FF 100.29%) 1; */
-    /* padding: 0 20px 20px 20px; */
-    border-radius: 20px;
+  border: 1px solid #dabcff;
+  /* border-image-source: linear-gradient(89.26deg, #DABCFF 0.57%, #BFB5FF 100.29%) 1; */
+  /* padding: 0 20px 20px 20px; */
+  border-radius: 20px;
 }
 
 .gift-about {
-    background: #E7ECFF;
-    padding: 20px 0;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    text-align: center;
+  background: #e7ecff;
+  padding: 20px 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
 }
 
 .gift-body {
-    margin-top: 20px;
-    padding: 20px;
+  margin-top: 20px;
+  padding: 20px;
 }
 
 .headline {
-    color: #5479E5;
-    margin-bottom: 10px;
+  color: #5479e5;
+  margin-bottom: 10px;
 }
 
 .amount {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    row-gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 20px;
 
   @media (min-width: #{$tablet}) {
     flex-direction: row;
-  } 
+  }
 }
 
 .amount-inputs {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 
-    .select-wrap::after {
-        top: 12px;
-    }
+  .select-wrap::after {
+    top: 12px;
+  }
 
-    input {
-        width: 100px;
-    }
+  input {
+    width: 100px;
+  }
 
-    select {
-        width: 140px;
-        height: 100%;
+  select {
+    width: 100%;
+    height: 100%;
+
+    @media (min-width: #{$tablet}) {
+      width: 140px;
     }
+  }
 }
 
 .history {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
-.win, .loose {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 17px 40px;
-    margin-bottom: 10px;
-    border-radius: 20px;
+.win,
+.loose {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 40px;
+  margin-bottom: 10px;
+  border-radius: 20px;
 }
 
 .info {
-    display: flex;
-    align-items: flex-end;
-    gap: 10px;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  color: #169649;
+
+  & h3 {
+    margin-bottom: 0;
+  }
+
+  & span {
     color: #169649;
-
-    & h3 {
-      margin-bottom: 0;
-    }
-
-    & span {
-      color: #169649;
-    }
-    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, #169649, #169649); */
+  }
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, #169649, #169649); */
 }
 
 .win {
-    background: #{$secondaryHover};
+  background: #{$secondaryHover};
 }
 
 .loose {
-    background: #FFF1F0;
+  background: #fff1f0;
 }
 
 .loose-info {
-    display: flex;
-    align-items: flex-end;
-    gap: 10px;
-    color: #F31E1E;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  color: #f31e1e;
 
-    & h3 {
-      margin-bottom: 0;
-    }
+  & h3 {
+    margin-bottom: 0;
+  }
 
-    & span {
-      color: #F31E1E;
-    }
+  & span {
+    color: #f31e1e;
+  }
 }
 
 .chat-wrap {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .chat-box {
-    // background: #{$borderGradient}
-    border: 1px solid #DABCFF;
-    box-sizing: content-box;
-    /*border-image: linear-gradient(89.26deg, #DABCFF 0.57%, #BFB5FF 100.29%) 1;
+  // background: #{$borderGradient}
+  border: 1px solid #dabcff;
+  box-sizing: content-box;
+  /*border-image: linear-gradient(89.26deg, #DABCFF 0.57%, #BFB5FF 100.29%) 1;
     border-radius: 20px;
-    */min-height: 500px;
-    padding: 20px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    */
+  min-height: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .chat-user {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .chat-admin {
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
-    flex-direction: row-reverse;
-    margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
 }
 
 .admin-message-details {
-    background: hsla(222, 24%, 95%, 1);
-    border-radius: 8px 0px 8px 8px;
-      padding: 12px 24px;
-      display: block;
+  background: hsla(222, 24%, 95%, 1);
+  border-radius: 8px 0px 8px 8px;
+  padding: 12px 24px;
+  display: block;
 }
 
 .profile {
-    background: #{$primaryDefault};
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-weight: 700;
+  background: #{$primaryDefault};
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
 }
 
 .message {
-    border-radius: 0px 8px 8px 8px;
-    background: #D6E4FF;
-    padding: 12px 24px;
-    display: block;
+  border-radius: 0px 8px 8px 8px;
+  background: #d6e4ff;
+  padding: 12px 24px;
+  display: block;
 }
 
 .chat-type {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 12px;
-    background: #EFF1F5;
-    padding: 2px;
-    margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  background: #eff1f5;
+  padding: 2px;
+  margin-top: 40px;
 }
 
 #help {
-    padding: 80px 0;
-    background: url("../../images/order/help-bg.png") no-repeat center;
-    background-size: cover;
+  background: url("../../images/order/help-bg.png") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  margin-top: 80px;
+
+  @media (min-width: #{$tablet}) {
     border-radius: 20px;
     margin: 80px auto 60px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
-    @media (min-width: #{$laptop}) {
-      width: 80%;
+    padding: 80px 0;
+    width: 80%;
+  }
 
-    }
+  @media (min-width: #{$laptop}) {
+    width: 80%;
+  }
 }
 
 .help-top {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }

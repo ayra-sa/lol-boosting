@@ -53,7 +53,6 @@ textarea {
   font-family: inherit;
 }
 
-
 .section {
   margin-top: 40px;
 
@@ -93,7 +92,7 @@ textarea {
 .input {
   background: #ebeff8;
   border-radius: 6px;
-  padding: 10px;
+  padding: 13px 16px;
   border: none;
   margin-bottom: 20px;
   font-size: 0.875em;
@@ -143,6 +142,11 @@ select {
   font-family: inherit;
 }
 
+select {
+  font-weight: 600;
+  color: #{$textDark};
+}
+
 textarea {
   resize: none;
 }
@@ -152,10 +156,19 @@ textarea {
   width: 100%;
   position: relative;
 
+  &-product {
+    float: unset;
+    margin-top: 40px;
+
+    .input {
+      width: 100%;
+    }
+  }
+
   &::after {
     content: url("../images/icons/down-arrow.svg");
     right: 11px;
-    top: 6px;
+    top: 10px;
     // height: 34px;
     // padding: 15px 0px 0px 8px;
     position: absolute;
@@ -502,6 +515,14 @@ input {
     position: absolute;
     inset: 0 auto 0 0;
     // margin-top: 2%;
+  }
+  
+  #dropdownSidebar {
+    margin-top: 85px;
+    
+    @media (min-width: #{$tablet}) {
+      display: block;
+    }
   }
 }
 
@@ -1027,6 +1048,10 @@ input {
     padding: 30px;
     display: block;
 
+    @media (min-width: #{$tablet}) {
+      padding: unset;
+    }
+
     input {
       width: 100%;
     }
@@ -1072,6 +1097,10 @@ input {
   .heading-2,
   button.x-btn {
     display: none;
+
+    @media (min-width: #{$tablet}) {
+      display: block;
+    }
   }
 
   .coupon {
@@ -1107,14 +1136,21 @@ input {
   flex-direction: column-reverse;
   padding: 30px;
 
+  @media (min-width: #{$tablet}) {
+    padding: unset;
+  }
+
   @media (min-width: #{$laptop}) {
     flex-direction: row;
-    padding: unset;
   }
 }
 
 .left {
   text-align: left;
+
+  @media (min-width: #{$laptop}) {
+    width: 50%;
+  }
 
   .items {
     flex-direction: column;
@@ -1128,6 +1164,10 @@ input {
 .personal {
   display: flex;
   flex-direction: column;
+
+  input:focus {
+    outline: 1px solid hsla(234, 100%, 71%, 1);
+  }
 }
 
 .method {
@@ -1135,9 +1175,18 @@ input {
   border-radius: 6px;
   padding: 10px;
   margin-bottom: 10px;
+  color: #{$textMedium};
 
   &.active {
-    border-color: #6b7aff;
+    border-color: hsla(225, 74%, 62%, 1);
+
+    p {
+      background: #{$primaryDefault};
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }
 
@@ -1149,23 +1198,29 @@ input {
   flex-wrap: wrap;
 }
 
-.items {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-}
+.order-sum {
 
-.item-box {
-  // background: #{$borderGradient};
-  border-radius: 20px;
-  border: 1px solid #dabcff;
-  padding: 15px 50px;
-  text-align: center;
+  .items {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    
+    .item-box {
+      // background: #{$borderGradient};
+      border-radius: 20px;
+      border: 1px solid #dabcff;
+      padding: 15px 50px;
+      text-align: center;
+    
+      img {
+        margin: 25px 0 20px 0;
+      }
 
-  & img {
-    margin: 25px 0 20px 0;
+    }
   }
+  
 }
+
 
 table {
   margin-top: 20px;
@@ -1288,7 +1343,7 @@ td {
 
 // DROPDOWN
 
-#dropdown {
+#dropdown, #dropdownSidebar {
   margin-top: 60px;
 
   .dropdown {
@@ -1312,7 +1367,7 @@ td {
       z-index: 787;
       background: #fff;
       display: none;
-      
+
       &.open {
         display: block;
       }
@@ -1335,7 +1390,7 @@ td {
         -moz-border-radius: 20px 20px 0 0;
         -ms-border-radius: 20px 20px 0 0;
         -o-border-radius: 20px 20px 0 0;
-}
+      }
 
       li {
         padding: 15px 20px;
@@ -1357,3 +1412,91 @@ td {
 }
 
 // DROPDOWN END
+
+// SELECT
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 250px;
+  height: 52px;
+  font-weight: 600;
+  color: #{$textDark};
+  font-size: 16px;
+  cursor: pointer;
+
+  input {
+    opacity: 0;
+    position: absolute;
+    left: -99999px;
+  }
+
+  input:checked + label {
+    order: 1;
+    z-index: 2;
+    cursor: pointer;
+    background: hsla(222, 48%, 95%, 1);
+    border-top: none;
+    position: relative;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+  }
+
+  input:checked + label:after {
+    content: url("../images/icons/down-arrow.svg");
+    position: absolute;
+    right: 15px;
+    // top:calc(50% - 2.5px);
+    pointer-events: none;
+    z-index: 3;
+  }
+
+  input:checked + label:before {
+    position: absolute;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    content: "";
+    // background:#666;
+  }
+}
+
+.option {
+  // padding:0 30px 0 10px;
+  padding: 0 16px;
+  cursor: pointer;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-top: 1px solid hsla(222, 48%, 95%, 1);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+  order: 2;
+  z-index: 1;
+  transition: background 0.4s ease-in-out;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-transition: background 0.4s ease-in-out;
+  -moz-transition: background 0.4s ease-in-out;
+  -ms-transition: background 0.4s ease-in-out;
+  -o-transition: background 0.4s ease-in-out;
+}
+
+.option:hover {
+  background: hsla(222, 48%, 95%, 1);
+}
+
+.select-container:focus .option {
+  position: relative;
+  pointer-events: all;
+}
+
+// SELECT END

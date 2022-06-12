@@ -41,21 +41,35 @@
 }
 
 .selector-wrap {
-  background: #ebeff8;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 100%;
-  margin-top: 40px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .selector-wrap {
+    background: #ebeff8;
+    border-radius: 20px;
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    inset: auto 0;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+  }
+  .selector-wrap::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .select-top {
   /* background: linear-gradient(89.67deg, #5479e6 0.26%, #7094ea 99.71%); */
   border-radius: 20px;
   padding: 24px;
+  cursor: pointer;
 }
 
 .select-top p {
@@ -72,15 +86,28 @@
 }
 
 .content-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-top: 40px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .content-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 140px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-slide {
+    margin-top: 40px;
+  }
 }
 
 .content-slide .basket {
@@ -128,7 +155,7 @@
 }
 
 .positions select option:hover {
-  background: #ecf0f8 !important;
+  background-color: red;
 }
 
 @media (min-width: 768px) {
@@ -532,6 +559,7 @@
   display: -ms-flexbox;
   display: flex;
   gap: 70px;
+  row-gap: 20px;
   margin-top: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -544,7 +572,24 @@
   }
 }
 
-@media (min-width: 1024px) {
+.what-you-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .what-you-title {
+    display: unset;
+  }
+}
+
+@media (min-width: 768px) {
   .what-you {
     width: 33%;
   }
@@ -587,6 +632,7 @@
 
 #feedback {
   margin-top: 120px;
+  margin-bottom: 60px;
 }
 
 .reviews {

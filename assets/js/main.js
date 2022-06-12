@@ -68,6 +68,8 @@ window.onclick = function (event) {
 // Order
 
 const order = document.querySelector(".rank-up-mobo")
+const rankBtnMobo = document.querySelector(".rank-btn-mobo")
+const closeRankBtn = document.querySelector(".x-btn-mobo")
 const orderBtn = document.getElementById("orderBtn")
 const closeOrder = document.getElementById("closeOrder")
 const rankCheckout = document.getElementById("rankCheckout")
@@ -92,8 +94,18 @@ if (rankCheckout) {
   rankCheckout.addEventListener("click", rankCheckoutOpen)
 }
 
+if (rankBtnMobo) {
+  rankBtnMobo.addEventListener("click", rankCheckoutOpen)
+}
+
 function rankCheckoutOpen() {
   modal.style.display = "flex"
+}
+
+if (closeRankBtn) {
+  closeRankBtn.addEventListener("click", () => {
+    modal.style.display = "none"
+  })
 }
 
 // Nav
@@ -177,6 +189,13 @@ dropdownList.forEach((n) => n.addEventListener("click", closeDropdown));
 function closeDropdown() {
   dropdownBody.classList.remove("open")
 }
+
+// document.addEventListener("click", function handleCloseOutside(event) {
+//   console.log(event.target)
+//   if (!dropdownBody.contains(event.target)) {
+//     dropdownBody.classList.remove("open")
+//   }
+// })
 
 // Filter Blog
 

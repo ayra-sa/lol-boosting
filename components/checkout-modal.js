@@ -9,7 +9,7 @@ class Checkout extends HTMLElement {
             <div class="checkout-box">
                 <div class="header on-mobo">
                     <h2 class="heading-4">Checkout</h2>
-                    <div class="x-btn">
+                    <div class="x-btn-mobo">
                         <img src="./assets/images/icons/close-mobo.svg" alt="icon" >
                     </div>
                 </div>
@@ -22,12 +22,12 @@ class Checkout extends HTMLElement {
                 <div class="checkout-content">
                 <div class="left">
                     <div class="personal">
-                    <h3 class="heading-3 mb-1">Personal information</h3>
-                    <input class="input" placeholder="Username" type="text" />
-                    <input class="input" placeholder="Password" type="password" />
-                    <input class="input" placeholder="Summone name" type="text" />
-                    <input class="input" placeholder="Location" type="text" />
-                    <input class="input" placeholder="Email" type="email" />
+                        <h3 class="heading-3 mb-1">Personal information</h3>
+                        <input class="input" placeholder="Username" type="text" />
+                        <input class="input" placeholder="Password" type="password" />
+                        <input class="input" placeholder="Summone name" type="text" />
+                        <input class="input" placeholder="Location" type="text" />
+                        <input class="input" placeholder="Email" type="email" />
                     </div>
 
                     <div class="payment">
@@ -82,11 +82,11 @@ class Checkout extends HTMLElement {
                     <div class="checks">
                         <div class="check">
                         <input class="checkbox" type="checkbox" id="oke" />
-                        <label for="oke">Loasjadn asdadas asfasf</label>
+                        <label for="oke">Check this out</label>
                         </div>
                         <div class="check">
                         <input class="checkbox" type="checkbox" id="agree" />
-                        <label for="agree">asf asfasf asfasf</label>
+                        <label for="agree">Check this this out</label>
                         </div>
                     </div>
                     </div>
@@ -99,7 +99,7 @@ class Checkout extends HTMLElement {
                             <div class="item-box">
                             <p class="heading-4">Initial</p>
                             <img src="assets/images/order/item.png" alt="order" />
-                            <p class="heading-3">Silver 3</p>
+                            <p class="heading-3 blueText">Silver 3</p>
                         </div>
                     </div>
 
