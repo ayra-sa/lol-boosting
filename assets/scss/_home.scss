@@ -186,6 +186,10 @@
   @media (min-width: #{$laptop}) {
     flex-wrap: nowrap;
   }
+
+  @media (min-width: #{$desktop}) {
+    column-gap: 90px;
+  }
 }
 
 .product-card, .product-card-right {
@@ -379,7 +383,8 @@
 
 #what-is {
   background: url("../images/what-is-bg.svg") no-repeat center;
-  background-size: cover;
+  background-size: contain;
+  padding: 100px 0;
 }
 
 #what-is-title {

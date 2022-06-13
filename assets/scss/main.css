@@ -510,6 +510,13 @@ button {
   }
 }
 
+@media (min-width: 1536px) {
+  .product-box {
+    -webkit-column-gap: 90px;
+            column-gap: 90px;
+  }
+}
+
 .product-card, .product-card-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -737,7 +744,8 @@ button {
 
 #what-is {
   background: url("../images/what-is-bg.svg") no-repeat center;
-  background-size: cover;
+  background-size: contain;
+  padding: 100px 0;
 }
 
 #what-is-title {
