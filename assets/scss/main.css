@@ -586,7 +586,7 @@ button {
 .char {
   position: absolute;
   z-index: 1;
-  inset: 0 0 0 auto;
+  inset: 0 10px 0 auto;
   margin-top: -30px;
   height: 203px;
   width: 180px;
@@ -1220,6 +1220,12 @@ button {
   }
 }
 
+@media (min-width: 1024px) {
+  .small-container {
+    width: 65%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1295,6 +1301,10 @@ textarea {
 
 .mt-4 {
   margin-top: 40px;
+}
+
+.mt-6 {
+  margin-top: 60px;
 }
 
 .mb-1 {
@@ -1434,7 +1444,7 @@ select {
 
 .decoration {
   position: absolute;
-  top: -35%;
+  top: -50%;
   left: 0;
   z-index: -1;
 }
@@ -1590,8 +1600,9 @@ input:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
-    left: auto;
+    position: static;
+    left: unset;
+    width: unset;
   }
 }
 
@@ -1778,6 +1789,10 @@ input:focus {
     -webkit-column-gap: 50px;
             column-gap: 50px;
   }
+}
+
+.btn-navbar-login {
+  margin-left: unset;
 }
 
 .login {

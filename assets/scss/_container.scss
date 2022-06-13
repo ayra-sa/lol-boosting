@@ -150,3 +150,10 @@
     margin-left: 375px;
   }
 }
+
+.small-container {
+   
+  @media (min-width: #{$laptop}) {
+    width: 65%;
+  }
+}

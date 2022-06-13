@@ -18,6 +18,7 @@ class NavbarLogin extends HTMLElement {
                   <!-- <input type="text" placeholder="Search for boosting"> -->
                   <img src="./assets/images/icons/search.svg" alt="icon">
                 </div>
+              </div>
                 <ul class="nav-menu">
                   <li class="nav-item-header">
                     <h3 class="heading-3">Menu</h3>
@@ -35,9 +36,8 @@ class NavbarLogin extends HTMLElement {
                   <li class="nav-item"><a class="heading-5" href="blog.html">Blog</a></li>
                   <li class="nav-item"><a class="heading-5" href="faq.html">FAQ</a></li>
                 </ul>
-              </div>
   
-              <div class="btn-navbar">
+              <div class="btn-navbar btn-navbar-login">
                 <div class="search-bar on-tablet">
                   <!-- <input type="text" placeholder="Search for boosting"> -->
                   <img src="./assets/images/icons/search.svg" alt="icon" />

@@ -67,27 +67,27 @@ class Sidebar extends HTMLElement {
                 </li>
                 <li class="category-list">
                     <a class="link-list" href="product-slider2.html">
-                        <span class="heading-4">WOW Gold</span>
+                        <span class="heading-4">Leveling</span>
                     </a>
                 </li>
                 <li class="category-list">
                     <a class="link-list" href="product-slider.html">
-                    <span class="heading-4">WOW Gold</span>
+                    <span class="heading-4">Character boosting</span>
                 </a>
                 </li>
                 <li class="category-list">
                     <a class="link-list" href="product-slider.html">
-                        <span class="heading-4">WOW Gold</span>
+                        <span class="heading-4">Raids</span>
                     </a>
                 </li>
                 <li class="category-list">
                     <a class="link-list" href="product-slider.html">
-                        <span class="heading-4">WOW Gold</span>
+                        <span class="heading-4">Items</span>
                     </a>
                 </li>
                 <li class="category-list">
                     <a class="link-list" href="product-slider.html">
-                        <span class="heading-4">WOW Gold</span>
+                        <span class="heading-4">Achievement</span>
                     </a>
                 </li>
             </ul>

@@ -46,7 +46,7 @@
 
             <div class="small-container">
               <h2 class="heading-2">
-                We offer to buy booster for your account
+                We Offer to <span class="dot">Buy Booster</span>for Your Account
               </h2>
               <p class="body-3">
                 Lol Boosting provides cheap WoW boosting of all types: character
@@ -81,7 +81,7 @@
               <div class="positions">
                 <div class="position">
                   <h4 class="heading-4">Current Position</h4>
-                  <img src="assets/images/order/item.png" alt="item" />
+                  <img src="assets/images/products/iron-product.png" alt="item" />
                   <div class="select-wrap">
                     <select class="input" name="position">
                       <option value="iron">Iron</option>
@@ -100,20 +100,38 @@
                       <option value="platinum">Platinum</option>
                     </select>
                   </div>
-
-                  <!-- <div class="rank-selection">
-                        <div class="cursor">
-                            <img src="assets/" alt="">
-                        </div>
-                        
-    
-                        <div class="rank-slider">
-                            <input type="range" name="range" id="range" class="range">
-                          <div class="mt-2">
-                              <h4 class="heading-4">3 LP</h4>
-                          </div>
-                        </div>
-                      </div> -->
+                </div>
+                <div class="position">
+                  <h4 class="heading-4">Current Position</h4>
+                  <img src="assets/images/products/platinum-product.png" alt="item" />
+                  <div class="select-wrap">
+                    <select class="input" name="position">
+                      <option value="iron">Iron</option>
+                      <option value="platinum">Platinum</option>
+                    </select>
+                  </div>
+                  <div class="select-wrap">
+                    <select class="input" name="position">
+                      <option value="iron">Iron</option>
+                      <option value="platinum">Platinum</option>
+                    </select>
+                  </div>
+                  <div class="select-wrap">
+                    <select class="input" name="position">
+                      <option value="iron">Iron</option>
+                      <option value="platinum">Platinum</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="position">
+                  <h4 class="heading-4">Current Position</h4>
+                  <img src="assets/images/products/server-product.png" alt="item" />
+                  <div class="select-wrap">
+                    <select class="input" name="position">
+                      <option value="iron">Iron</option>
+                      <option value="platinum">Platinum</option>
+                    </select>
+                  </div>
                 </div>
               </div>
 
@@ -353,11 +371,13 @@
                       placeholder="Review text"
                     ></textarea>
                     <div class="btn-container">
-                      <input
-                        type="submit"
-                        class="btn btn-primary"
-                        value="Send Review"
-                      />
+                      <button type="submit" class="btn btn-primary">
+                        <span>Send Review</span>
+                        <img
+                          src="assets/images/icons/arrow-up.svg"
+                          alt="icon"
+                        />
+                      </button>
                     </div>
                   </form>
                 </div>
@@ -365,28 +385,79 @@
                 <div class="review-total">
                   <h4 class="heading-4 mb-2">2 of 132 Reviews</h4>
 
-                  <div class="review-card">
-                    <p class="heading-6">Fantastic Job</p>
-                    <p class="body-3">
-                      Good purchase Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua.
-                    </p>
-                    <div class="verified">
-                      <img src="assets/images/icons/verified.svg" alt="icon" />
-                      <span>Verified purchased</span>
+                  <div class="review-total-body">
+                    <div class="review-cards">
+                      <div class="review-card">
+                        <p class="heading-6">Fantastic Job</p>
+                        <p class="body-3">
+                          Good purchase Lorem ipsum dolor sit amet, consectetur
+                          adipiscing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua.
+                        </p>
+                        <div class="verified">
+                          <img
+                            src="assets/images/icons/verified.svg"
+                            alt="icon"
+                          />
+                          <span>Verified purchased</span>
+                        </div>
+                      </div>
+                      <div class="review-card">
+                        <p class="heading-6">Fantastic Job</p>
+                        <p class="body-3">
+                          Good purchase Lorem ipsum dolor sit amet, consectetur
+                          adipiscing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua.
+                        </p>
+                        <div class="verified">
+                          <img
+                            src="assets/images/icons/verified.svg"
+                            alt="icon"
+                          />
+                          <span>Verified purchased</span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="review-card">
-                    <p class="heading-6">Fantastic Job</p>
-                    <p class="body-3">
-                      Good purchase Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua.
-                    </p>
-                    <div class="verified">
-                      <img src="assets/images/icons/verified.svg" alt="icon" />
-                      <span>Verified purchased</span>
+
+                    <div class="pagination">
+                      <button disabled>
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.2426 6.34317L14.8284 4.92896L7.75739 12L14.8285 19.0711L16.2427 17.6569L10.5858 12L16.2426 6.34317Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                        <!-- <img src="assets/images/icons/arrow-pagination-left.svg" alt="icon"> -->
+                      </button>
+                      <div class="pagination-numbers">
+                        <div class="number active">1</div>
+                        <div class="number">2</div>
+                        <div class="number">3</div>
+                        <div class="number">4</div>
+                        <div class="pagination-dot">. . .</div>
+                        <div class="number">55</div>
+                      </div>
+                      <button>
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.5858 6.34317L12 4.92896L19.0711 12L12 19.0711L10.5858 17.6569L16.2427 12L10.5858 6.34317Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                        <!-- <img src="assets/images/icons/arrow-up-purple.svg" alt="icon"> -->
+                      </button>
                     </div>
                   </div>
                 </div>

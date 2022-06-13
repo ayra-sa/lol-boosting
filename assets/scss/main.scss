@@ -82,6 +82,7 @@ textarea {
 @include mt("1", "10px");
 @include mt("2", "20px");
 @include mt("4", "40px");
+@include mt("6", "60px");
 
 @include mb("1", "10px");
 @include mb("2", "20px");
@@ -199,7 +200,7 @@ select {
 
 .decoration {
   position: absolute;
-  top: -35%;
+  top: -50%;
   left: 0;
   z-index: -1;
 }
@@ -313,8 +314,9 @@ input {
 
   @media (min-width: #{$tablet}) {
     display: flex;
-    position: relative;
-    left: auto;
+    position: static;
+    left: unset;
+    width: unset;
   }
 }
 
@@ -471,6 +473,10 @@ input {
 
   @media (min-width: #{$laptop}) {
     column-gap: 50px;
+  }
+
+  &-login {
+    margin-left: unset;
   }
 }
 

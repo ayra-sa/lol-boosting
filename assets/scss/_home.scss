@@ -249,7 +249,7 @@
 .char {
   position: absolute;
   z-index: 1;
-  inset: 0 0 0 auto;
+  inset: 0 10px 0 auto;
   margin-top: -30px;
   height: 203px;
   width: 180px;
@@ -266,7 +266,6 @@
 }
 
 .col {
-  
   display: flex;
   overflow: scroll;
     gap: 30px;
