@@ -50,13 +50,33 @@ class FooterProduct extends HTMLElement {
                       <p class="body-3">About us</p>
                     </a>
                     <a href="#">
-                      <p class="body-3">About us</p>
+                      <p class="body-3">We are hiring</p>
                     </a>
                     <a href="#">
-                      <p class="body-3">About us</p>
+                      <p class="body-3">Blog</p>
                     </a>
                     <a href="#">
-                      <p class="body-3">About us</p>
+                      <p class="body-3">FAQ</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="footer-menu">
+                  <h2 class="heading-5">Lol Elo Boosting</h2>
+                  <div class="footer-links">
+                    <a href="#">
+                      <p class="body-3">Lol Boosting</p>
+                    </a>
+                    <a href="#">
+                      <p class="body-3">Win League Boost</p>
+                    </a>
+                    <a href="#">
+                      <p class="body-3">Duo Game League Boost</p>
+                    </a>
+                    <a href="#">
+                      <p class="body-3">Cheap League Boost</p>
+                    </a>
+                    <a href="#">
+                      <p class="body-3">Lol Coaching</p>
                     </a>
                   </div>
                 </div>
@@ -64,33 +84,13 @@ class FooterProduct extends HTMLElement {
                   <h2 class="heading-5">Information</h2>
                   <div class="footer-links">
                     <a href="#">
-                      <p class="body-3">About us</p>
+                      <p class="body-3">More Games</p>
                     </a>
                     <a href="#">
-                      <p class="body-3">About us</p>
+                      <p class="body-3">Overwatch Boosting</p>
                     </a>
                     <a href="#">
-                      <p class="body-3">About us</p>
-                    </a>
-                    <a href="#">
-                      <p class="body-3">About us</p>
-                    </a>
-                  </div>
-                </div>
-                <div class="footer-menu">
-                  <h2 class="heading-5">Information</h2>
-                  <div class="footer-links">
-                    <a href="#">
-                      <p class="body-3">About us</p>
-                    </a>
-                    <a href="#">
-                      <p class="body-3">About us</p>
-                    </a>
-                    <a href="#">
-                      <p class="body-3">About us</p>
-                    </a>
-                    <a href="#">
-                      <p class="body-3">About us</p>
+                      <p class="body-3">Valorant Boosting</p>
                     </a>
                   </div>
                 </div>
