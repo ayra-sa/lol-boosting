@@ -2525,7 +2525,7 @@ input:focus {
 
 .eye-show {
   position: absolute;
-  inset: 5px 10px auto auto;
+  inset: 10px 10px auto auto;
 }
 
 .remember {
