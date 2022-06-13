@@ -6,6 +6,10 @@
   margin-top: 80px;
   padding: 40px 0;
   text-align: center;
+
+  @media (min-width: #{$laptopL}) {
+    margin-top: 100px;
+  }
 }
 
 // Progress
@@ -65,7 +69,7 @@
 }
 
 .order-col {
-  margin-top: 100px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 100px;
@@ -93,18 +97,14 @@
       // background: #{$borderGradient};
       border-radius: 20px;
       border: 1px solid #dabcff;
-      padding: 15px 50px;
+      padding: 15px 30px;
       // box-sizing: content-box;
       text-align: center;
       display: flex;
       align-items: center;
       flex-direction: column;
-      // justify-content: space-between;
+      justify-content: space-between;
       width: 100%;
-
-      img {
-        margin: 25px 0 20px 0;
-      }
 
       .heading-3 {
         margin-bottom: 0;
@@ -187,9 +187,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 17px 40px;
+  padding: 15px 88px 15px 40px;
   margin-bottom: 10px;
   border-radius: 20px;
+
+  p {
+    margin-bottom: 0 !important;
+  }
+
 }
 
 .info {
@@ -299,7 +304,7 @@
   border-radius: 12px;
   background: #eff1f5;
   padding: 2px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 #help {
@@ -321,6 +326,11 @@
 
   @media (min-width: #{$laptop}) {
     width: 80%;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: #{$laptopL}) {
+    width: 1270px;
   }
 }
 
