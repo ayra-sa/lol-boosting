@@ -169,6 +169,16 @@
   margin-bottom: 60px;
 }
 
+.blog-wrap .col-3 {
+  padding-inline: unset;
+}
+
+@media (min-width: 768px) {
+  .blog-wrap .col-3 {
+    row-gap: 60px;
+  }
+}
+
 .blog-wrap .blog-card {
   display: none;
 }

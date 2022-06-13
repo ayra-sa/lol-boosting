@@ -59,7 +59,8 @@
 .col-3 {
     overflow: scroll;
     display: flex;
-    column-gap: 20px;
+    column-gap: 30px;
+    row-gap: 30px;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;
     padding-inline: 20px;
@@ -71,8 +72,6 @@
     @media (min-width: #{$tablet}) {
       overflow: unset;
       display: grid;
-      row-gap: 60px;
-      column-gap: 30px;
       grid-template-columns: repeat(2, 1fr);
     }
   

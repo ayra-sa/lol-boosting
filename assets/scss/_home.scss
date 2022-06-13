@@ -539,6 +539,20 @@
   margin: 40px auto;
   width: fit-content;
   box-shadow: 2px 3px 13px -8px #6c6c6c;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    border: 1px solid hsla(0, 0%, 100%, 1);
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+}
 
   @media (min-width: #{$laptop}) {
     padding: 20px 92px;

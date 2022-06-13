@@ -947,6 +947,20 @@ button {
   width: fit-content;
   -webkit-box-shadow: 2px 3px 13px -8px #6c6c6c;
           box-shadow: 2px 3px 13px -8px #6c6c6c;
+  position: relative;
+}
+
+.rating::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  border: 1px solid white;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  -ms-border-radius: inherit;
+  -o-border-radius: inherit;
 }
 
 @media (min-width: 1024px) {
@@ -1161,8 +1175,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
@@ -1178,9 +1193,6 @@ button {
     overflow: unset;
     display: -ms-grid;
     display: grid;
-    row-gap: 60px;
-    -webkit-column-gap: 30px;
-            column-gap: 30px;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }

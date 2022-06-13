@@ -135,6 +135,14 @@
 .blog-wrap {
   margin-bottom: 60px;
 
+  .col-3 {
+    padding-inline: unset;
+    
+    @media (min-width: #{$tablet}) {
+      row-gap: 60px;
+    }
+  }
+
   .blog-card {
     display: none;
 
