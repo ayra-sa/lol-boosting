@@ -24,6 +24,10 @@
   background: #ffa03e;
 }
 
+.tag.special-offer {
+  background: #4802DD;
+}
+
 .tag.most {
   background: #6a49ee;
 }
@@ -503,14 +507,15 @@ button {
   margin: 0;
 }
 
-.filter-games, .filter-dropdown {
+.filter-games,
+.filter-dropdown {
   padding: 24px 50px;
   /* white-space: nowrap; */
   border-radius: 20px;
   font-weight: 500;
   font-size: 1.15em;
   line-height: 32px;
-  color: #6e7687;
+  color: #3a445c;
   cursor: pointer;
 }
 
@@ -584,7 +589,8 @@ button {
   }
 }
 
-.product-card, .product-card-right {
+.product-card,
+.product-card-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,7 +610,8 @@ button {
 }
 
 @media (min-width: 1024px) {
-  .product-card, .product-card-right {
+  .product-card,
+  .product-card-right {
     /* width: 600px; */
   }
 }

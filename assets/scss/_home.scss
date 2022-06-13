@@ -1,6 +1,5 @@
 @import "variable";
 
-
 // Hero
 
 #heroHome {
@@ -8,79 +7,77 @@
 }
 
 .hero {
-    // padding: 5% 0;
-    display: flex;
-    flex-direction: column-reverse;
-    position: relative;
-    margin-top: 100px;
-    
-    @media (min-width: #{$laptop}) {
-      flex-direction: row;
-      margin-top: 140px;
-      align-items: center;
-    }
+  // padding: 5% 0;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  margin-top: 100px;
+
+  @media (min-width: #{$laptop}) {
+    flex-direction: row;
+    margin-top: 140px;
+    align-items: center;
+  }
 }
 
 .hero-title-home {
-    position: relative;
-  
-    &::after {
-      content: url("../images/Highlight_10.svg");
-      position: absolute;
-      inset: 30% -10% auto auto;
-    }
+  position: relative;
+
+  &::after {
+    content: url("../images/Highlight_10.svg");
+    position: absolute;
+    inset: 30% -10% auto auto;
+  }
 }
 
 .hero-left {
-    width: 100%;
-    @media (min-width: #{$laptop}) {
-      width: 50%;
-    }
+  width: 100%;
+  @media (min-width: #{$laptop}) {
+    width: 50%;
+  }
 }
 
-
 .hero-right {
-    
-    width: 100%;
-    position: relative;
-    inset: 0 0 auto auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    & .decor {
-      position: absolute;
-      max-width: 20%;
-    
-      @media (min-width: #{$tablet}) {
-        max-width: 100%;
-      }
-    
-      &.leftBtm {
-        inset: auto auto 0 0;
-      }
-    
-      &.rightBtm {
-        inset: auto 50px 0 auto;
-      }
-    
-      &.right {
-        inset: auto 0 auto auto;
-      }
-    
-      &.leftTop {
-        inset: -50px auto auto 0;
-      }
-    
-      &.rightBtw {
-        z-index: -1;
-        inset: auto 0 50px auto;
-      }
+  width: 100%;
+  position: relative;
+  inset: 0 0 auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .decor {
+    position: absolute;
+    max-width: 20%;
+
+    @media (min-width: #{$tablet}) {
+      max-width: 100%;
     }
-    
-    @media (min-width: #{$laptop}) {
-      inset: 0;
+
+    &.leftBtm {
+      inset: auto auto 0 0;
     }
+
+    &.rightBtm {
+      inset: auto 50px 0 auto;
+    }
+
+    &.right {
+      inset: auto 0 auto auto;
+    }
+
+    &.leftTop {
+      inset: -50px auto auto 0;
+    }
+
+    &.rightBtw {
+      z-index: -1;
+      inset: auto 0 50px auto;
+    }
+  }
+
+  @media (min-width: #{$laptop}) {
+    inset: 0;
+  }
 }
 
 // Filter
@@ -101,7 +98,7 @@
 
   @media (min-width: #{$laptop}) {
     position: static;
-  border-radius: 20px;
+    border-radius: 20px;
   }
 
   .filter-wrap {
@@ -111,21 +108,21 @@
     width: 100%;
     overflow: scroll;
     white-space: nowrap;
-    -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none; 
-      display: none;
-  
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    display: none;
+
     &::-webkit-scrollbar {
       display: none;
     }
-  
+
     @media (min-width: #{$tablet}) {
       display: flex;
     }
-  
+
     @media (min-width: #{$laptop}) {
       position: static;
-    border-radius: 20px;
+      border-radius: 20px;
     }
   }
 
@@ -140,24 +137,24 @@
     z-index: 787;
     background: #fff;
     display: none;
-    
+
     @media (min-width: #{$laptop}) {
       margin-top: 90px;
     }
-  
+
     &.open {
       display: block;
     }
 
     .dropdown-body-top {
       background: #{$primaryDefault};
-        color: #fff;
-        padding: 15px 20px;
-        border-radius: 20px 20px 0 0;
-        -webkit-border-radius: 20px 20px 0 0;
-        -moz-border-radius: 20px 20px 0 0;
-        -ms-border-radius: 20px 20px 0 0;
-        -o-border-radius: 20px 20px 0 0;
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 20px 20px 0 0;
+      -webkit-border-radius: 20px 20px 0 0;
+      -moz-border-radius: 20px 20px 0 0;
+      -ms-border-radius: 20px 20px 0 0;
+      -o-border-radius: 20px 20px 0 0;
     }
 
     li {
@@ -174,20 +171,19 @@
   }
 }
 
-
-.filter-games, .filter-dropdown {
+.filter-games,
+.filter-dropdown {
   padding: 24px 50px;
   /* white-space: nowrap; */
   border-radius: 20px;
   font-weight: 500;
   font-size: 1.15em;
   line-height: 32px;
-  color: #{$textMedium};
+  color: #{$textDark};
   cursor: pointer;
 }
 
 .filter-games {
-
   &.active {
     background: #{$primaryDefault};
     font-weight: 700;
@@ -200,7 +196,6 @@
   gap: 10px;
 }
 
-
 // Product home
 
 #products {
@@ -208,7 +203,6 @@
 }
 
 .product-content {
-
   @media (min-width: #{$tablet}) {
     padding-top: 180px;
   }
@@ -222,13 +216,12 @@
   position: relative;
 
   &::after {
-  //   content: url(${burst});
+    //   content: url(${burst});
     content: "";
     margin-left: 20px;
     position: relative;
   }
 }
-
 
 .product-box {
   flex-wrap: wrap;
@@ -236,7 +229,7 @@
   gap: 50px;
   margin-top: 40px;
   display: none;
-  
+
   &:nth-of-type(1) {
     display: flex;
   }
@@ -250,7 +243,8 @@
   }
 }
 
-.product-card, .product-card-right {
+.product-card,
+.product-card-right {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
@@ -260,8 +254,7 @@
   padding: 20px;
   width: 100%;
   border-radius: 20px;
-  
-  
+
   @media (min-width: #{$laptop}) {
     /* width: 600px; */
   }
@@ -326,34 +319,33 @@
 .col {
   display: flex;
   overflow: scroll;
-    gap: 30px;
-    margin-top: 40px;
-    -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none; 
-  
-      &::-webkit-scrollbar {
-        display: none;
-      }
-    
-    @media (min-width: #{$tablet}) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      overflow: unset;
-    }
-    
-    @media (min-width: #{$laptop}) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      overflow: unset;
-    }
+  gap: 30px;
+  margin-top: 40px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (min-width: #{$tablet}) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: unset;
+  }
+
+  @media (min-width: #{$laptop}) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: unset;
+  }
 }
 
 .card {
-  
   position: relative;
   height: 510px;
   display: block;
-  
+
   @media (min-width: #{$laptop}) {
     height: 100%;
   }
@@ -393,12 +385,11 @@
   position: relative;
   white-space: nowrap;
   height: 100%;
-  
+
   @media (min-width: #{$laptop}) {
     position: absolute;
     inset: 0;
     height: unset;
-
   }
 }
 
@@ -425,7 +416,7 @@
 
 .list {
   list-style: disc;
-  
+
   & span {
     color: #fff;
   }
@@ -489,7 +480,6 @@
   }
 }
 
-
 .what-is-content {
   margin-top: 100px;
   display: flex;
@@ -509,7 +499,6 @@
     width: 50%;
   }
 }
-
 
 // Review
 
@@ -550,15 +539,13 @@
   margin: 40px auto;
   width: fit-content;
   box-shadow: 2px 3px 13px -8px #6c6c6c;
-  
+
   @media (min-width: #{$laptop}) {
     padding: 20px 92px;
   }
-  
 }
 
 .review-info {
-  
   background: url("../images/numbers.png") no-repeat center;
   background-size: cover;
   backdrop-filter: blur(12px);
@@ -599,7 +586,7 @@
     text-align: center;
     display: inline-block;
     color: #fff;
-    
+
     @media (min-width: #{$tablet}) {
       width: 233px;
     }
@@ -613,14 +600,13 @@
     }
 
     &:nth-of-type(2) {
-      border-top: 1px solid rgba(255, 255, 255, 0.5);;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.5);;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
       /* border-left: 1px solid #fff;
       border-right: 1px solid #fff; */
     }
   }
 }
-
 
 // Blog
 
@@ -635,7 +621,6 @@
 }
 
 .blog-content {
-
   @media (min-width: #{$laptop}) {
     width: 50%;
   }

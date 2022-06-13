@@ -25,6 +25,9 @@
   &.special {
     background: #{$special};
   }
+  &.special-offer {
+    background: #{$specialOffer};
+  }
   &.most {
     background: #{$most};
   }
