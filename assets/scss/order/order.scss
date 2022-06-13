@@ -97,7 +97,7 @@
       // background: #{$borderGradient};
       border-radius: 20px;
       border: 1px solid #dabcff;
-      padding: 15px 30px;
+      padding: 15px 40px;
       // box-sizing: content-box;
       text-align: center;
       display: flex;
@@ -178,21 +178,25 @@
   }
 }
 
-.history {
-  margin-top: 40px;
-}
+// .history {
+//   margin-top: 40px;
+// }
 
 .win,
 .loose {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 88px 15px 40px;
   margin-bottom: 10px;
   border-radius: 20px;
-
+  padding: 17px 20px;
+  
   p {
     margin-bottom: 0 !important;
+  }
+  
+  @media (min-width: #{$tablet}) {
+    padding: 15px 88px 15px 40px;
   }
 
 }
@@ -236,9 +240,9 @@
   }
 }
 
-.chat-wrap {
-  margin-top: 40px;
-}
+// .chat-wrap {
+//   margin-top: 40px;
+// }
 
 .chat-box {
   // background: #{$borderGradient}

@@ -1,5 +1,5 @@
 .product-main {
-  background: url("../../images/products/bg-product.png") no-repeat top;
+  background: url("../../images/products/bg-product.svg") no-repeat top;
   background-size: cover;
 }
 
@@ -19,8 +19,14 @@
 #review-product {
   background: url("../../images/review-bg.png") no-repeat center;
   background-size: cover;
-  padding: 80px;
   position: relative;
+  padding: 40px 32px;
+}
+
+@media (min-width: 768px) {
+  #review-product {
+    padding: 80px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -32,6 +38,12 @@
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+  }
+}
+
+@media (min-width: 1536px) {
+  #review-product {
+    width: 80%;
   }
 }
 

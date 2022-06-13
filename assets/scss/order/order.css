@@ -119,7 +119,7 @@
 .order-col .items .item-box {
   border-radius: 20px;
   border: 1px solid #dabcff;
-  padding: 15px 30px;
+  padding: 15px 40px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,10 +218,6 @@
   }
 }
 
-.history {
-  margin-top: 40px;
-}
-
 .win,
 .loose {
   display: -webkit-box;
@@ -233,14 +229,21 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px 88px 15px 40px;
   margin-bottom: 10px;
   border-radius: 20px;
+  padding: 17px 20px;
 }
 
 .win p,
 .loose p {
   margin-bottom: 0 !important;
+}
+
+@media (min-width: 768px) {
+  .win,
+  .loose {
+    padding: 15px 88px 15px 40px;
+  }
 }
 
 .info {
@@ -288,10 +291,6 @@
 
 .loose-info span {
   color: #f31e1e;
-}
-
-.chat-wrap {
-  margin-top: 40px;
 }
 
 .chat-box {

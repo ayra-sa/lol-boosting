@@ -421,6 +421,7 @@ input {
 
 .profile-btn {
   display: none;
+  cursor: pointer;
 
   @media (min-width: #{$tablet}) {
     display: flex;
@@ -522,10 +523,10 @@ input {
     inset: 0 auto 0 0;
     // margin-top: 2%;
   }
-  
+
   #dropdownSidebar {
     margin-top: 85px;
-    
+
     @media (min-width: #{$tablet}) {
       display: block;
     }
@@ -814,7 +815,8 @@ input {
 
 .footer-right {
   display: grid;
-  gap: 50px;
+  column-gap: 50px;
+  row-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
 
   @media (min-width: #{$tablet}) {
@@ -849,7 +851,7 @@ input {
 .email {
   display: flex;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 14px;
   font-size: inherit;
   font-weight: 500;
 }
@@ -858,13 +860,14 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   margin-top: 40px;
   margin-bottom: 20px;
   border-bottom: 1px solid #e0fff2;
   padding-bottom: 20px;
-
+  column-gap: 24px;
+  
   @media (min-width: #{$tablet}) {
+    gap: 10px;
     justify-content: unset;
   }
 }
@@ -883,8 +886,13 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: #{$tablet}) {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .footer-bottom {
@@ -1205,28 +1213,24 @@ input {
 }
 
 .order-sum {
-
   .items {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
-    
+
     .item-box {
       // background: #{$borderGradient};
       border-radius: 20px;
       border: 1px solid #dabcff;
       padding: 15px 50px;
       text-align: center;
-    
+
       img {
         margin: 25px 0 20px 0;
       }
-
     }
   }
-  
 }
-
 
 table {
   margin-top: 20px;
@@ -1349,7 +1353,8 @@ td {
 
 // DROPDOWN
 
-#dropdown, #dropdownSidebar {
+#dropdown,
+#dropdownSidebar {
   margin-top: 60px;
 
   .dropdown {

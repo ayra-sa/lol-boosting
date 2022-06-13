@@ -7,7 +7,11 @@
     <title>Lol Boosting</title>
 
     <link rel="stylesheet" href="assets/scss/main.css" />
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
 
     <!-- components -->
     <script src="components/navbar.js"></script>
@@ -75,26 +79,70 @@
         <!-- Tab Home -->
         <section class="section" id="productTab">
           <div class="container">
-            <div class="filter-wrap">
-              <div class="filter-games active" onclick="openTab(event, 'WorldOfWarcraft')">
-                <span>World of Warcraft</span>
+
+            <div class="filter-container">
+              <div class="filter-wrap">
+                <div
+                  class="filter-games active"
+                  onclick="openTab(event, 'WorldOfWarcraft')"
+                >
+                  <span>World of Warcraft</span>
+                </div>
+                <div class="filter-games" onclick="openTab(event, 'Apex')">
+                  <span>Apex Legends</span>
+                </div>
+                <div
+                  class="filter-games"
+                  onclick="openTab(event, 'LeagueLogends')"
+                >
+                  <span>League of Legends</span>
+                </div>
+                <div class="filter-games" onclick="openTab(event, 'NewWorld')">
+                  <span>New world</span>
+                </div>
+                <div class="filter-games" onclick="openTab(event, 'Destiny')">
+                  <span>Destiny 2</span>
+                </div>
+                <div class="filter-dropdown">
+                  <span>Other</span>
+                  <img src="assets/images/icons/chevron-down.svg" alt="icon" />
+                </div>
               </div>
-              <div class="filter-games" onclick="openTab(event, 'Apex')">
-                <span>Apex Legends</span>
-              </div>
-              <div class="filter-games" onclick="openTab(event, 'LeagueLogends')">
-                <span>League of Legends</span>
-              </div>
-              <div class="filter-games" onclick="openTab(event, 'NewWorld')">
-                <span>New world</span>
-              </div>
-              <div class="filter-games" onclick="openTab(event, 'Destiny')">
-                <span>Destiny 2</span>
-              </div>
-              <div class="filter-dropdown">
-                <span>Other</span>
-                <img src="assets/images/icons/chevron-down.svg" alt="icon" />
-              </div>
+              <ul class="dropdown-body-large">
+                <li class="dropdown-body-top">
+                  <p class="body-2">Other Games</p>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-link">
+                    <p class="heading-4 text-grey">League Of Legend</p>
+                    <span class="body-4 blueText">Riot Games</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-link">
+                    <p class="heading-4 text-grey">League Of Legend</p>
+                    <span class="body-4 blueText">Riot Games</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-link">
+                    <p class="heading-4 text-grey">League Of Legend</p>
+                    <span class="body-4 blueText">Riot Games</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-link">
+                    <p class="heading-4 text-grey">League Of Legend</p>
+                    <span class="body-4 blueText">Riot Games</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-link">
+                    <p class="heading-4">League Of Legend</p>
+                    <span class="body-4 blueText">Riot Games</span>
+                  </a>
+                </li>
+              </ul>
             </div>
 
             <div class="product-content">
@@ -178,7 +226,6 @@
                 </div>
               </div>
               <div class="product-box" id="Apex">
-                
                 <div class="product-card-right">
                   <span class="tag hot">Hot Sale</span>
 
@@ -252,7 +299,6 @@
                     alt="chara"
                   />
                 </div>
-
               </div>
             </div>
           </div>
@@ -275,12 +321,12 @@
               <card-component></card-component>
               <card-component></card-component>
             </div>
-  
+
             <!-- <div class="btn-container">
               <button class="pre" onclick="previous()">Previous</button>
               <button class="next" onclick="next()">Next</button>
             </div> -->
-  
+
             <div class="btn-container">
               <a href="#">
                 <button class="btn btn-primary">
@@ -326,22 +372,23 @@
                 <div class="info-wrap">
                   <img src="./assets/images/Card 21.svg" alt="icon" />
                   <div>
-                    <h4 class="heading-4">
-                      Privilege of high ranked friend
-                    </h4>
+                    <h4 class="heading-4">Privilege of high ranked friend</h4>
                     <p class="body-3">
-                      Does everyone else take advantage of their higher ranked friend in solo que? Now so can you! Thanks to Eloboostleague, everyone can have the privilege of having their own high ranked friend to play with.
+                      Does everyone else take advantage of their higher ranked
+                      friend in solo que? Now so can you! Thanks to
+                      Eloboostleague, everyone can have the privilege of having
+                      their own high ranked friend to play with.
                     </p>
                   </div>
                 </div>
                 <div class="info-wrap">
                   <img src="./assets/images/Card 21-1.svg" alt="icon" />
                   <div>
-                    <h4 class="heading-4">
-                      Thousands of happy players
-                    </h4>
+                    <h4 class="heading-4">Thousands of happy players</h4>
                     <p class="body-3">
-                      Eloboostleague provides you the potential for action and growth by servicing you with class boosting, duo queueing and coaching solution.
+                      Eloboostleague provides you the potential for action and
+                      growth by servicing you with class boosting, duo queueing
+                      and coaching solution.
                     </p>
                   </div>
                 </div>

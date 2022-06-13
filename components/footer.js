@@ -22,16 +22,16 @@ class Footer extends HTMLElement {
                 <img src="./assets/images/icons/twitter.svg" alt="icon" />
               </a>
               <a href="#" class="socmed-link">
-                <img src="./assets/images/icons/twitter.svg" alt="icon" />
+                <img src="./assets/images/icons/ig.svg" alt="icon" />
               </a>
               <a href="#" class="socmed-link">
-                <img src="./assets/images/icons/twitter.svg" alt="icon" />
+                <img src="./assets/images/icons/tele.svg" alt="icon" />
               </a>
               <a href="#" class="socmed-link">
-                <img src="./assets/images/icons/twitter.svg" alt="icon" />
+                <img src="./assets/images/icons/youtube.svg" alt="icon" />
               </a>
               <a href="#" class="socmed-link">
-                <img src="./assets/images/icons/twitter.svg" alt="icon" />
+                <img src="./assets/images/icons/t.svg" alt="icon" />
               </a>
             </div>
 

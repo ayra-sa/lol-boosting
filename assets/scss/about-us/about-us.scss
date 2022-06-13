@@ -1,68 +1,67 @@
 @import "../variable";
 
 .about-hero {
-    margin-top: 70px;
-    padding: 100px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url("../../images/about-us/about-hero.png") no-repeat center;
-    background-size: cover;
+  margin-top: 70px;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../../images/about-us/about-hero.png") no-repeat center;
+  background-size: cover;
 }
 
 .count-box {
-    
-    background: url("../../images/numbers.png") no-repeat center;
-    background-size: cover;
-    backdrop-filter: blur(12px);
-    border-radius: 30px;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    color: #fff;
-    row-gap: 10px;
-    padding: 20px;
-    margin-top: 60px;
-  
-    @media (min-width: #{$tablet}) {
-      /* width: 70%; */
-      padding-inline-start: 0;
-      padding-inline-end: 0;
-      flex-direction: row;
-  
-      & > div {
-        /* padding: 0 100px !important; */
-  
-        &:nth-of-type(2) {
-          border-top: none !important;
-          border-bottom: none !important;
-          border-left: 1px solid rgba(255, 255, 255, 0.5);
-          border-right: 1px solid rgba(255, 255, 255, 0.5);
-        }
-      }
-    }
-  
-    & > div {
-      width: 230px;
-      /* padding: 10px 50px; */
-      text-align: center;
-      display: inline-block;
-      color: #fff;
+  background: url("../../images/numbers.png") no-repeat center;
+  background-size: cover;
+  backdrop-filter: blur(12px);
+  border-radius: 30px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  color: #fff;
+  row-gap: 10px;
+  padding: 20px;
+  margin-top: 60px;
 
-      @media (min-width: #{$laptop}) {
-        width: 333px;
-      }
-  
-      & p {
-        color: #fff;
-      }
-  
+  @media (min-width: #{$tablet}) {
+    /* width: 70%; */
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    flex-direction: row;
+
+    & > div {
+      /* padding: 0 100px !important; */
+
       &:nth-of-type(2) {
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid #fff;
+        border-top: none !important;
+        border-bottom: none !important;
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
       }
     }
+  }
+
+  & > div {
+    width: 230px;
+    /* padding: 10px 50px; */
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+
+    @media (min-width: #{$laptop}) {
+      width: 333px;
+    }
+
+    & p {
+      color: #fff;
+    }
+
+    &:nth-of-type(2) {
+      border-top: 1px solid hsla(0, 0%, 100%, 0.5);
+      border-bottom: 1px solid hsla(0, 0%, 100%, 0.5);
+    }
+  }
 }
 
 #values-about {
@@ -84,78 +83,80 @@
 }
 
 .values-cards {
-    display: flex;
-    margin-top: 60px;
-    flex-direction: column;
-    gap: 30px;
-    
-    @media (min-width: #{$laptop}) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
+  display: flex;
+  margin-top: 60px;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (min-width: #{$laptop}) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .vcard {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  background: url("../../images/card-bg.png") no-repeat center;
+  background-size: cover;
+  padding: 40px 20px;
+  
+  @media (min-width: #{$tablet}) {
     padding: 40px 85px;
-    background: url("../../images/card-bg.png") no-repeat center;
-    background-size: cover;
+  }
 }
 
 #service {
-    background: url("../../images/about-us/bg-service.png") no-repeat;
-    background-size: contain;
-    margin-top: 100px;
+  background: url("../../images/about-us/bg-service.png") no-repeat;
+  background-size: contain;
+  margin-top: 100px;
 }
 
 .service-info {
-    
-    display: flex;
-    align-items: center;
-    margin-top: 60px;
-    position: relative;
-    flex-direction: column;
-  
-    @media (min-width: #{$laptop}) {
-      flex-direction: row;
-    }
-  
-    // &::before {
-    //   content: '';
-    //   border-left: 1px dashed #D0D5DF;
-    //   display: block;
-    //   position: absolute;
-    //   inset: 0;
-    //   margin-left: 40px;
-    //   z-index: -1;
-    //   height: 50%;
-      
-    //   @media (min-width: #{$laptop}) {
-    //     height: 60%;
-    //     margin: auto 0 auto 40px;
-    //   }
-  
-    // }
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  position: relative;
+  flex-direction: column;
+
+  @media (min-width: #{$laptop}) {
+    flex-direction: row;
+  }
+
+  // &::before {
+  //   content: '';
+  //   border-left: 1px dashed #D0D5DF;
+  //   display: block;
+  //   position: absolute;
+  //   inset: 0;
+  //   margin-left: 40px;
+  //   z-index: -1;
+  //   height: 50%;
+
+  //   @media (min-width: #{$laptop}) {
+  //     height: 60%;
+  //     margin: auto 0 auto 40px;
+  //   }
+
+  // }
 }
 
 .info-wrap {
-    display: flex;
-    column-gap: 30px;
-    margin-bottom: 50px;
-    text-align: left;
-    align-items: flex-start;
-  
-    & > div {
-      width: 100%;
-  
-      @media (min-width: #{$laptop}) {
-        width: 70%;
-      }
+  display: flex;
+  column-gap: 30px;
+  margin-bottom: 50px;
+  text-align: left;
+  align-items: flex-start;
+
+  & > div {
+    width: 100%;
+
+    @media (min-width: #{$laptop}) {
+      width: 70%;
     }
+  }
 }
 
 .info-wrap input {
@@ -171,11 +172,11 @@
   height: 0;
   position: relative;
   z-index: 10;
-  -webkit-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-  -moz-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-  -o-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-  -ms-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-  transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+  -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
 }
 
 .info-wrap article p {
@@ -183,11 +184,11 @@
 }
 
 .info-wrap input:checked ~ article {
-  -webkit-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  -moz-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  -o-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  -ms-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+  -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
 }
 
 .info-wrap input:checked ~ article.ac-small {
@@ -195,160 +196,157 @@
 }
 
 .content-wrap {
-    width: 100%;
+  width: 100%;
 
-    &:nth-of-type(1) {
-      &::before {
-        content: '';
-        border-left: 1px dashed #D0D5DF;
-        display: block;
-        position: absolute;
-        inset: 0;
-        margin-left: 40px;
-        z-index: -1;
-        height: 40%;
-        
-        @media (min-width: #{$tablet}) {
-          height: 30%;
-          // margin: auto 0 auto 40px;
-        }
+  &:nth-of-type(1) {
+    &::before {
+      content: "";
+      border-left: 1px dashed #d0d5df;
+      display: block;
+      position: absolute;
+      inset: 0;
+      margin-left: 40px;
+      z-index: -1;
+      height: 40%;
 
-        @media (min-width: #{$laptop}) {
-          height: 60%;
-          margin: auto 0 auto 40px;
-        }
-    
+      @media (min-width: #{$tablet}) {
+        height: 30%;
+        // margin: auto 0 auto 40px;
+      }
+
+      @media (min-width: #{$laptop}) {
+        height: 60%;
+        margin: auto 0 auto 40px;
       }
     }
-  
-    @media (min-width: #{$laptop}) {
-      width: 50%;
-    }
+  }
+
+  @media (min-width: #{$laptop}) {
+    width: 50%;
+  }
 }
 
 #team {
-    background: url("../../images/about-us/team-bg.png") no-repeat center;
-    background-size: cover;
-    margin-top: 100px;
-    padding: 5% 0;
-    text-align: center;
-    position: relative;
+  background: url("../../images/about-us/team-bg.png") no-repeat center;
+  background-size: cover;
+  margin-top: 100px;
+  padding: 5% 0;
+  text-align: center;
+  position: relative;
 }
 
 .count-team {
-    margin-top: 60px;
-    display: flex;
-    // row-gap: 40px;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 20px;
-    
-    @media (min-width: #{$laptop}) {
-      flex-wrap: nowrap;
-    }
-    
-    & > div {
-      padding: 20px 90px;
-      text-align: center;
+  margin-top: 60px;
+  display: flex;
+  // row-gap: 40px;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 20px;
 
+  @media (min-width: #{$laptop}) {
+    flex-wrap: nowrap;
+  }
+
+  & > div {
+    padding: 20px 90px;
+    text-align: center;
+
+    &:nth-of-type(1) {
+      border-bottom: 1px solid #d2cbff;
+    }
+
+    &:nth-of-type(2) {
+      border-bottom: 1px solid #d2cbff;
+    }
+
+    &:nth-of-type(3) {
+      border-bottom: 1px solid #d2cbff;
+    }
+
+    @media (min-width: #{$tablet}) {
       &:nth-of-type(1) {
-        border-bottom: 1px solid #D2CBFF;
+        border-right: 1px solid rgba(77, 137, 255, 0.4);
+        border-bottom: none;
       }
 
       &:nth-of-type(2) {
-        border-bottom: 1px solid #D2CBFF;
+        border-bottom: none;
       }
 
       &:nth-of-type(3) {
-        border-bottom: 1px solid #D2CBFF;
+        border-bottom: none;
       }
-    
-      @media (min-width: #{$tablet}) {
-        &:nth-of-type(1) {
-          border-right: 1px solid rgba(77, 137, 255, .4);
-          border-bottom: none;
-        }
-        
-        &:nth-of-type(2) {
-          border-bottom: none;
-        }
 
-        &:nth-of-type(3) {
-          border-bottom: none;
-        }
-        
-        &:nth-last-of-type(1) {
-          border-left: 1px solid rgba(77, 137, 255, .4);
-        }
-      }
-    
-      @media (min-width: #{$laptop}) {
-        padding: 0 50px;
-    
-        &:nth-of-type(1) {
-          border-right: unset;
-          border-bottom: unset;
-        }
-    
-        &:nth-last-of-type(1) {
-          border-left: unset;
-        }
-    
-        &:nth-of-type(2) {
-          border-bottom: unset;
-          border-left: 1px solid rgba(77, 137, 255, .4);
-        }
-    
-        &:nth-of-type(3) {
-          border-bottom: unset;
-          border-left: 1px solid rgba(77, 137, 255, .4);
-          border-right: 1px solid rgba(77, 137, 255, .4);
-        }
+      &:nth-last-of-type(1) {
+        border-left: 1px solid rgba(77, 137, 255, 0.4);
       }
     }
+
+    @media (min-width: #{$laptop}) {
+      padding: 0 50px;
+
+      &:nth-of-type(1) {
+        border-right: unset;
+        border-bottom: unset;
+      }
+
+      &:nth-last-of-type(1) {
+        border-left: unset;
+      }
+
+      &:nth-of-type(2) {
+        border-bottom: unset;
+        border-left: 1px solid rgba(77, 137, 255, 0.4);
+      }
+
+      &:nth-of-type(3) {
+        border-bottom: unset;
+        border-left: 1px solid rgba(77, 137, 255, 0.4);
+        border-right: 1px solid rgba(77, 137, 255, 0.4);
+      }
+    }
+  }
 }
 
-
 .lonely {
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    column-gap: 100px;
-    row-gap: 30px;
-    flex-direction: column;
-    flex-wrap: wrap;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  column-gap: 100px;
+  row-gap: 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
 
-    &-right {
-      text-align: center;
+  &-right {
+    text-align: center;
 
-      @media (min-width: #{$tablet}) {
-        text-align: left;
-      }
+    @media (min-width: #{$tablet}) {
+      text-align: left;
     }
-  
-      @media (min-width: #{$laptop}) {
-        flex-direction: row;
-      }
-  
-      @media (min-width: #{$laptopL}) {
-        flex-wrap: nowrap;
-      }
-    
+  }
+
+  @media (min-width: #{$laptop}) {
+    flex-direction: row;
+  }
+
+  @media (min-width: #{$laptopL}) {
+    flex-wrap: nowrap;
+  }
 }
 
 .buttons-wrap {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-direction: column;
+
+  @media (min-width: #{$tablet}) {
+    flex-direction: row;
+  }
+
+  .btn {
     display: flex;
-    gap: 10px;
-    margin-top: 20px;
-    flex-direction: column;
-
-    @media (min-width: #{$tablet}) {
-      flex-direction: row;
-    }
-
-    .btn {
-      display: flex;
-      justify-content: center;
-    }
+    justify-content: center;
+  }
 }

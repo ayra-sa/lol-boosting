@@ -173,8 +173,17 @@ function openTab(evt, tabName) {
 // Dropdown
 
 const dropdownIcon = document.querySelector(".dropdown-icon")
+const dropdownOther = document.querySelector(".filter-dropdown")
 const dropdownBody = document.querySelector(".dropdown-body")
+const dropdownBodyLarge = document.querySelector(".dropdown-body-large")
 const dropdownList = document.querySelectorAll(".dropdown-body li a")
+
+if (dropdownOther) {
+  dropdownOther.addEventListener("click", () => {
+    console.log("popopo")
+    dropdownBodyLarge.classList.toggle("open")
+  })
+}
 
 if (dropdownIcon) {
   dropdownIcon.addEventListener("click", openDropdown)

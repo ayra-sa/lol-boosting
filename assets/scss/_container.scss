@@ -153,7 +153,14 @@
 
 .small-container {
    
-  @media (min-width: #{$laptop}) {
+  @media (min-width: #{$laptopL}) {
     width: 65%;
+  }
+}
+
+.medium-container {
+
+  @media (min-width: #{$laptop}) {
+    width: 85%;
   }
 }

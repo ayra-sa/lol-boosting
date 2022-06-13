@@ -167,12 +167,14 @@
     position: absolute;
     top: 10px;
     margin-left: 20px;
+    z-index: -1;
   }
 
   &-hero::after {
     content: url("../images/Highlight_10.svg");
     position: absolute;
     inset: 50% -10px auto auto;
+    z-index: -1;
   }
 
   &-review::after {
@@ -180,6 +182,7 @@
     position: absolute;
     left: 0;
     top: -30%;
+    z-index: -1;
   }
 
   &-about::after {
@@ -187,6 +190,7 @@
     position: absolute;
     top: -50%;
     left: 0;
+    z-index: -1;
 
     @media (min-width: #{$tablet}) {
       left: -60px;
@@ -196,6 +200,7 @@
   &-hiring::after {
     content: url("../images/Highlight_10.svg");
     position: absolute;
+    z-index: -1;
   }
 
   &-right {
