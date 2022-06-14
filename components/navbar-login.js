@@ -6,7 +6,7 @@ class NavbarLogin extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
       <!-- Navbar -->
-      <nav class="navbar">
+      <nav class="navbar navbar-login">
         <div class="nav">
           <div class="container">
             <div class="nav-wrap">
@@ -23,7 +23,9 @@ class NavbarLogin extends HTMLElement {
                   <!-- <input type="text" placeholder="Search for boosting"> -->
                   <img src="./assets/images/icons/search.svg" alt="icon" />
                 </div>
-                <ul class="nav-menu">
+              </div>
+              
+              <ul class="nav-menu">
                   <li class="nav-item-header">
                     <h3 class="heading-3">Menu</h3>
                     <img
@@ -59,8 +61,7 @@ class NavbarLogin extends HTMLElement {
                   <li class="nav-item on-mobo">
                     <a class="heading-5 blueText" href="#">Account</a>
                   </li>
-                </ul>
-              </div>
+              </ul>
   
               <div class="btn-navbar">
                 <div class="search-bar on-tablet">

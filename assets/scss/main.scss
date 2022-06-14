@@ -396,16 +396,6 @@ input {
     margin-left: 0;
   }
 
-  // &:last-of-type {
-  //   margin-right: 0;
-
-  //   &:after {
-  //     content: "";
-  //     display: inline-block;
-  //     width: 24px;
-  //   }
-  // }
-
   @media (min-width: #{$tablet}) {
     padding: 14px;
     // margin: 0 16px;
@@ -489,13 +479,19 @@ input {
   }
 }
 
-// const OrderIcon = styled.div`
-//   display: block;
+  // NAVBAR LOGIN
 
-//   @media (min-width: #{$tablet}) {
-//     display: none;
-//   }
-// `
+  .navbar-login {
+
+    .nav-wrap {
+      justify-content: space-between;
+    }
+
+    .btn-navbar {
+      margin-left: unset;
+    }
+  }
+
 
 // MOBILE NAVBAR
 
