@@ -12,7 +12,7 @@ class Sidebar extends HTMLElement {
                 <div class="dropdown-header">
                     <div class="dropdown-title">
                     <h2 class="heading-4">World Of Warcraft</h2>
-                    <p class="body-3">Blizzard Entertainment</p>
+                    <p class="body-4">Blizzard Entertainment</p>
                     </div>
                     <img class="dropdown-icon" src="assets/images/icons/arrow-down.svg" alt="icon">
                 </div>

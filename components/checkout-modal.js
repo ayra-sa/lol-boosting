@@ -97,11 +97,16 @@ class Checkout extends HTMLElement {
                         <h3 class="heading-3 mb-1">Order Summary</h3>
                         <div class="items">
                             <div class="item-box">
-                            <p class="heading-4">Initial</p>
-                            <img src="assets/images/order/item.png" alt="order" />
-                            <p class="heading-3 blueText">Silver 3</p>
+                                <p class="heading-4">Initial</p>
+                                <img src="assets/images/order/item.png" alt="order" />
+                                <p class="heading-3 blueText">Silver 3</p>
+                            </div>
+                            <div class="item-box">
+                                <p class="heading-4">Initial</p>
+                                <img src="assets/images/order/item.png" alt="order" />
+                                <p class="heading-3 blueText">Silver 3</p>
+                            </div>
                         </div>
-                    </div>
 
                         <table>
                         <tr>
