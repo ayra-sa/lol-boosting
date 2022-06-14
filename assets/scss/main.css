@@ -1536,7 +1536,7 @@ select {
 
 .decoration {
   position: absolute;
-  top: -50%;
+  top: -18%;
   left: 0;
   z-index: -1;
 }
@@ -2483,8 +2483,13 @@ input:focus {
   outline: 1px solid #6b7aff !important;
 }
 
-.login-wrap .input:invalid {
-  outline: 1px solid red;
+.login-wrap .input.success {
+  outline-color: #16984a;
+}
+
+.login-wrap .input.error {
+  outline-color: #f32020;
+  background: #fff1f0;
 }
 
 .x-btn {
