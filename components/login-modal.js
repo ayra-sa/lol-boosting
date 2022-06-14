@@ -12,13 +12,14 @@ class Login extends HTMLElement {
                     <img class="x-btn" src="assets/images/icons/x.svg" alt="icon" />
                 </div>
                 <form class="login-form">
-                    <input class="input" placeholder="User" type="text" required />
+                    <input class="input input-login" name="user" placeholder="User" type="text" />
                     <div class="password">
                         <input
-                            class="input"
+                            class="input input-login"
                             placeholder="Password"
                             type="password"
-                            required
+                            name="password"
+                            id="password"
                         />
                         <div class="eye-show">
                             <img src="assets/images/icons/eye.svg" alt="icon" />

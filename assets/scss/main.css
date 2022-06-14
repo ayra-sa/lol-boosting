@@ -1633,7 +1633,6 @@ select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 360px;
   }
   .search-bar input {
     width: 160px;
@@ -2482,6 +2481,10 @@ input:focus {
 
 .login-wrap .input:focus {
   outline: 1px solid #6b7aff !important;
+}
+
+.login-wrap .input:invalid {
+  outline: 1px solid red;
 }
 
 .x-btn {

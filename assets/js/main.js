@@ -252,13 +252,49 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 // Show Password
 
-const togglePassword = document.querySelector('#togglePassword');
-const password = document.querySelector('#id_password');
+const togglePassword = document.querySelector('.eye-show');
+const password = document.querySelector('#password');
 
-togglePassword.addEventListener('click', function (e) {
-  // toggle the type attribute
-  const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-  password.setAttribute('type', type);
-  // toggle the eye slash icon
-  this.classList.toggle('fa-eye-slash');
-});
+if (togglePassword) {
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+  });
+}
+
+
+
+// Validate
+
+// function validateInput() {
+//   const user = document.forms["login-form"]["user"].value;
+//   const password = document.forms["login-form"]["password"].value;
+//   const input = document.querySelectorAll(".input-login")
+//   if (user == "" || user == null) {
+//   	input.style.outline = "1px solid blue"
+//     return false
+//   } else if (password == "" || password == "") {
+//     input.style.outline = "1px solid blue"
+//     return false
+//   }
+// }
+
+
+// Slider
+
+const slider = document.getElementById("range");
+const sliderIron = document.getElementById("rangeIron");
+const outputIron = document.getElementById("value-range-iron");
+const output = document.getElementById("value-range");
+outputIron.innerHTML = sliderIron.value; // Display the default slider value
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+sliderIron.oninput = function() {
+  outputIron.innerHTML = this.value;
+}
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}

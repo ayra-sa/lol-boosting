@@ -269,7 +269,7 @@ select {
 
   @media (min-width: #{$laptop}) {
     display: flex;
-    width: 360px;
+    // width: 360px;
 
     input {
       width: 160px;
@@ -969,6 +969,10 @@ input {
 
     &:focus {
       outline: 1px solid hsla(234, 100%, 71%, 1) !important;
+    }
+
+    &:invalid {
+      outline: 1px solid red;
     }
   }
 }
