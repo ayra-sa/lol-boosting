@@ -6,13 +6,23 @@ class Sidebar extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
         <aside class="sidebar">
+            <div class="sidebar-nav-left">
+                <a href="index.html">
+                    <img src="assets/images/logo.svg" alt="logo" />
+                </a>
+
+                <div class="search-bar w-auto">
+                  <!-- <input type="text" placeholder="Search for boosting"> -->
+                  <img src="./assets/images/icons/search.svg" alt="icon" />
+                </div>
+            </div>
             <!-- Dropdown -->
             <div id="dropdownSidebar">
                 <div class="dropdown-wrap">
                 <div class="dropdown-header">
                     <div class="dropdown-title">
-                    <h2 class="heading-4">World Of Warcraft</h2>
-                    <p class="body-4">Blizzard Entertainment</p>
+                        <h2 class="heading-4">World Of Warcraft</h2>
+                        <p class="body-4">Blizzard Entertainment</p>
                     </div>
                     <img class="dropdown-icon" src="assets/images/icons/arrow-down.svg" alt="icon">
                 </div>

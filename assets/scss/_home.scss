@@ -121,7 +121,7 @@
     }
 
     @media (min-width: #{$laptop}) {
-      position: static;
+      position: relative;
       border-radius: 20px;
     }
   }

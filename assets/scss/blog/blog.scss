@@ -137,6 +137,7 @@
 
   .col-3 {
     padding-inline: unset;
+    flex-direction: column;
     
     @media (min-width: #{$tablet}) {
       row-gap: 60px;
