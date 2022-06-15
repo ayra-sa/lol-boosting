@@ -160,8 +160,12 @@
   display: flex;
   gap: 10px;
 
-  .select-wrap::after {
-    top: 12px;
+  .select-box {
+    margin-bottom: 0;
+    
+    @media (min-width: #{$tablet}) {
+      width: 140px;
+    }
   }
 
   input {
@@ -333,7 +337,7 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: #{$laptopL}) {
+  @media (min-width: #{$desktop}) {
     width: 1270px;
   }
 }

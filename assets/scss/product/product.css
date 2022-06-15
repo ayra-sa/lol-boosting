@@ -519,6 +519,10 @@
   padding: 20px;
 }
 
+.basket-body .btn-container {
+  margin-top: 20px;
+}
+
 .bb-info {
   padding-bottom: 10px;
   border-bottom: 1px solid #ebeff8;
@@ -735,6 +739,35 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+}
+
+.review-testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  margin-bottom: 10px;
+}
+
+.review-testimonial .review-rating-star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 4px;
+          column-gap: 4px;
+}
+
+.review-testimonial .review-name-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 6px;
+          column-gap: 6px;
+  color: #6e7687;
 }
 
 .review-card {

@@ -81,12 +81,12 @@ class Checkout extends HTMLElement {
 
                     <div class="checks">
                         <div class="check">
-                        <input class="checkbox" type="checkbox" id="oke" />
-                        <label for="oke">Check this out</label>
+                            <input class="checkbox" type="checkbox" id="oke" />
+                            <label for="oke">Check this out</label>
                         </div>
                         <div class="check">
-                        <input class="checkbox" type="checkbox" id="agree" />
-                        <label for="agree">Check this this out</label>
+                            <input class="checkbox" type="checkbox" id="agree" />
+                            <label for="agree">Check this this out</label>
                         </div>
                     </div>
                     </div>
@@ -109,35 +109,38 @@ class Checkout extends HTMLElement {
                         </div>
 
                         <table>
-                        <tr>
-                            <td><p class="heading-4">Server</p></td>
-                            <td class="td-result">
-                            <p class="heading-4">Europe West</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><p class="heading-4">Server</p></td>
-                            <td class="td-result">
-                            <p class="heading-4">Europe West</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><p class="heading-4">Server</p></td>
-                            <td class="td-result">
-                            <p class="heading-4">Europe West</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><p class="heading-4">Server</p></td>
-                            <td class="td-result">
-                            <p class="heading-4">Europe West</p>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td><p class="text-medium">Server</p></td>
+                                <td class="td-result">
+                                <p class="heading-4">Europe West</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><p class="text-medium">Competition Time</p></td>
+                                <td class="td-result">
+                                <p class="heading-4">1 Day</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><p class="text-medium">Extra Options</p></td>
+                                <td class="td-result">
+                                <p class="heading-4">None</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><p class="text-medium">You Earn</p></td>
+                                <td class="td-result">
+                                <p class="heading-4">0 Fox Coins</p>
+                                </td>
+                            </tr>
                         </table>
 
                         <div class="coupon">
                             <input class="input" placeholder="Enter coupon" type="text" />
-                            <button class="btn btn-secondary">Apply</button>
+                            <button class="btn btn-secondary">
+                                <span>Apply</span>
+                                <img src="./assets/images/icons/arrow-up-purple.svg" alt="icon" >
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -149,7 +152,10 @@ class Checkout extends HTMLElement {
                 <div class="btn-bottom">
                     <div class="coupon">
                         <input class="input" placeholder="Enter coupon" type="text" />
-                        <button class="btn btn-secondary">Apply</button>
+                        <button class="btn btn-secondary">
+                            <span>Apply</span>
+                            <img src="./assets/images/icons/arrow-up-purple.svg" alt="icon" >
+                        </button>
                     </div>
                     <button class="btn btn-mobo btn-primary">
                         <span>Purchase</span>
