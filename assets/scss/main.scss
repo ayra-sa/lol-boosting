@@ -127,6 +127,14 @@ textarea {
   @media (min-width: #{$laptop}) {
     display: block;
   }
+  
+  &-tablet {
+    display: none;
+    
+    @media (min-width: #{$tablet}) {
+      display: block;
+    }
+  }
 }
 
 .w-auto {
@@ -325,6 +333,7 @@ select {
     
     @media (min-width: #{$laptopL}) {
       visibility: hidden;
+      // display: none;
     }
 
     // @media (min-width: #{$desktop}) {
@@ -333,6 +342,12 @@ select {
     // }
     
   }
+
+  // .nav-wrap {
+  //   justify-content: unset !important;
+  //   column-gap: 300px;
+  //   margin-left: 10%;
+  // }
 }
 
 .navbar {
@@ -650,7 +665,7 @@ input {
   }
 
   #dropdownSidebar {
-    margin-top: 95px;
+    margin-top: 92px;
 
     @media (min-width: #{$tablet}) {
       display: block;
@@ -1552,8 +1567,12 @@ td {
     &-header {
       display: flex;
       justify-content: space-between;
-      padding: 20px 30px 20px 80px;
       color: #fff;
+      padding: 20px 30px;
+      
+      @media (min-width: #{$laptop}) {
+        padding: 20px 30px 20px 80px;
+      }
     }
 
     &-body {

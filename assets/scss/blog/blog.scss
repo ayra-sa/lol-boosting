@@ -57,8 +57,10 @@
   justify-content: space-between;
   flex-direction: column;
   row-gap: 20px;
+  padding-left: 20px;
 
   @media (min-width: #{$laptop}) {
+    padding-inline: 20px;
     align-items: center;
     flex-direction: row;
   }
@@ -137,10 +139,12 @@
 
   .col-3 {
     padding-inline: unset;
+    display: flex;
     flex-direction: column;
     
     @media (min-width: #{$tablet}) {
       row-gap: 60px;
+      display: grid;
     }
   }
 
