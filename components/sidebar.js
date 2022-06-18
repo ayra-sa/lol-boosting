@@ -7,13 +7,14 @@ class Sidebar extends HTMLElement {
       this.innerHTML = `
         <aside class="sidebar">
             <div class="sidebar-nav-left">
-                <a href="index.html">
+                <a href="index.html" class="sidebar-brand">
                     <img src="assets/images/logo.svg" alt="logo" />
                 </a>
-
-                <div class="search-bar w-auto">
-                  <!-- <input type="text" placeholder="Search for boosting"> -->
-                  <img src="./assets/images/icons/search.svg" alt="icon" />
+                <div class="search-bar">
+                  <input type="text" placeholder="Search for boosting">
+                  <a href="#" class="search-btn">
+                    <img src="./assets/images/icons/search.svg" alt="icon" />
+                  </a>
                 </div>
             </div>
             <!-- Dropdown -->

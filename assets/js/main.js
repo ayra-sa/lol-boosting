@@ -281,20 +281,14 @@ if (togglePassword) {
 // }
 
 
-// Slider
 
-const slider = document.getElementById("range");
-const sliderIron = document.getElementById("rangeIron");
-const outputIron = document.getElementById("value-range-iron");
-const output = document.getElementById("value-range");
-outputIron.innerHTML = sliderIron.value; // Display the default slider value
-output.innerHTML = slider.value; // Display the default slider value
+// Search tablet
 
-// Update the current slider value (each time you drag the slider handle)
-sliderIron.oninput = function() {
-  outputIron.innerHTML = this.value;
-}
+const searchBtn = document.querySelector(".search-bar.on-tablet")
+const searchBarTablet = document.querySelector(".search-bar-hidden")
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
+if (searchBtn) {
+  searchBtn.addEventListener("click", () => {
+    searchBarTablet.classList.toggle("open")
+  })
 }

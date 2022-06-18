@@ -443,7 +443,7 @@ button {
 
 @media (min-width: 1024px) {
   .filter-container {
-    position: static;
+    position: relative;
     border-radius: 20px;
   }
 }
@@ -477,6 +477,9 @@ button {
   .filter-container .filter-wrap {
     position: relative;
     border-radius: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -536,6 +539,27 @@ button {
   line-height: 32px;
   color: #3a445c;
   cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .filter-games,
+  .filter-dropdown {
+    padding-inline: 15px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .filter-games,
+  .filter-dropdown {
+    padding-inline: 30px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .filter-games,
+  .filter-dropdown {
+    padding-inline: 50px;
+  }
 }
 
 .filter-games.active {
@@ -1565,7 +1589,7 @@ textarea {
 }
 
 .select-box__current:focus .select-box__input-text {
-  outline: 1px solid #6B7AFF;
+  outline: 1px solid #6b7aff;
 }
 
 .select-box__icon {
@@ -1805,6 +1829,13 @@ select {
   }
 }
 
+.nav-left,
+.nav-menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .search-bar {
   background-color: #ebeff8;
   padding: 14px;
@@ -1813,6 +1844,38 @@ select {
       -ms-flex-align: center;
           align-items: center;
   display: none;
+  overflow: hidden;
+}
+
+.search-bar-hidden {
+  position: absolute;
+  z-index: 88;
+  left: 0;
+  margin-top: 140px;
+  background-color: #ebeff8;
+  padding: 14px;
+  border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  display: none;
+}
+
+.search-bar-hidden.homepage {
+  margin-left: 13%;
+}
+
+.search-bar-hidden.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-bar-hidden a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (min-width: 1024px) {
@@ -1820,9 +1883,28 @@ select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .search-bar input {
-    width: 160px;
+    transition: width 0.55s ease;
+    -webkit-transition: width 0.55s ease;
+    -moz-transition: width 0.55s ease;
+    -ms-transition: width 0.55s ease;
+    -o-transition: width 0.55s ease;
+    width: 0;
+  }
+  .search-bar input:focus, .search-bar input:not(:placeholder-shown) {
+    width: 260px;
+  }
+  .search-bar a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .search-bar:hover > input {
+    width: 260px;
   }
 }
 
@@ -1913,10 +1995,9 @@ input:focus {
 
 @media (min-width: 768px) {
   .nav-item.current::before {
-    content: "";
     position: absolute;
     display: block;
-    inset: -10px 0 auto 0;
+    inset: -14px 0 auto 0;
     height: 4px;
     background: linear-gradient(89.67deg, #5479e6 0.26%, #6b7aff 99.71%);
     border-radius: 0px 0px 4px 4px;
@@ -1924,6 +2005,12 @@ input:focus {
     -moz-border-radius: 0px 0px 4px 4px;
     -ms-border-radius: 0px 0px 4px 4px;
     -o-border-radius: 0px 0px 4px 4px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-item.current::before {
+    inset: -10px 0 auto 0;
   }
 }
 
@@ -2094,6 +2181,7 @@ input:focus {
 
 .navbar-login .btn-navbar {
   margin-left: unset;
+  position: relative;
 }
 
 .mobile-menu {
@@ -2163,6 +2251,14 @@ input:focus {
             align-items: center;
     padding: 13px 0;
   }
+}
+
+.sidebar .sidebar-nav-left .search-bar input:focus, .sidebar .sidebar-nav-left .search-bar input:not(:placeholder-shown) {
+  width: 160px;
+}
+
+.sidebar .sidebar-nav-left .search-bar:hover > input {
+  width: 160px;
 }
 
 .game-selection {
@@ -2685,6 +2781,20 @@ input:focus {
 @media (min-width: 1536px) {
   .footer-product .medium-container {
     width: 85%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-product .footer-top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer-product .footer-top {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 

@@ -40,9 +40,11 @@
               <a href="index.html">
                 <img src="./assets/images/logo.svg" alt="logo" />
               </a>
-              <div class="search-bar w-auto">
-                <!-- <input type="text" placeholder="Search for boosting"> -->
-                <img src="./assets/images/icons/search.svg" alt="icon" />
+              <div class="search-bar">
+                <input type="text" placeholder="Search for boosting">
+                <a href="#" class="search-btn">
+                  <img src="./assets/images/icons/search.svg" alt="icon" />
+                </a>
               </div>
             </div>
             
@@ -88,6 +90,12 @@
               <div class="search-bar on-tablet">
                 <!-- <input type="text" placeholder="Search for boosting"> -->
                 <img src="./assets/images/icons/search.svg" alt="icon" />
+              </div>
+              <div class="search-bar-hidden">
+                <input type="text" placeholder="Search for boosting">
+                <a href="#" class="search-btn">
+                  <img src="./assets/images/icons/search.svg" alt="icon" />
+                </a>
               </div>
               <a href="order.html">
                 <button class="btn btn-primary btn-order">My Order</button>
@@ -138,131 +146,133 @@
               </p>
             </div>
 
-            <div class="content-slide">
-              <div class="positions">
-                <div class="position">
-                  <h4 class="heading-4">Current Position</h4>
-                  <img src="assets/images/products/iron-product.png" alt="item" />
-                  <div class="select-box">
-                    <div class="select-box__current" tabindex="1">
-                      <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="0" value="1" name="ironSelect1" checked="checked"/>
-                        <p class="select-box__input-text">Iron</p>
+            <div class="content-slide product-one">
+              <div class="rank-container">
+                <div class="positions">
+                  <div class="position">
+                    <h4 class="heading-4">Current Position</h4>
+                    <img src="assets/images/products/iron-product.png" alt="item" />
+                    <div class="select-box">
+                      <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="0" value="1" name="ironSelect1" checked="checked"/>
+                          <p class="select-box__input-text">Iron</p>
+                        </div>
+                        <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="1" value="2" name="ironSelect1"/>
+                          <p class="select-box__input-text">Platinum</p>
+                        </div>
+                        <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="2" value="3" name="ironSelect1"/>
+                          <p class="select-box__input-text">Gold</p>
+                        </div>
+                        <img class="select-box__icon" src="assets/images/icons/down-arrow.svg" alt="Arrow Icon" aria-hidden="true"/>
                       </div>
-                      <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="1" value="2" name="ironSelect1"/>
-                        <p class="select-box__input-text">Platinum</p>
-                      </div>
-                      <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="2" value="3" name="ironSelect1"/>
-                        <p class="select-box__input-text">Gold</p>
-                      </div>
-                      <img class="select-box__icon" src="assets/images/icons/down-arrow.svg" alt="Arrow Icon" aria-hidden="true"/>
+                      <ul class="select-box__list">
+                        <li>
+                          <label class="select-box__option" for="0" aria-hidden="aria-hidden">Iron</label>
+                        </li>
+                        <li>
+                          <label class="select-box__option" for="1" aria-hidden="aria-hidden">Platinum</label>
+                        </li>
+                        <li>
+                          <label class="select-box__option" for="2" aria-hidden="aria-hidden">Gold</label>
+                        </li>
+                      </ul>
                     </div>
-                    <ul class="select-box__list">
-                      <li>
-                        <label class="select-box__option" for="0" aria-hidden="aria-hidden">Iron</label>
-                      </li>
-                      <li>
-                        <label class="select-box__option" for="1" aria-hidden="aria-hidden">Platinum</label>
-                      </li>
-                      <li>
-                        <label class="select-box__option" for="2" aria-hidden="aria-hidden">Gold</label>
-                      </li>
-                    </ul>
+  
+                    <div class="select-box">
+                      <div class="select-box__current" tabindex="2">
+                        <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="0" value="1" name="ironSelect2" checked="checked"/>
+                          <p class="select-box__input-text">Ironq</p>
+                        </div>
+                        <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="1" value="2" name="ironSelect2"/>
+                          <p class="select-box__input-text">Platinum</p>
+                        </div>
+                        <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="2" value="3" name="ironSelect2"/>
+                          <p class="select-box__input-text">Gold</p>
+                        </div>
+                        <img class="select-box__icon" src="assets/images/icons/down-arrow.svg" alt="Arrow Icon" aria-hidden="true"/>
+                      </div>
+                      <ul class="select-box__list">
+                        <li>
+                          <label class="select-box__option" for="0" aria-hidden="aria-hidden">Ironq</label>
+                        </li>
+                        <li>
+                          <label class="select-box__option" for="1" aria-hidden="aria-hidden">Platinum</label>
+                        </li>
+                        <li>
+                          <label class="select-box__option" for="2" aria-hidden="aria-hidden">Gold</label>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-
-                  <div class="select-box">
-                    <div class="select-box__current" tabindex="2">
-                      <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="0" value="1" name="ironSelect2" checked="checked"/>
-                        <p class="select-box__input-text">Ironq</p>
+                  <div class="position">
+                    <h4 class="heading-4">Current Position</h4>
+                    <img src="assets/images/products/platinum-product.png" alt="item" />
+                    <div class="select-box">
+                      <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="0" value="1" name="platinumSelect" checked="checked"/>
+                          <p class="select-box__input-text">Iron</p>
+                        </div>
+                        <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="1" value="2" name="platinumSelect"/>
+                          <p class="select-box__input-text">Platinum</p>
+                        </div>
+                        <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="2" value="3" name="platinumSelect"/>
+                          <p class="select-box__input-text">Gold</p>
+                        </div>
+                        <img class="select-box__icon" src="assets/images/icons/down-arrow.svg" alt="Arrow Icon" aria-hidden="true"/>
                       </div>
-                      <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="1" value="2" name="ironSelect2"/>
-                        <p class="select-box__input-text">Platinum</p>
-                      </div>
-                      <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="2" value="3" name="ironSelect2"/>
-                        <p class="select-box__input-text">Gold</p>
-                      </div>
-                      <img class="select-box__icon" src="assets/images/icons/down-arrow.svg" alt="Arrow Icon" aria-hidden="true"/>
+                      <ul class="select-box__list">
+                        <li>
+                          <label class="select-box__option" for="0" aria-hidden="aria-hidden">Iron</label>
+                        </li>
+                        <li>
+                          <label class="select-box__option" for="1" aria-hidden="aria-hidden">Platinum</label>
+                        </li>
+                        <li>
+                          <label class="select-box__option" for="2" aria-hidden="aria-hidden">Gold</label>
+                        </li>
+                      </ul>
                     </div>
-                    <ul class="select-box__list">
-                      <li>
-                        <label class="select-box__option" for="0" aria-hidden="aria-hidden">Ironq</label>
-                      </li>
-                      <li>
-                        <label class="select-box__option" for="1" aria-hidden="aria-hidden">Platinum</label>
-                      </li>
-                      <li>
-                        <label class="select-box__option" for="2" aria-hidden="aria-hidden">Gold</label>
-                      </li>
-                    </ul>
                   </div>
-                </div>
-                <div class="position">
-                  <h4 class="heading-4">Current Position</h4>
-                  <img src="assets/images/products/platinum-product.png" alt="item" />
-                  <div class="select-box">
-                    <div class="select-box__current" tabindex="1">
-                      <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="0" value="1" name="platinumSelect" checked="checked"/>
-                        <p class="select-box__input-text">Iron</p>
+                  <div class="position">
+                    <h4 class="heading-4">Current Position</h4>
+                    <img src="assets/images/products/server-product.png" alt="item" />
+                    <div class="select-box">
+                      <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">Iron</p>
+                        </div>
+                        <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="1" value="2" name="Ben"/>
+                          <p class="select-box__input-text">Platinum</p>
+                        </div>
+                        <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="2" value="3" name="Ben"/>
+                          <p class="select-box__input-text">Gold</p>
+                        </div>
+                        <img class="select-box__icon" src="assets/images/icons/down-arrow.svg" alt="Arrow Icon" aria-hidden="true"/>
                       </div>
-                      <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="1" value="2" name="platinumSelect"/>
-                        <p class="select-box__input-text">Platinum</p>
-                      </div>
-                      <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="2" value="3" name="platinumSelect"/>
-                        <p class="select-box__input-text">Gold</p>
-                      </div>
-                      <img class="select-box__icon" src="assets/images/icons/down-arrow.svg" alt="Arrow Icon" aria-hidden="true"/>
+                      <ul class="select-box__list">
+                        <li>
+                          <label class="select-box__option" for="0" aria-hidden="aria-hidden">Iron</label>
+                        </li>
+                        <li>
+                          <label class="select-box__option" for="1" aria-hidden="aria-hidden">Platinum</label>
+                        </li>
+                        <li>
+                          <label class="select-box__option" for="2" aria-hidden="aria-hidden">Gold</label>
+                        </li>
+                      </ul>
                     </div>
-                    <ul class="select-box__list">
-                      <li>
-                        <label class="select-box__option" for="0" aria-hidden="aria-hidden">Iron</label>
-                      </li>
-                      <li>
-                        <label class="select-box__option" for="1" aria-hidden="aria-hidden">Platinum</label>
-                      </li>
-                      <li>
-                        <label class="select-box__option" for="2" aria-hidden="aria-hidden">Gold</label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="position">
-                  <h4 class="heading-4">Current Position</h4>
-                  <img src="assets/images/products/server-product.png" alt="item" />
-                  <div class="select-box">
-                    <div class="select-box__current" tabindex="1">
-                      <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
-                        <p class="select-box__input-text">Iron</p>
-                      </div>
-                      <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="1" value="2" name="Ben"/>
-                        <p class="select-box__input-text">Platinum</p>
-                      </div>
-                      <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="2" value="3" name="Ben"/>
-                        <p class="select-box__input-text">Gold</p>
-                      </div>
-                      <img class="select-box__icon" src="assets/images/icons/down-arrow.svg" alt="Arrow Icon" aria-hidden="true"/>
-                    </div>
-                    <ul class="select-box__list">
-                      <li>
-                        <label class="select-box__option" for="0" aria-hidden="aria-hidden">Iron</label>
-                      </li>
-                      <li>
-                        <label class="select-box__option" for="1" aria-hidden="aria-hidden">Platinum</label>
-                      </li>
-                      <li>
-                        <label class="select-box__option" for="2" aria-hidden="aria-hidden">Gold</label>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>

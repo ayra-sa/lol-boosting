@@ -75,6 +75,7 @@
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
+    white-space: nowrap;
   }
   .selector-wrap::-webkit-scrollbar {
     display: none;
@@ -87,14 +88,27 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 .select-top {
-  /* background: linear-gradient(89.67deg, #5479e6 0.26%, #7094ea 99.71%); */
   border-radius: 20px;
   padding: 24px;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .select-top {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .select-top {
+    padding: 24px;
+  }
 }
 
 .select-top p {
@@ -125,13 +139,56 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 140px;
+    margin-top: 100px;
+  }
+  .content-slide.product-one {
+    margin-top: 40px;
+  }
+  .content-slide.product-one .rank-container {
+    width: 50%;
+  }
+  .content-slide.product-one .positions, .content-slide.product-one .basket {
+    margin-top: 0;
   }
 }
 
 @media (min-width: 1024px) {
   .content-slide {
     margin-top: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content-slide.product-one .rank-container {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .content-slide {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .content-slide.product-one .rank-container {
+    width: 100%;
+  }
+  .content-slide.product-one .rank-container .position {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .content-slide {
+    width: calc(100% - 10%);
+    -webkit-column-gap: 5%;
+            column-gap: 5%;
+  }
+  .content-slide.product-one .rank-container {
+    width: 70%;
+  }
+  .content-slide.product-one .rank-container .position {
+    width: 100%;
   }
 }
 
@@ -142,6 +199,12 @@
 @media (min-width: 768px) {
   .content-slide .basket {
     display: unset;
+  }
+}
+
+@media (min-width: 1536px) {
+  .rank-container {
+    width: 70%;
   }
 }
 
@@ -186,11 +249,13 @@
 @media (min-width: 768px) {
   .positions {
     width: auto;
+    margin-top: 100px;
   }
 }
 
 @media (min-width: 1024px) {
   .positions {
+    margin-top: 40px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -227,13 +292,19 @@
 
 @media (min-width: 768px) {
   .position {
-    width: 300px;
+    width: 100%;
   }
 }
 
 @media (min-width: 1280px) {
   .position {
-    width: 400px;
+    width: auto;
+  }
+}
+
+@media (min-width: 1536px) {
+  .position {
+    width: 100%;
   }
 }
 
@@ -249,12 +320,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-@media (min-width: 1280px) {
-  .rank-selection .position {
-    width: 350px;
-  }
 }
 
 .rank {
@@ -498,28 +563,27 @@
   .basket {
     width: unset;
     min-width: 300px;
+    margin-top: 100px;
   }
 }
 
 @media (min-width: 1024px) {
   .basket {
-    position: fixed;
     z-index: 99;
     bottom: 0;
-    margin-left: 24%;
   }
 }
 
 @media (min-width: 1280px) {
   .basket {
     bottom: unset;
-    margin-left: 45%;
+    margin-top: 40px;
   }
 }
 
 @media (min-width: 1536px) {
   .basket {
-    margin-left: 50%;
+    margin-top: 0;
   }
 }
 
@@ -678,6 +742,12 @@
   margin-bottom: 60px;
 }
 
+@media (min-width: 1024px) {
+  #feedback {
+    margin-bottom: unset;
+  }
+}
+
 .reviews {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -692,6 +762,26 @@
 
 @media (min-width: 768px) {
   .reviews {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .reviews {
+    gap: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 1280px) {
+  .reviews {
+    gap: 90px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

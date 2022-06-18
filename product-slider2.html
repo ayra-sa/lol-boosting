@@ -40,9 +40,11 @@
               <a href="index.html">
                 <img src="./assets/images/logo.svg" alt="logo" />
               </a>
-              <div class="search-bar w-auto">
-                <!-- <input type="text" placeholder="Search for boosting"> -->
-                <img src="./assets/images/icons/search.svg" alt="icon" />
+              <div class="search-bar">
+                <input type="text" placeholder="Search for boosting">
+                <a href="#" class="search-btn">
+                  <img src="./assets/images/icons/search.svg" alt="icon" />
+                </a>
               </div>
             </div>
             
@@ -88,6 +90,12 @@
               <div class="search-bar on-tablet">
                 <!-- <input type="text" placeholder="Search for boosting"> -->
                 <img src="./assets/images/icons/search.svg" alt="icon" />
+              </div>
+              <div class="search-bar-hidden">
+                <input type="text" placeholder="Search for boosting">
+                <a href="#" class="search-btn">
+                  <img src="./assets/images/icons/search.svg" alt="icon" />
+                </a>
               </div>
               <a href="order.html">
                 <button class="btn btn-primary btn-order">My Order</button>
@@ -139,11 +147,35 @@
               </p>
             </div>
 
-            <div class="select-wrap select-wrap-product on-mobo">
-              <select class="input" name="position">
-                <option value="iron">Iron</option>
-                <option value="platinum">Platinum</option>
-              </select>
+            <div class="mt-2">
+              <div class="select-box on-mobo">
+                <div class="select-box__current" tabindex="1">
+                  <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="0" value="1" name="ironSelectMobo" checked="checked"/>
+                    <p class="select-box__input-text">Iron</p>
+                  </div>
+                  <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="1" value="2" name="ironSelectMobo"/>
+                    <p class="select-box__input-text">Platinum</p>
+                  </div>
+                  <div class="select-box__value">
+                    <input class="select-box__input" type="radio" id="2" value="3" name="ironSelectMobo"/>
+                    <p class="select-box__input-text">Gold</p>
+                  </div>
+                  <img class="select-box__icon" src="assets/images/icons/down-arrow.svg" alt="Arrow Icon" aria-hidden="true"/>
+                </div>
+                <ul class="select-box__list">
+                  <li>
+                    <label class="select-box__option" for="0" aria-hidden="aria-hidden">Iron</label>
+                  </li>
+                  <li>
+                    <label class="select-box__option" for="1" aria-hidden="aria-hidden">Platinum</label>
+                  </li>
+                  <li>
+                    <label class="select-box__option" for="2" aria-hidden="aria-hidden">Gold</label>
+                  </li>
+                </ul>
+              </div>
             </div>
             
             <div class="content-slide">
@@ -222,7 +254,7 @@
                         />
                         <!-- <input type="range" name="range" id="range" class="range" /> -->
                         <div class="mt-2">
-                          <h4 class="heading-4"><span id="value-range-iron"></span> LP</h4>
+                          <h4 class="heading-4"><span id="valueRangeIron"></span> LP</h4>
                         </div>
                       </div>
                     </div>
@@ -276,7 +308,7 @@
                         />
                         <!-- <input type="range" name="range" id="range" class="range" /> -->
                         <div class="mt-2">
-                          <h4 class="heading-4"><span id="value-range"></span> LP</h4>
+                          <h4 class="heading-4"><span id="valueRange"></span> LP</h4>
                         </div>
                       </div>
                     </div>
@@ -661,5 +693,6 @@
 
     <!-- js -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/slider.js"></script>
   </body>
 </html>

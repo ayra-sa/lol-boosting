@@ -209,6 +209,16 @@
   background-size: contain;
 }
 
+#blogDetail .bread {
+  margin-top: 80px;
+}
+
+@media (min-width: 1024px) {
+  #blogDetail .bread {
+    margin-top: 40px;
+  }
+}
+
 .blog-detail-wrap {
   margin-inline: auto;
 }

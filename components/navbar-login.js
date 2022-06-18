@@ -19,9 +19,11 @@ class NavbarLogin extends HTMLElement {
                 <a href="index.html">
                   <img src="./assets/images/logo.svg" alt="logo" />
                 </a>
-                <div class="search-bar w-auto">
-                  <!-- <input type="text" placeholder="Search for boosting"> -->
-                  <img src="./assets/images/icons/search.svg" alt="icon" />
+                <div class="search-bar">
+                  <input type="text" placeholder="Search for boosting">
+                  <a href="#" class="search-btn">
+                    <img src="./assets/images/icons/search.svg" alt="icon" />
+                  </a>
                 </div>
               </div>
               
@@ -67,6 +69,12 @@ class NavbarLogin extends HTMLElement {
                 <div class="search-bar on-tablet">
                   <!-- <input type="text" placeholder="Search for boosting"> -->
                   <img src="./assets/images/icons/search.svg" alt="icon" />
+                </div>
+                <div class="search-bar-hidden">
+                  <input type="text" placeholder="Search for boosting">
+                  <a href="#" class="search-btn">
+                    <img src="./assets/images/icons/search.svg" alt="icon" />
+                  </a>
                 </div>
                 <a href="order.html">
                   <button class="btn btn-primary btn-order">My Order</button>

@@ -14,10 +14,24 @@ class Navbar extends HTMLElement {
               <a href="index.html">
                 <img src="./assets/images/logo.svg" alt="logo">
               </a>
-              <div class="search-bar">
-                <input placeholder="Search for boosting">
-                <img src="./assets/images/icons/search.svg" alt="icon">
+              <div class="search-bar search-bar-home">
+                <input type="text" placeholder="Search for boosting">
+                <a href="#" class="search-btn">
+                  <img src="./assets/images/icons/search.svg" alt="icon" />
+                </a>
               </div>
+              <div class="search-bar on-tablet">
+                  <!-- <input type="text" placeholder="Search for boosting"> -->
+                  <img src="./assets/images/icons/search.svg" alt="icon" />
+                </div>
+                <div class="search-bar-hidden homepage">
+                  <input type="text" placeholder="Search for boosting">
+                  <a href="#" class="search-btn">
+                    <img src="./assets/images/icons/search.svg" alt="icon" />
+                  </a>
+                </div>
+              </div>
+              
               <ul class="nav-menu">
                 <li class="nav-item-header">
                   <h3 class="heading-3">Menu</h3>
@@ -36,7 +50,6 @@ class Navbar extends HTMLElement {
                 <li class="nav-item"><a class="heading-5" href="faq.html">FAQ</a></li>
                 
               </ul>
-            </div>
 
             <div class="btn-navbar">
               <a class="btn btn-primary" id="modalBtn">Log In</a>

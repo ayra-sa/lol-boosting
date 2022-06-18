@@ -163,6 +163,14 @@
 #blogDetail {
   background: url("../../images/blogs/bdetail-bg.png") no-repeat center;
   background-size: contain;
+
+  .bread {
+    margin-top: 80px;
+
+    @media (min-width: #{$laptop}) {
+      margin-top: 40px;
+    }
+  }
 }
 
 .blog-detail-wrap {
@@ -296,12 +304,3 @@
     flex-direction: row;
   }
 }
-
-// const CommentThumb = styled.div`
-//   display: flex;
-//   align-items: center;
-//   column-gap: 10px;
-// `;
-// const BlogDet = styled.div`
-//   margin-top: 20px;
-// `;

@@ -97,7 +97,7 @@
   }
 
   @media (min-width: #{$laptop}) {
-    position: static;
+    position: relative;
     border-radius: 20px;
   }
 
@@ -123,6 +123,7 @@
     @media (min-width: #{$laptop}) {
       position: relative;
       border-radius: 20px;
+      justify-content: space-between;
     }
   }
 
@@ -181,6 +182,18 @@
   line-height: 32px;
   color: #{$textDark};
   cursor: pointer;
+
+  @media (min-width: #{$laptop}) {
+    padding-inline: 15px;
+  }
+
+  @media (min-width: #{$laptopL}) {
+    padding-inline: 30px;
+  }
+
+  @media (min-width: #{$desktop}) {
+    padding-inline: 50px;
+  }
 }
 
 .filter-games {
