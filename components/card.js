@@ -26,17 +26,19 @@ class Card extends HTMLElement {
                             <p class="body-5">Stream on demand</p>
                           </li>
                         </ul>
-                        <h3 class="heading-3">$89.99</h3>
                       </div>
-                      <a href="#">
-                        <button class="btn btn-primary">
-                          <span>Buy</span>
-                          <img
-                            src="./assets/images/icons/arrow-up.svg"
-                            alt="icon"
-                          />
-                        </button>
-                      </a>
+                      <div class="product-single-card-body-bottom">
+                        <h3 class="heading-3">$89.99</h3>
+                        <a href="#">
+                          <button class="btn btn-primary">
+                            <span>Buy</span>
+                            <img
+                              src="./assets/images/icons/arrow-up.svg"
+                              alt="icon"
+                            />
+                          </button>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>

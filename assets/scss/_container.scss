@@ -72,6 +72,11 @@
       display: none;
     }
     
+    @media (min-width: #{$mobileL}) {
+      grid-template-columns: repeat(auto-fill,minmax(90%,1fr));
+      grid-auto-columns: minmax(90%,1fr);
+    }
+
     @media (min-width: #{$tablet}) {
       overflow: unset;
       // display: grid;

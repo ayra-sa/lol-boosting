@@ -180,7 +180,7 @@ const dropdownList = document.querySelectorAll(".dropdown-body li a")
 
 if (dropdownOther) {
   dropdownOther.addEventListener("click", () => {
-    console.log("popopo")
+    // console.log("popopo")
     dropdownBodyLarge.classList.toggle("open")
   })
 }
@@ -199,12 +199,19 @@ function closeDropdown() {
   dropdownBody.classList.remove("open")
 }
 
-// document.addEventListener("click", function handleCloseOutside(event) {
-//   console.log(event.target)
-//   if (!dropdownBody.contains(event.target)) {
-//     dropdownBody.classList.remove("open")
-//   }
-// })
+window.addEventListener("mouseup", (event) => {
+  console.log(event.target)
+  if (event.target !== dropdownBody) {
+    dropdownBody.classList.remove("open")
+  }
+})
+
+window.addEventListener("mouseup", (event) => {
+  console.log(event.target)
+  if (event.target !== dropdownBodyLarge) {
+    dropdownBodyLarge.classList.remove("open")
+  }
+})
 
 // Filter Blog
 
@@ -292,3 +299,9 @@ if (searchBtn) {
     searchBarTablet.classList.toggle("open")
   })
 }
+
+window.addEventListener("mouseup", (event) => {
+  if (event.target !== searchBarTablet && event.target.parrentNode !== searchBarTablet) {
+    searchBarTablet.classList.remove("open")
+  }
+})

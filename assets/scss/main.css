@@ -579,6 +579,12 @@ button {
   position: relative;
 }
 
+@media only screen and (max-width: 720px) {
+  #products .container-full {
+    max-width: unset;
+  }
+}
+
 @media (min-width: 768px) {
   .product-content {
     padding-top: 180px;
@@ -641,7 +647,8 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* justify-content: space-between; */
+  /*justify-content: space-between;
+  */
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -650,6 +657,10 @@ button {
   padding: 20px;
   width: 100%;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -1234,6 +1245,14 @@ button {
   display: none;
 }
 
+@media (min-width: 425px) {
+  .col-3 {
+    -ms-grid-columns: (minmax(90%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(90%, 1fr));
+    grid-auto-columns: minmax(90%, 1fr);
+  }
+}
+
 @media (min-width: 768px) {
   .col-3 {
     overflow: unset;
@@ -1565,6 +1584,11 @@ textarea {
   font-weight: 600;
   color: #3a445c;
   margin-bottom: 10px;
+}
+
+.select-box.on-mobo {
+  width: 70%;
+  margin-top: 40px;
 }
 
 .select-box__current {
@@ -3573,6 +3597,10 @@ td {
   inset: auto 0 0 0;
   height: 60%;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .product-single-card-info {
@@ -3604,13 +3632,23 @@ td {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product-single-card-body-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .product-single-card .list-wrap {

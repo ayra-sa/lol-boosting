@@ -171,6 +171,11 @@ textarea {
   color: #{$textDark};
   margin-bottom: 10px;
 
+  &.on-mobo {
+    width: 70%;
+    margin-top: 40px;
+  }
+
   &__current {
     position: relative;
     // box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
@@ -1825,6 +1830,10 @@ td {
     inset: auto 0 0 0;
     height: 60%;
     border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
   }
 
   &-info {
@@ -1851,14 +1860,17 @@ td {
 
   &-body {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    // justify-content: space-between;
+    // align-items: flex-end;
     color: #fff;
-  }
+    flex-direction: column;
 
-  // .card-body-left = styled.div`
-  //   /* width: 50%; */
-  // `;
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 
   .list-wrap {
     margin: 5px 0;
